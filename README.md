@@ -1,7 +1,4 @@
-# SA-2aFase
-SA 2aFase
-<div>
-  
+# SA-2aFase 
 ## Requisitos Funcionais:
 
   <ul>
