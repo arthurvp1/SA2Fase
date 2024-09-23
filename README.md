@@ -3,39 +3,18 @@ SA 2aFase
 <div>
   
 ## Requisitos Funcionais:
-  
-</div>
-<div> 
-</div>
-<div>
-[RF001] Verificar o desempenho de funcionários
-</div>
-<div>
-[RF002] Verificar o produto mais requisitado 
-</div>
-<div>
-[RF003] Cadastrar funcionários e produtos 
-</div>
-<div>
-[RF004] Inserir os dados dos funcionários no banco de dados 
-</div>
-<div>
-[RF005] Definir níveis de acesso para administrador e funcionários.  
-</div>
-<div>
-[RF006] Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo.
-</div>
-<div>
-[RF007] Realizar análise comparativa entre diferentes períodos de tempo.
-</div>
-<div>
-[RF008] Exibir histórico de vendas e desempenho dos vendedores.
-</div>
-<div>
-[RF009] Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas.
-</div>
 
-<div>
+  <ul>
+     <li>[RF001] Verificar o desempenho de funcionários</li>
+     <li>[RF002] Verificar o produto mais requisitado</li>
+     <li>[RF003] Cadastrar funcionários e produtos</li>
+     <li>[RF004] Inserir os dados dos funcionários no banco de dados </li>
+     <li>[RF005] Definir níveis de acesso para administrador e funcionários.  </li>
+     <li>[RF006] Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo.</li>
+     <li>[RF007] Realizar análise comparativa entre diferentes períodos de tempo.</li>
+     <li>[RF008] Exibir histórico de vendas e desempenho dos vendedores.</li>
+     <li>[RF009] Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas.</li>
+  <ul/>
   
 ## Requisitos Não Funcionais:
 
@@ -65,5 +44,11 @@ SA 2aFase
 [RNF008] Exportar relatórios em formatos como PDF e Excel.
 </div>
 
-![Tela de Cadastro](Cadastrar.jpg)
-![Tela de Login](Entrar.jpg)
+## Protótipo de páginas
+
+### Cadastro
+
+<img src="imagens/Cadastrar.jpg" alt="imagemCadastrar" style="width:700px">
+
+### Login
+<img src="imagens/Entrar.jpg" alt="imagementrar" style="width:700px">
