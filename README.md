@@ -5,7 +5,7 @@
      <li>[RF001] Verificar o desempenho de funcionários</li>
      <li>[RF002] Verificar o produto mais requisitado</li>
      <li>[RF003] Cadastrar funcionários e produtos</li>
-     <li>[RF004] Inserir os dados dos funcionários no banco de dados </li>
+     <li>[RF004] Inserir os dados de vendas dos funcionários no banco de dados </li>
      <li>[RF005] Definir níveis de acesso para administrador e funcionários.  </li>
      <li>[RF006] Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo.</li>
      <li>[RF007] Realizar análise comparativa entre diferentes períodos de tempo.</li>
