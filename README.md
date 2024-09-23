@@ -18,31 +18,15 @@ SA 2aFase
   
 ## Requisitos Não Funcionais:
 
-</div>
-<div>
-[RNF001] Mostrar dados dos funcionários atualizados imediatamente  
-</div>
-<div>
-[RNF002] Meta de comissão deve ser um número divisível por 4 (progress bar) 
-</div>
-<div>
-[RNF003] Gerar gráficos e tabelas dos dados de funcionários 
-</div>
-<div> 
-[RNF004] A ferramenta deve suportar até 1000 usuários simultâneos.
-</div>
-<div> 
-[RNF005] O tempo de carregamento das páginas deve ser inferior a 3 segundos.
-</div>
-<div>  
-[RNF006] Garantir disponibilidade de 99,9% do sistema.
-</div>
-<div>  
-[RNF007] As transações de inserção de dados devem ser registradas.
-</div>
-<div>  
-[RNF008] Exportar relatórios em formatos como PDF e Excel.
-</div>
+<ul>
+  <li>[RNF001] Mostrar dados dos funcionários atualizados imediatamente</li>
+  <li>[RNF002] Meta de comissão deve ser um número divisível por 4 (progress bar)</li>
+  <li>[RNF003] Gerar gráficos e tabelas dos dados de funcionários</li>
+  <li>[RNF004] A ferramenta deve suportar até 1000 usuários simultâneos</li>
+  <li>[RNF005] O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
+  <li>[RNF006] Garantir disponibilidade de 99,9% do sistema</li>
+  <li>[RNF007] As transações de inserção de dados devem ser registradas</li>
+</ul>
 
 ## Protótipo de páginas
 
