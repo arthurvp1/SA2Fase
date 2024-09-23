@@ -1,9 +1,8 @@
 # SA-2aFase
 SA 2aFase
+
 ##Requisitos Funcionais:
-<div>
-  
-</div>
+
 <div>
   
 </div>
