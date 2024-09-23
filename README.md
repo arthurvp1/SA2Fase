@@ -65,4 +65,5 @@ SA 2aFase
 [RNF008] Exportar relatórios em formatos como PDF e Excel.
 </div>
 
-
+![Tela de Cadastro](Cadastrar.jpg)
+![Tela de Login](Entrar.jpg)
