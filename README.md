@@ -1,7 +1,7 @@
 # SA-2aFase
 SA 2aFase
-<div>
 ##Requisitos Funcionais:
+<div>
   
 </div>
 <div>
@@ -44,10 +44,9 @@ SA 2aFase
 [RF009] Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas.
 </div>
 
-<div>
-  
+
 ##Requisitos Não Funcionais:
-</div>
+
 <div>
 [RNF001] Mostrar dados dos funcionários atualizados imediatamente
   
