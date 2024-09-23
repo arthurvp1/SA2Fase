@@ -11,6 +11,9 @@
      <li>[RF007] Realizar análise comparativa entre diferentes períodos de tempo.</li>
      <li>[RF008] Exibir histórico de vendas e desempenho dos vendedores.</li>
      <li>[RF009] Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas.</li>
+     <li>[RF010] A ferramenta deve suportar até 1000 usuários simultâneos</li>
+     <li>[RF011] O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
+     <li>[RF012] Garantir disponibilidade de 99,9% do sistema</li>
   </ul>
   
 ## Requisitos Não Funcionais:
