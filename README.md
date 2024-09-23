@@ -1,7 +1,7 @@
 # SA-2aFase
 SA 2aFase
 <div>
-Requisitos Funcionais:
+##Requisitos Funcionais:
   
 </div>
 <div>
@@ -46,7 +46,7 @@ Requisitos Funcionais:
 
 <div>
   
-Requisitos Não Funcionais:
+##Requisitos Não Funcionais:
 </div>
 <div>
 [RNF001] Mostrar dados dos funcionários atualizados imediatamente
