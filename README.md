@@ -32,7 +32,7 @@
 
 ##### Realizado no Figma: https://www.figma.com/design/D3nMK9UnZpaAejK6rxgtfW/Login_Sign-up-Templates-(Desktop)-(Community)?node-id=0-1&t=vSZAtuAhFl2IExx9-1
 
-<center>
+
   
 ### Cadastro
 
@@ -41,5 +41,5 @@
 ### Login
 <img src="imagens/Entrar.jpg" alt="imagementrar" style="width:700px">
   
-</center>
+
   
