@@ -1,4 +1,5 @@
 # SaleSight
+
 ##### Plataforma para ser aplicada em empresas que necessitam de uma melhor visualização e manipulação de suas vendas, produtos e funcionários(Vizualição de comissão por produto, metas de funcionários e funcionalidades para adicionar novos produtos e novos funcionários)
 
 <p align="center"><img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/></p>
