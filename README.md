@@ -76,7 +76,7 @@
   
 ### Desenvolvedores do Projeto
 
-<div align="center" >
+<div align="left" >
 
 <a href="https://github.com/arthurvp1" target="_blank">
     <img width="115" src="https://avatars.githubusercontent.com/u/162986888?s=400&u=e822d060bce33f697aa40efb2bf9a606088cafcf&v=4" alt="Arthur">
