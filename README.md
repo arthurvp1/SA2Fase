@@ -1,4 +1,6 @@
-# SA-2aFase 
+# SaleSight
+##### Plataforma para ser aplicada em empresas que necessitam de uma melhor visualização e manipulação de suas vendas, produtos e funcionários(Vizualição de comissão por produto, metas de funcionários e funcionalidades para adicionar novos produtos e novos funcionários)
+
 ## Requisitos Funcionais:
 
   <ul>
