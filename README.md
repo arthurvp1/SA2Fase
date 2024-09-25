@@ -8,7 +8,31 @@
 * [Requisitos Funcionais](#requisitos-funcionais)
 * [Requisitos Não Funcionais](#requisitos-não-funcionais)
 * [Protótipo de Páginas](#protótipo-de-páginas)
-* [Desenvolvedoras do Projeto](#pessoas-desenvolvedoras-do-projeto)
+* [Desenvolvedores do Projeto](#pessoas-desenvolvedoras-do-projeto)
+
+## Tenologias utilizadas
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" height="40" alt="jira logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
+</div>
+
 
 ## Requisitos Funcionais:
 
@@ -52,6 +76,6 @@
   
 ### Desenvolvedores do Projeto
 
-<img  width=115 src="https://avatars.githubusercontent.com/u/162986888?s=400&u=e822d060bce33f697aa40efb2bf9a606088cafcf&v=4"></img>
-<img  width=115 src="https://avatars.githubusercontent.com/u/165953439?v=4"></img>
-<img  width=115 src="https://avatars.githubusercontent.com/u/166057870?v=4"></img>
+<a href="https://github.com/arthurvp1" target="_blank" >     <img  width=115 src="https://avatars.githubusercontent.com/u/162986888?s=400&u=e822d060bce33f697aa40efb2bf9a606088cafcf&v=4"></img>        </a>
+<a href="https://github.com/](https://github.com/LuizFli" target="_blank">     <img  width=115 src="https://avatars.githubusercontent.com/u/165953439?v=4"></img>        </a>   
+<a href="https://github.com/JoabeSCosta" target="_blank">                                <img  width=115 src="https://avatars.githubusercontent.com/u/166057870?v=4"></img>        </a>
