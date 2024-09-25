@@ -8,7 +8,7 @@
 * [Requisitos Funcionais](#requisitos-funcionais)
 * [Requisitos Não Funcionais](#requisitos-não-funcionais)
 * [Protótipo de Páginas](#protótipo-de-páginas)
-* [Desenvolvedores do Projeto](#pessoas-desenvolvedoras-do-projeto)
+* [Desenvolvedores do Projeto](#desenvolvedores-do-projeto)
 
 ## Tenologias utilizadas
 <div align="center">
