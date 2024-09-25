@@ -1,6 +1,15 @@
 # SaleSight
 ##### Plataforma para ser aplicada em empresas que necessitam de uma melhor visualização e manipulação de suas vendas, produtos e funcionários(Vizualição de comissão por produto, metas de funcionários e funcionalidades para adicionar novos produtos e novos funcionários)
 
+## Índice
+* [Introdução](#SaleSight)
+* [Índice](#Índice)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Requisitos Funcionais](#requisitos-funcionais)
+* [Requisitos Não Funcionais](#requisitos-não-funcionais)
+* [Protótipo de Páginas](#protótipo-de-páginas)
+* [Desenvolvedoras do Projeto](#pessoas-desenvolvedoras-do-projeto)
+
 ## Requisitos Funcionais:
 
   <ul>
@@ -33,8 +42,6 @@
 ## Protótipo de páginas
 
 ##### Realizado no Figma: https://www.figma.com/design/D3nMK9UnZpaAejK6rxgtfW/Login_Sign-up-Templates-(Desktop)-(Community)?node-id=0-1&t=vSZAtuAhFl2IExx9-1
-
-
   
 ### Cadastro
 
@@ -43,5 +50,8 @@
 ### Login
 <img src="imagens/Entrar.jpg" alt="imagementrar" style="width:700px">
   
+### Desenvolvedores do Projeto
 
-  
+<img  width=115 src="https://avatars.githubusercontent.com/u/162986888?s=400&u=e822d060bce33f697aa40efb2bf9a606088cafcf&v=4"></img>
+<img  width=115 src=""></img>
+<img  width=115 src=""></img>
