@@ -1,6 +1,8 @@
 # SaleSight
 ##### Plataforma para ser aplicada em empresas que necessitam de uma melhor visualização e manipulação de suas vendas, produtos e funcionários(Vizualição de comissão por produto, metas de funcionários e funcionalidades para adicionar novos produtos e novos funcionários)
 
+<p align="center"><img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/></p>
+
 ## Índice
 * [Introdução](#SaleSight)
 * [Índice](#Índice)
@@ -41,10 +43,6 @@
     <li><strong>[RF002]</strong> Verificar o produto mais requisitado</li>
     <li><strong>[RF003]</strong> Cadastrar funcionários e produtos</li>
     <li><strong>[RF004]</strong> Inserir os dados de vendas dos funcionários no banco de dados</li>
-    <li><strong>[RF005]</strong> Definir níveis de acesso para administrador e funcionários</li>
-    <li><strong>[RF006]</strong> Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo</li>
-    <li><strong>[RF007]</strong> Realizar análise comparativa entre diferentes períodos de tempo</li>
-    <li><strong>[RF008]</strong> Exibir histórico de vendas e desempenho dos vendedores</li>
     <li><strong>[RF009]</strong> Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas</li>
     <li><strong>[RF010]</strong> A ferramenta deve suportar até 1000 usuários simultâneos</li>
     <li><strong>[RF011]</strong> O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
@@ -61,6 +59,11 @@
     <li><strong>[RNF005]</strong> O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
     <li><strong>[RNF006]</strong> Garantir disponibilidade de 99,9% do sistema</li>
     <li><strong>[RNF007]</strong> As transações de inserção de dados devem ser registradas</li>
+    <li><strong>[RNF008]</strong> Definir níveis de acesso para administrador e funcionários</li>
+    <li><strong>[RNF009]</strong> Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo</li>
+    <li><strong>[RNF010]</strong> Realizar análise comparativa entre diferentes períodos de tempo</li>
+    <li><strong>[RNF011]</strong> Exibir histórico de vendas e desempenho dos vendedores</li>
+  
 </ul>
 
 ## Protótipo de páginas
