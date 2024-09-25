@@ -43,10 +43,10 @@
     <li><strong>[RF002]</strong> Verificar o produto mais requisitado</li>
     <li><strong>[RF003]</strong> Cadastrar funcionários e produtos</li>
     <li><strong>[RF004]</strong> Inserir os dados de vendas dos funcionários no banco de dados</li>
-    <li><strong>[RF009]</strong> Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas</li>
-    <li><strong>[RF010]</strong> A ferramenta deve suportar até 1000 usuários simultâneos</li>
-    <li><strong>[RF011]</strong> O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
-    <li><strong>[RF012]</strong> Garantir disponibilidade de 99,9% do sistema</li>
+    <li><strong>[RF005]</strong> Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas</li>
+    <li><strong>[RF006]</strong> A ferramenta deve suportar até 1000 usuários simultâneos</li>
+    <li><strong>[RF007]</strong> O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
+    <li><strong>[RF008]</strong> Garantir disponibilidade de 99,9% do sistema</li>
   </ul>
   
 ## Requisitos Não Funcionais:
