@@ -47,6 +47,10 @@
     <li><strong>[RF005]</strong> Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas</li>
     <li><strong>[RF006]</strong> Mostrar dados dos funcionários atualizados imediatamente</li>
     <li><strong>[RF007]</strong> Gerar gráficos e tabelas dos dados de funcionários</li>
+    <li><strong>[RF008]</strong> Definir níveis de acesso para administrador e funcionários</li>
+    <li><strong>[RF009]</strong> Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo</li>
+    <li><strong>[RF010]</strong> Realizar análise comparativa entre diferentes períodos de tempo</li>
+    <li><strong>[RF011]</strong> Exibir histórico de vendas e desempenho dos vendedores</li>
   </ul>
   
 ## Requisitos Não Funcionais:
@@ -56,11 +60,7 @@
     <li><strong>[RNF002]</strong> O tempo de carregamento das páginas deve ser inferior a 3 segundos</li>
     <li><strong>[RNF003]</strong> Garantir disponibilidade de 99,9% do sistema</li>
     <li><strong>[RNF004]</strong> As transações de inserção de dados devem ser registradas</li>
-    <li><strong>[RNF005]</strong> Definir níveis de acesso para administrador e funcionários</li>
-    <li><strong>[RNF006]</strong> Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo</li>
-    <li><strong>[RNF007]</strong> Realizar análise comparativa entre diferentes períodos de tempo</li>
-    <li><strong>[RNF008]</strong> Exibir histórico de vendas e desempenho dos vendedores</li>
-    <li><strong>[RNF009]</strong> Meta de comissão deve ser um número divisível por 4 (progress bar)</li>
+    <li><strong>[RNF005]</strong> Meta de comissão deve ser um número divisível por 4 (progress bar)</li>
   
 </ul>
 
