@@ -46,8 +46,7 @@
     <li><strong>[RF004]</strong> Inserir os dados de vendas dos funcionários no banco de dados</li>
     <li><strong>[RF005]</strong> Disponibilizar uma dashboard visual em tempo real para acompanhar as metas de vendas</li>
     <li><strong>[RF006]</strong> Mostrar dados dos funcionários atualizados imediatamente</li>
-    <li><strong>[RF007]</strong> Meta de comissão deve ser um número divisível por 4 (progress bar)</li>
-    <li><strong>[RF008]</strong> Gerar gráficos e tabelas dos dados de funcionários</li>
+    <li><strong>[RF007]</strong> Gerar gráficos e tabelas dos dados de funcionários</li>
   </ul>
   
 ## Requisitos Não Funcionais:
@@ -61,6 +60,7 @@
     <li><strong>[RNF006]</strong> Gerar relatórios customizáveis com filtros por período, vendedor, e tipo de veículo</li>
     <li><strong>[RNF007]</strong> Realizar análise comparativa entre diferentes períodos de tempo</li>
     <li><strong>[RNF008]</strong> Exibir histórico de vendas e desempenho dos vendedores</li>
+    <li><strong>[RNF009]</strong> Meta de comissão deve ser um número divisível por 4 (progress bar)</li>
   
 </ul>
 
