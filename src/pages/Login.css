@@ -1,0 +1,26 @@
+html,body,#root{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+        
+  }
+.login-container{
+    display: flex;
+    height: 100vh;
+    
+    
+}
+    .esquerda-container{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-image: url(/imagens/fundoLogin.png);
+
+    }
+    .direita-contaier{
+        display: flex;
+        height: 100%;
+        width: 50%;
+  
+    }
+

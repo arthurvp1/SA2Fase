@@ -4,6 +4,7 @@ import Contato from "../pages/Contato";
 import Generica from "../pages/Generica";
 import Final from "../pages/Final";
 import CadastroFunc from "../pages/CadastroFunc";
+import Login from "../pages/Login";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     {path: "/generica", element: <Generica />},
     {path: "/final", element: <Final />},
     {path: "/cadastrofunc", element: <CadastroFunc />},
+    {path: "/login", element: <Login />},
 ])
 
 export default router;
