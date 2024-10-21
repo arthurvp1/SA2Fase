@@ -160,7 +160,19 @@ p{
 .buttons-goo-in{
     display: flex;
     gap: 20px;
+    justify-content: center;  
+}
+.but-icon{
+    
+    display: flex;
+    align-items: center;
     justify-content: center;
+
+}
+.icon-but{
+     height: 20px;
+     padding-right: 10px;
+     
 }
 
 .div-inputs-login{

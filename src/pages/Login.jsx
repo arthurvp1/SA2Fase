@@ -42,8 +42,8 @@ function Login() {
                         <h1>Entrar & Conectar-se aos melhores relatórios de venda</h1>
                     </div>
                     <div className='buttons-goo-in'>
-                        <button>G Entrar Com Google</button>
-                        <button> IN Entrar Com Linkedin</button>
+                        <button className='but-icon'> <img src="./public/imagens/icon-google.png" alt="" className='icon-but'/> Entrar Com Google</button>
+                        <button className='but-icon'> <img src="./public/imagens/icon-linkedin.png" alt=""  className='icon-but'/> Entrar Com Linkedin</button>
 
                     </div>
                     <div className='div-inputs-login'>
