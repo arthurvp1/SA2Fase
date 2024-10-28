@@ -1,0 +1,16 @@
+html,body,#root{
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.container-produtos{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #281650;
+}

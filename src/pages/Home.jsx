@@ -6,7 +6,7 @@ function Home() {
  
 
   return (
-    <div>
+    <div className="container-home">
         <Navbar />
       <h1>Página home do site</h1>
       <p>Olá {usuarioLogado}</p>
