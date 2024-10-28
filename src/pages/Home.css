@@ -3,6 +3,7 @@ html,body,#root{
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    background: radial-gradient(193.69% 189.9% at 54.62% -37.46%, #2C0E6A 0%, rgba(7, 3, 18, 0.50) 100%), #565656;
     
 }
 .container-home{
@@ -10,5 +11,4 @@ html,body,#root{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #281650;
 }
