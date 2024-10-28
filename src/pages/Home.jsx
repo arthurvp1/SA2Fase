@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import { useContext, useState } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
+import "./Home.css"
 function Home() {
     const {usuarioLogado} = useContext(GlobalContext)
  

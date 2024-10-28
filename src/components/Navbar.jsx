@@ -9,6 +9,7 @@ function Navbar() {
         <Link to="/final">Final</Link>
         <Link to="/cadastroFunc">Funcionarios</Link>
         <Link to="/login">Login</Link>
+        <Link to="/produtos">Produtos</Link>
     </nav>
   )
 }
