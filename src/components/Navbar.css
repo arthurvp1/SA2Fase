@@ -6,7 +6,7 @@
     align-items: center;
     font-family: 'Poppins', sans-serif;
     width: 160px;
-    height: 819px;
+    height: 600px;
     flex-shrink: 0;
     border-radius: 25px;
     background: linear-gradient(178deg, #5321CA -2.19%, rgba(27, 0, 92, 0.53) 110.15%);
@@ -18,13 +18,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: top;
-    gap: 60px;
+    gap: 30px;
     width: 100%;
     height: 80%;
     flex-shrink: 0;
     
 }
 .div-label-navbar{
+    height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +34,10 @@
 }
 .span-navbar{
     color: green;
+}
+.logo-navbar{
+    display: flex;
+    height: 20%;
 }
 .icon-navbar{
     display: flex;
@@ -43,6 +48,7 @@
     width: 68.768px;
     height: 65px;
     flex-shrink: 0;
+    margin-top: 10px;
 }
 
 a {
@@ -54,4 +60,7 @@ a {
 a:hover {
     transition: 0.5s;
     color: gainsboro;
+}
+h2{
+    margin: 0;
 }
