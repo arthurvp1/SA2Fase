@@ -5,8 +5,8 @@ body,html,#root{
 }
     .Cadastrofunc-container{
         padding: 3%;
-        height: 100%;
-        width: 100%;
+        height: 87%;
+        width: 90%;
         display: flex;
     }
         .esquerdo{
@@ -78,7 +78,7 @@ body,html,#root{
                     margin-left: 15%;
                     gap: 10%;
                 }
-                    .confirma,.limpa{
+                    .confirma,.limpa,.change-photo-button{
                         width: 150px;
                         height: 55px;
                         border-radius: 20px;
@@ -118,3 +118,9 @@ body,html,#root{
                 width: 200px;
                 height: 200px;
             } 
+
+            .change-photo-button{
+                background-color: #7B76F1;
+                color: white;
+                border: 0;
+            }

@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 
 function CadastroFunc() {
-
   const DataInput = () => {
+    
         const [data, setData] = useState("");
     
         const handleInputChange = (e) => {
@@ -16,8 +16,22 @@ function CadastroFunc() {
           } else if (valor.length >= 5) {
             valor = valor.slice(0, 2) + "/" + valor.slice(2, 4) + "/" + valor.slice(4, 8);
           }
+    
           setData(valor);
         };
+    
+        return (
+          <input
+          className="nascimento-input"
+           type="text" id="data" name="data"
+            value={data}
+            onChange={handleInputChange}
+            maxLength="10"
+            placeholder="dd/mm/aaaa"
+          />
+        );
+      };
+    
   return (
     <div className="Cadastrofunc-container">
 
@@ -41,20 +55,21 @@ function CadastroFunc() {
 
         <section className="buttons">
           <button className="confirma">CONFIRMAR</button>
-          <button className="limpa" onClick={handleClear}>LIMPAR</button>
+          <button className="limpa" >LIMPAR</button>
         </section>
       </aside>
 
 
-      {/* <aside className="direito">
+      <aside className="direito">
         <div className="profile-section">
-          <img className="profile-picture" src="profile-img.png" alt="Profile" />
+          <img className="profile-picture" src="./images/user.png" alt="Profile" />
           <button className="change-photo-button">Trocar Foto</button>
         </div>
-      </aside> */}
+      </aside>
     </div>
   )
 }
-}
+
+
 
 export default CadastroFunc
