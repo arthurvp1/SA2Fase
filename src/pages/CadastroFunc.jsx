@@ -4,36 +4,57 @@ import { useState } from 'react'
 
 
 function CadastroFunc() {
+
+  //Ｃｒｉａ ｃｏｍｐｏｎｅｎｔｅ ｄａｔｅ
+
   const DataInput = () => {
-    
-        const [data, setData] = useState("");
-    
-        const handleInputChange = (e) => {
-          let valor = e.target.value.replace(/\D/g, "");
-    
-          if (valor.length >= 3 && valor.length <= 4) {
-            valor = valor.slice(0, 2) + "/" + valor.slice(2);
-          } else if (valor.length >= 5) {
-            valor = valor.slice(0, 2) + "/" + valor.slice(2, 4) + "/" + valor.slice(4, 8);
-          }
-    
-          setData(valor);
-        };
-    
-        return (
-          <input
-          className="nascimento-input"
-           type="text" id="data" name="data"
-            value={data}
-            onChange={handleInputChange}
-            maxLength="10"
-            placeholder="dd/mm/aaaa"
-          />
+
+    const [data, setData] = useState("");
+
+    const handleInputChange = (e) => {
+      let valor = e.target.value.replace(/\D/g, "");
+
+      if (valor.length >= 3 && valor.length <= 4) {
+        valor = valor.slice(0, 2) + "/" + valor.slice(2);
+      } else if (valor.length >= 5) {
+        valor = valor.slice(0, 2) + "/" + valor.slice(2, 4) + "/" + valor.slice(4, 8);
+      }
+
+      setData(valor);
+    };
+
+    return (
+      <input
+      className="nascimento-input"
+      type="text" id="data" name="data"
+      value={data}
+      onChange={handleInputChange}
+      maxLength="10"
+        placeholder="dd/mm/aaaa"
+        />
         );
       };
-    
-  return (
-    <div className="Cadastrofunc-container">
+      
+
+      //functions
+
+        
+        //function limpar inputs
+
+          function limpaInputs() {
+
+            document.getElementById('input-nome').value = ''
+            document.getElementById('input-email').value = ''
+            document.getElementById('input-senha').value = ''
+            document.getElementById('input-telefone').value = ''
+            document.getElementById('data').value = ''
+
+          }
+
+      //ａｑｕｉ ｅ ｏ ｃｏｒｐｏ ｄａ ｐａｇｉｎａ
+
+      return (
+        <div className="Cadastrofunc-container">
 
       <aside className="esquerdo">
 
@@ -45,17 +66,17 @@ function CadastroFunc() {
 
 
         <section className="inputs">
-          <input className="username-input" placeholder="Digite seu nome" type="text" />
-          <input className="email-input" placeholder="Digite seu email" type="email" />
-          <input className="senha-input" placeholder="Digite sua senha" type="password" />
-          <input className="telefone" placeholder="Digite seu telefone" type="text" />
+          <input id='input-nome' className="username-input" placeholder="Digite seu nome" type="text" />
+          <input id='input-email' className="email-input" placeholder="Digite seu email" type="email" />
+          <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" />
+          <input id='input-telefone' className="telefone" placeholder="Digite seu telefone" type="text" />
           <DataInput />
         </section>
 
 
         <section className="buttons">
           <button className="confirma">CONFIRMAR</button>
-          <button className="limpa" >LIMPAR</button>
+          <button id="botaoLimpa" className="limpa" onClick={limpaInputs} >LIMPAR</button>
         </section>
       </aside>
 
@@ -69,6 +90,7 @@ function CadastroFunc() {
     </div>
   )
 }
+
 
 
 
