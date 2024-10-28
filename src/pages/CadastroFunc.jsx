@@ -25,37 +25,36 @@ function CadastroFunc() {
 
     return (
       <input
-      className="nascimento-input"
-      type="text" id="data" name="data"
-      value={data}
-      onChange={handleInputChange}
-      maxLength="10"
+        className="nascimento-input"
+        type="text" id="data" name="data"
+        value={data}
+        onChange={handleInputChange}
+        maxLength="10"
         placeholder="dd/mm/aaaa"
-        />
-        );
-      };
-      
+      />
+    );
+  };
 
-      //functions
 
-        
-        //function limpar inputs
+  //functions
 
-          function limpaInputs() {
 
-            document.getElementById('input-nome').value = ''
-            document.getElementById('input-email').value = ''
-            document.getElementById('input-senha').value = ''
-            document.getElementById('input-telefone').value = ''
-            document.getElementById('data').value = ''
+  //function limpar inputs
 
-          }
+  function limpaInputs() {
 
-      //ａｑｕｉ ｅ ｏ ｃｏｒｐｏ ｄａ ｐａｇｉｎａ
+    document.getElementById('input-nome').value = ''
+    document.getElementById('input-email').value = ''
+    document.getElementById('input-senha').value = ''
+    document.getElementById('input-telefone').value = ''
+    document.getElementById('data').value = ''
 
-      return (
-        <div className="Cadastrofunc-container">
+  }
 
+  //ａｑｕｉ ｅ ｏ ｃｏｒｐｏ ｄａ ｐａｇｉｎａ
+
+  return (
+    <div className="Cadastrofunc-container">
       <aside className="esquerdo">
 
         <div className="texts">

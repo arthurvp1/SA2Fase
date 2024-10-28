@@ -7,10 +7,11 @@ body,html,#root{
         padding: 2%;
         height: 90%;
         width: 90%;
-        display: flex;
+        display: flex;  
     }
         .esquerdo{
-            background-color: #e3e1e9;
+            background-color: #e3e1e9 ;
+            backdrop-filter: blur(10px);
             width: 60%;
             height: 100%;
             border-radius: 10px;
