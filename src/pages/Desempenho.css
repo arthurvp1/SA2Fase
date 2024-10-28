@@ -1,0 +1,34 @@
+.desempenho-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.body-container {
+    display: flex;
+    border-radius: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    background: radial-gradient(101.81% 98.73% at 51.96% 40.13%, rgba(96, 103, 242, 0.80) 0.01%, rgba(52, 52, 52, 0.80) 94.06%);
+    box-shadow: 10px 28px 36px 17px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25.5px);
+}
+
+.div-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 25px;
+
+}
+
+.body-desempenho {
+    width: 80%;
+}

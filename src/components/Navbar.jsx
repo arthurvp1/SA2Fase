@@ -17,7 +17,6 @@ function Navbar() {
         <Link to="/desempenho">Desempenho</Link>
         <Link to="/produtos">Produtos</Link>
         <Link to="/maisVendidos">Mais Vendidos</Link>
-        <Link to="/contato">Contato</Link>
         <Link to="/cadastroFunc">Cad Func</Link>
         <Link to="/login">Log Out</Link>
       </nav>
