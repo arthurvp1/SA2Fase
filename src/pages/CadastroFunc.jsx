@@ -1,6 +1,7 @@
 import React from 'react'
 import './Cadastrofunc.css'
 import { useState } from 'react'
+import Navbar from '../components/Navbar'
 
 
 function CadastroFunc() {
@@ -39,22 +40,27 @@ function CadastroFunc() {
   //functions
 
 
-  //function limpar inputs
+    //function limpar inputs
 
-  function limpaInputs() {
+    function limpaInputs() {
 
-    document.getElementById('input-nome').value = ''
-    document.getElementById('input-email').value = ''
-    document.getElementById('input-senha').value = ''
-    document.getElementById('input-telefone').value = ''
-    document.getElementById('data').value = ''
+      document.getElementById('input-nome').value = ''
+      document.getElementById('input-email').value = ''
+      document.getElementById('input-senha').value = ''
+      document.getElementById('input-telefone').value = ''
+      document.getElementById('data').value = ''
 
-  }
+    }
 
   //ａｑｕｉ ｅ ｏ ｃｏｒｐｏ ｄａ ｐａｇｉｎａ
 
   return (
     <div className="Cadastrofunc-container">
+
+      <div className='div-navbar'>
+
+        <Navbar/>
+      </div>
       <aside className="esquerdo">
 
         <div className="texts">
