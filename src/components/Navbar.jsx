@@ -13,12 +13,31 @@ function Navbar() {
       </div>
 
       <nav className="navbar">
-        <Link to="/"><img src="./Vector.svg"/> Inicio</Link>
-        <Link to="/desempenho">Desempenho</Link>
-        <Link to="/produtos">Produtos</Link>
-        <Link to="/maisVendidos">Mais Vendidos</Link>
-        <Link to="/cadastroFunc">Cad Func</Link>
-        <Link to="/login">Log Out</Link>
+
+        <div className="inicio">
+          <Link to="/"><img src="./imagens/Group 2.png" /> Inicio</Link>
+        </div>
+
+        <div className="desempenho">
+          <Link to="/desempenho"><img src="./imagens/TrendUp.png" />Desempenho</Link>
+        </div>
+
+        <div className="produtos">
+          <Link to="/produtos"><img src="./imagens/CirclesFour.png" />Produtos</Link>
+        </div>
+
+        <div className="vendidos">
+          <Link to="/maisVendidos"> <img src="./imagens/directions_car.png" alt="" />Mais Vendidos</Link>
+        </div>
+
+        <div className="cadastro">
+          <Link to="/cadastroFunc"><img src="./imagens/Settings.png" alt="" />Cad Func</Link>
+        </div>
+
+        <div className="logout">
+          <Link to="/login"><img src="./imagens/Log out.png" alt="" />Log Out</Link>
+        </div>
+
       </nav>
 
     </div>
