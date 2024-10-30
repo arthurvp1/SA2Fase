@@ -13,7 +13,7 @@ function Navbar() {
       </div>
 
       <nav className="navbar">
-        <Link to="/">Inicio</Link>
+        <Link to="/"><img src="./Vector.svg"/> Inicio</Link>
         <Link to="/desempenho">Desempenho</Link>
         <Link to="/produtos">Produtos</Link>
         <Link to="/maisVendidos">Mais Vendidos</Link>

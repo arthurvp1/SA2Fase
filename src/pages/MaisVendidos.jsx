@@ -7,14 +7,14 @@ function MaisVendidos() {
     <div className='maisVendidos-container'>
       <div className='body-container'>
 
-      <div className='div-navbar'>
+        <div className='div-navbar'>
 
-        <Navbar />
-      </div>
-      <div className='body-maisVendidos'>
+          <Navbar />
+        </div>
+        <div className='body-maisVendidos'>
 
-      <h2>Mais Vendidos</h2>
-      </div>
+          <h2>Mais Vendidos</h2>
+        </div>
 
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import { Link } from "react-router-dom"
 
 function Login() {
     return (
@@ -59,7 +60,8 @@ function Login() {
                                 <label htmlFor="check">Lembrar-me</label>
                             </div>
                             <div className='div-but-entrar'>
-                                <button className='but-entrar'>Entrar</button>
+                            <Link to="/"><button className='but-entrar'>Entrar</button></Link> 
+                            
 
                             </div>
                         </div>

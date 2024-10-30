@@ -9,16 +9,6 @@ body,html,#root{
         width: 90%;
         display: flex;  
     }
-    .div-navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        height: 100%;
-        border-radius: 25px;
-    
-    }
         .esquerdo{
             background-color: #e3e1e9 ;
             backdrop-filter: blur(10px);

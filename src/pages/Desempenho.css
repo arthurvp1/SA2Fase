@@ -18,17 +18,6 @@
     backdrop-filter: blur(25.5px);
 }
 
-.div-navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-    border-radius: 25px;
-
-}
-
 .body-desempenho {
     width: 80%;
 }
