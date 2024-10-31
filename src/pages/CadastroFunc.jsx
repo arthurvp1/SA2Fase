@@ -17,25 +17,29 @@ function CadastroFunc() {
   function cadastrar() {
 
     if (user === '' || email === '' || senha === '' || telefone === '') {
-      alert('Preencha todos os campos')
-      return
+      alert('Preencha todos os campos');
+      return;
     }
     if (document.getElementById('data').value === '') {
-      alert('Preencha a data de nascimento')
-      return
+      alert('Preencha a data de nascimento');
+      return;
     }
     if (telefone.length < 11) {
-      alert('Telefone inválido')
-      return
+      alert('Telefone inválido');
+      return;
     }
     if (email.indexOf('@') === -1 || email.indexOf('.com') === -1) {
-      alert('Email inválido ou em uso')
-      return
+      alert('Email inválido ou em uso');
+      return;
+    }
+    else{
+      alert('Cadastro realizado com sucesso!')
+  
+      limpaInputs()
+
+      return;
     }
 
-    alert('Cadastro realizado com sucesso!')
-
-    limpaInputs()
 
   }
   //Ｃｒｉａ ｃｏｍｐｏｎｅｎｔｅ ｄａｔｅ
@@ -71,7 +75,7 @@ function CadastroFunc() {
   const CpfInput = () => {
     const [cpf, setCpf] = useState("");
   
-    const handleInputChange = (e) => {
+    const h = (e) => {
       let valor = e.target.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
       setCpf(valor);
     };
@@ -83,7 +87,7 @@ function CadastroFunc() {
           id="cpf"
           className="cpf-input"
           value={cpf}
-          onChange={handleInputChange}
+          onChange={h}
           maxLength="11"
           placeholder="Digite seu CPF"
         />

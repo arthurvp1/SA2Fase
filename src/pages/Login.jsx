@@ -3,6 +3,22 @@ import './Login.css'
 import { Link } from "react-router-dom"
 
 function Login() {
+
+
+    function logar() {
+
+        var checkbox = document.getElementById('check')
+        alert(checkbox.value)
+
+        if (checkbox.value == 'sim') {
+            alert('está marcado')
+            document.getElementById('user').setAttribute(autoComplete = 'on')
+        }
+        if (checkbox.value != 'sim') {
+            alert('não está marcado')
+            document.getElementById('user').setAttribute(autoComplete = 'off')
+        }
+    }
     return (
         <div className='login-container'>
 
@@ -43,25 +59,30 @@ function Login() {
                         <h1>Entrar & Conectar-se aos melhores relatórios de venda</h1>
                     </div>
                     <div className='buttons-goo-in'>
-                        <button className='but-icon'> <img src="./public/imagens/icon-google.png" alt="" className='icon-but'/> Entrar Com Google</button>
-                        <button className='but-icon'> <img src="./public/imagens/icon-linkedin.png" alt=""  className='icon-but'/> Entrar Com Linkedin</button>
+                        <button className='but-icon'> <img src="./public/imagens/icon-google.png" alt="" className='icon-but' /> Entrar Com Google</button>
+                        <button className='but-icon'> <img src="./public/imagens/icon-linkedin.png" alt="" className='icon-but' /> Entrar Com Linkedin</button>
 
                     </div>
                     <div className='div-inputs-login'>
                         <div className='form'>
                             <label htmlFor="user">Usuário:</label>
-                            <input type="text" id='user' />
+                            <input autoComplete='on' type="text" id='user' />
                             <label htmlFor="senha">Senha:</label>
                             <input type="password" id='senha' />
                         </div>
                         <div className='form2'>
+
                             <div className='lbl-check'>
-                                <input type="checkbox" id='check' />
+                                <input type="checkbox"
+                                    id='check'
+                                    value={'sim'} />
+
                                 <label htmlFor="check">Lembrar-me</label>
+
                             </div>
                             <div className='div-but-entrar'>
-                            <Link to="/"><button className='but-entrar'>Entrar</button></Link> 
-                            
+                                <Link to="/"><button onClick={logar} className='but-entrar'>Entrar</button></Link>
+
 
                             </div>
                         </div>
