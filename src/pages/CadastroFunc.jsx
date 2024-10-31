@@ -28,7 +28,7 @@ function CadastroFunc() {
       alert('Telefone inválido')
       return
     }
-    if(email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+    if(email.indexOf('@') === -1 || email.indexOf('.com') === -1) {
       alert('Email inválido ou em uso')
       return
     }
