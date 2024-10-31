@@ -4,7 +4,7 @@
         flex-direction: column;
         align-items: center;
         width: 20%;
-        height: 95%;
+        height: 97%;
         border-radius: 25px;  
 }
 .navbar-container{
@@ -39,7 +39,7 @@
     color: rgb(255, 255, 255); 
 }
 .span-navbar{
-    color: green;
+    color: rgb(0, 255, 0);
 }
 .logo-navbar{
     display: flex;
@@ -57,7 +57,7 @@
 a {
     text-decoration: none;
     color: #ffffff;
-    padding-left: 10px;
+    display: flex;
 }
 
 a:hover {
@@ -72,9 +72,11 @@ h2{
     height: 10%;
 }
 .iconesidebar{
-    display: flex;
     width: 20%;
+    height: 70%;
+    margin-left: 15px;
 }
 .textsidebar{
-width: 80%;
+width: 70%;
+
 }

@@ -57,6 +57,9 @@ function CadastroFunc() {
   return (
     <div className="Cadastrofunc-container">
 
+
+    <div className='body-container'>
+
       <div className='div-navbar'>
 
         <Navbar/>
@@ -92,6 +95,7 @@ function CadastroFunc() {
           <button className="change-photo-button">Trocar Foto</button>
         </div>
       </aside>
+    </div>
     </div>
   )
 }
