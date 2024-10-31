@@ -86,6 +86,7 @@ function CadastroFunc() {
           <button className="confirma">CONFIRMAR</button>
           <button id="botaoLimpa" className="limpa" onClick={limpaInputs} >LIMPAR</button>
         </section>
+        
       </aside>
 
 
