@@ -68,6 +68,29 @@ function CadastroFunc() {
     );
   };
 
+  const CpfInput = () => {
+    const [cpf, setCpf] = useState("");
+  
+    const handleInputChange = (e) => {
+      let valor = e.target.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+      setCpf(valor);
+    };
+  
+    return (
+      <div>
+        <input
+          type="text"
+          id="cpf"
+          className="cpf-input"
+          value={cpf}
+          onChange={handleInputChange}
+          maxLength="11"
+          placeholder="Digite seu CPF"
+        />
+      </div>
+    );
+  };
+
 
   //functions
 
@@ -112,8 +135,7 @@ function CadastroFunc() {
             <input id='input-email' className="email-input" placeholder="Digite seu email" type="email"
               onChange={(e) => setEmail(e.target.value)} />
 
-            <input id='input-cpf' className="cpf-input" placeholder="Digite seu CPF" type="text"
-              onChange={(e) => setCpf(e.target.value)} />
+            <CpfInput/>
 
             <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
 
