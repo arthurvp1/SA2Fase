@@ -71,7 +71,7 @@ body,html,#root{
                 input::placeholder{
                     color: rgb(100, 98, 98);
                 }
-                .username-input,.email-input,.senha-input,.telefone,.nascimento-input{
+                .username-input,.email-input,.senha-input,.telefone,.nascimento-input,.cpf-input{
                     width: 600px;
                     height: 45px;
                     border-top: 0px;

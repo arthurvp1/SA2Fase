@@ -28,11 +28,11 @@ function CadastroFunc() {
       alert('Telefone inválido')
       return
     }
-    if(email.indexOf('@') === -1 || email.indexOf('.com') === -1) {
+    if (email.indexOf('@') === -1 || email.indexOf('.com') === -1) {
       alert('Email inválido ou em uso')
       return
     }
-    
+
     alert('Cadastro realizado com sucesso!')
 
     limpaInputs()
@@ -90,51 +90,54 @@ function CadastroFunc() {
     <div className="Cadastrofunc-container">
 
 
-    <div className='body-container'>
+      <div className='body-container'>
 
-      <div className='div-navbar'>
+        <div className='div-navbar'>
 
-        <Navbar />
+          <Navbar />
+        </div>
+        <aside className="esquerdo">
+
+          <div className="texts">
+            <label className="titulo">Cadastro de funcionários</label>
+            <p className="descricao">Digite os dados do funcionário abaixo e clique em
+              <label className="verde">&nbsp;Confirmar</label></p>
+          </div>
+
+
+          <section className="inputs">
+            <input id='input-nome' className="username-input" placeholder="Digite seu nome" type="text"
+              onChange={(e) => setUser(e.target.value)} />
+
+            <input id='input-email' className="email-input" placeholder="Digite seu email" type="email"
+              onChange={(e) => setEmail(e.target.value)} />
+
+            <input id='input-cpf' className="cpf-input" placeholder="Digite seu CPF" type="text"
+              onChange={(e) => setCpf(e.target.value)} />
+
+            <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
+
+            <input id='input-telefone' className="telefone" placeholder="Digite seu telefone" type="text" onChange={(e) => setTelefone(e.target.value)} />
+
+            <DataInput />
+          </section>
+
+
+          <section className="buttons">
+            <button className="confirma" onClick={cadastrar}>CONFIRMAR</button>
+            <button id="botaoLimpa" className="limpa" onClick={limpaInputs} >LIMPAR</button>
+          </section>
+
+        </aside>
+
+
+        <aside className="direito">
+          <div className="profile-section">
+            <img className="profile-picture" src="./images/user.png" alt="Profile" />
+            <button className="change-photo-button">Trocar Foto</button>
+          </div>
+        </aside>
       </div>
-      <aside className="esquerdo">
-
-        <div className="texts">
-          <label className="titulo">Cadastro de funcionários</label>
-          <p className="descricao">Digite os dados do funcionário abaixo e clique em
-            <label className="verde">&nbsp;Confirmar</label></p>
-        </div>
-
-
-        <section className="inputs">
-          <input id='input-nome' className="username-input" placeholder="Digite seu nome" type="text"
-            onChange={(e) => setUser(e.target.value)} />
-
-          <input id='input-email' className="email-input" placeholder="Digite seu email" type="email"
-            onChange={(e) => setEmail(e.target.value)} />
-
-          <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
-
-          <input id='input-telefone' className="telefone" placeholder="Digite seu telefone" type="text" onChange={(e) => setTelefone(e.target.value)} />
-
-          <DataInput />
-        </section>
-
-
-        <section className="buttons">
-          <button className="confirma" onClick={cadastrar}>CONFIRMAR</button>
-          <button id="botaoLimpa" className="limpa" onClick={limpaInputs} >LIMPAR</button>
-        </section>
-        
-      </aside>
-
-
-      <aside className="direito">
-        <div className="profile-section">
-          <img className="profile-picture" src="./images/user.png" alt="Profile" />
-          <button className="change-photo-button">Trocar Foto</button>
-        </div>
-      </aside>
-    </div>
     </div>
   )
 }
