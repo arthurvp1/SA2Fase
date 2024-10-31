@@ -11,6 +11,8 @@ function CadastroFunc() {
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [telefone, setTelefone] = useState('')
+  const [cpf, setCpf] = useState('')
+  const [data, setData] = useState("");
   const [isValid, setIsValid] = useState(true);
 
 
@@ -32,6 +34,10 @@ function CadastroFunc() {
       alert('Email inválido ou em uso')
       return
     }
+    if(cpf.length === ''){
+      alert('Digite um CPF válido')
+      return
+    }
 
     alert('Cadastro realizado com sucesso!')
 
@@ -41,8 +47,6 @@ function CadastroFunc() {
   //Ｃｒｉａ ｃｏｍｐｏｎｅｎｔｅ ｄａｔｅ
 
   const DataInput = () => {
-
-    const [data, setData] = useState("");
 
     const handleInputChange = (e) => {
       let valor = e.target.value.replace(/\D/g, "");
@@ -67,9 +71,29 @@ function CadastroFunc() {
       />
     );
   };
+  const TelefoneInput = () => {
+  
+    const handleInputChange = (e) => {
+      let valorFone = e.target.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+      setTelefone(valorFone);
+    };
+  
+    return (
+      <div>
+        <input
+          type="text"
+          id='input-telefone'
+          className="telefone"
+          value={telefone}
+          onChange={handleInputChange}
+          maxLength="11"
+          placeholder="Digite seu telefone"
+        />
+      </div>
+    );
+  };
 
   const CpfInput = () => {
-    const [cpf, setCpf] = useState("");
   
     const handleInputChange = (e) => {
       let valor = e.target.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
@@ -103,6 +127,7 @@ function CadastroFunc() {
     document.getElementById('input-email').value = ''
     document.getElementById('input-senha').value = ''
     document.getElementById('input-telefone').value = ''
+    document.getElementById('cpf').value = ''
     document.getElementById('data').value = ''
 
   }
@@ -135,11 +160,11 @@ function CadastroFunc() {
             <input id='input-email' className="email-input" placeholder="Digite seu email" type="email"
               onChange={(e) => setEmail(e.target.value)} />
 
-            <CpfInput/>
+            <CpfInput />
 
             <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
 
-            <input id='input-telefone' className="telefone" placeholder="Digite seu telefone" type="text" onChange={(e) => setTelefone(e.target.value)} />
+            <TelefoneInput />
 
             <DataInput />
           </section>
