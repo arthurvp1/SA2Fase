@@ -1,8 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Cadastrofunc.css'
-import { useState } from 'react'
 import Navbar from '../components/Navbar'
-import { GlobalContext } from '../contexts/GlobalContext'
 
 
 function CadastroFunc() {
@@ -10,9 +8,9 @@ function CadastroFunc() {
   const [user, setUser] = useState('')
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
-  const [telefone, setTelefone] = useState('')
-  const [cpf, setCpf] = useState('')
-  const [data, setData] = useState("");
+  const [telefone, setTelefone] = useState()
+  const [cpf, setCpf] = useState()
+  const [data, setData] = useState('');
   const [isValid, setIsValid] = useState(true);
 
 
@@ -34,7 +32,7 @@ function CadastroFunc() {
       alert('Email inválido ou em uso')
       return
     }
-    if(cpf.length === ''){
+    if (cpf.length === '') {
       alert('Digite um CPF válido')
       return
     }
@@ -44,79 +42,6 @@ function CadastroFunc() {
     limpaInputs()
 
   }
-  //Ｃｒｉａ ｃｏｍｐｏｎｅｎｔｅ ｄａｔｅ
-
-  const DataInput = () => {
-
-    const handleInputChange = (e) => {
-      let valor = e.target.value.replace(/\D/g, "");
-
-      if (valor.length >= 3 && valor.length <= 4) {
-        valor = valor.slice(0, 2) + "/" + valor.slice(2);
-      } else if (valor.length >= 5) {
-        valor = valor.slice(0, 2) + "/" + valor.slice(2, 4) + "/" + valor.slice(4, 8);
-      }
-
-      setData(valor);
-    };
-
-    return (
-      <input
-        className="nascimento-input"
-        type="text" id="data" name="data"
-        value={data}
-        onChange={handleInputChange}
-        maxLength="10"
-        placeholder="dd/mm/aaaa"
-      />
-    );
-  };
-  const TelefoneInput = () => {
-  
-    const handleInputChange = (e) => {
-      let valorFone = e.target.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
-      setTelefone(valorFone);
-    };
-  
-    return (
-      <div>
-        <input
-          type="text"
-          id='input-telefone'
-          className="telefone"
-          value={telefone}
-          onChange={handleInputChange}
-          maxLength="11"
-          placeholder="Digite seu telefone"
-        />
-      </div>
-    );
-  };
-
-  const CpfInput = () => {
-  
-    const handleInputChange = (e) => {
-      let valor = e.target.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
-      setCpf(valor);
-    };
-  
-    return (
-      <div>
-        <input
-          type="text"
-          id="cpf"
-          className="cpf-input"
-          value={cpf}
-          onChange={handleInputChange}
-          maxLength="11"
-          placeholder="Digite seu CPF"
-        />
-      </div>
-    );
-  };
-
-
-  //functions
 
 
   //function limpar inputs
@@ -154,28 +79,72 @@ function CadastroFunc() {
 
 
           <section className="inputs">
-            <input id='input-nome' className="username-input" placeholder="Digite seu nome" type="text"
+            <input
+              id='input-nome'
+              className="username-input"
+              placeholder="Digite seu nome"
+              type="text"
               onChange={(e) => setUser(e.target.value)} />
 
-            <input id='input-email' className="email-input" placeholder="Digite seu email" type="email"
+            <input
+              id='input-email'
+              className="email-input"
+              placeholder="Digite seu email"
+              type="email"
               onChange={(e) => setEmail(e.target.value)} />
 
-            <CpfInput />
+            <input
+              type="text"
+              id="cpf"
+              className="cpf-input"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
+              maxLength="11"
+              placeholder="Digite seu CPF"
+            />
 
-            <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
+            <input
+              id='input-senha'
+              className="senha-input"
+              placeholder="Digite sua senha"
+              type="password" onChange={(e) =>
+                setSenha(e.target.value)} />
 
-            <TelefoneInput />
-
-            <DataInput />
+            <input
+              type="text"
+              id='input-telefone'
+              className="telefone"
+              value={telefone}
+              onChange={(e) => setTelefone(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
+              maxLength="11"
+              placeholder="Digite seu telefone"
+            />
+            <input
+              className="nascimento-input"
+              type="text" id="data" name="data"
+              value={data}
+              onChange={(e) => {
+                let valor = e.target.value.replace(/\D/g, "");
+          
+                if (valor.length >= 3 && valor.length <= 4) {
+                  valor = valor.slice(0, 2) + "/" + valor.slice(2);
+                } else if (valor.length >= 5) {
+                  valor = valor.slice(0, 2) + "/" + valor.slice(2, 4) + "/" + valor.slice(4, 8);
+                }
+          
+                setData(valor);
+              }}
+              maxLength="10"
+              placeholder="dd/mm/aaaa"
+            />
           </section>
-
 
           <section className="buttons">
             <button className="confirma" onClick={cadastrar}>CONFIRMAR</button>
             <button id="botaoLimpa" className="limpa" onClick={limpaInputs} >LIMPAR</button>
           </section>
-
         </aside>
+
 
 
         <aside className="direito">
@@ -186,6 +155,9 @@ function CadastroFunc() {
         </aside>
       </div>
     </div>
+
+
+
   )
 }
 
