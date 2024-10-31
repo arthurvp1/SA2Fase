@@ -17,34 +17,34 @@ function CadastroFunc() {
   function cadastrar() {
 
     if (user === '' || email === '' || senha === '' || telefone === '') {
-      alert('Preencha todos os campos')
-      return
+      alert('Preencha todos os campos');
+      return;
     }
     if (document.getElementById('data').value === '') {
-      alert('Preencha a data de nascimento')
-      return
+      alert('Preencha a data de nascimento');
+      return;
     }
     if (telefone.length < 11) {
-      alert('Telefone inválido')
-      return
+      alert('Telefone inválido');
+      return;
     }
     if (email.indexOf('@') === -1 || email.indexOf('.com') === -1) {
-      alert('Email inválido ou em uso')
-      return
+      alert('Email inválido ou em uso');
+      return;
     }
     if (cpf.length === '') {
       alert('Digite um CPF válido')
       return
     }
+    else{
+      alert('Cadastro realizado com sucesso!')
+  
+      limpaInputs()
 
-    alert('Cadastro realizado com sucesso!')
-
-    limpaInputs()
+      return;
+    }
 
   }
-
-
-  //function limpar inputs
 
   function limpaInputs() {
 
