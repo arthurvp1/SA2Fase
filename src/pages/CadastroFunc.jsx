@@ -1,11 +1,43 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Cadastrofunc.css'
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 
 function CadastroFunc() {
 
+  const [user, setUser] = useState('')
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [telefone, setTelefone] = useState('')
+  const [isValid, setIsValid] = useState(true);
+
+
+  function cadastrar() {
+
+    if (user === '' || email === '' || senha === '' || telefone === '') {
+      alert('Preencha todos os campos')
+      return
+    }
+    if (document.getElementById('data').value === '') {
+      alert('Preencha a data de nascimento')
+      return
+    }
+    if (telefone.length < 11) {
+      alert('Telefone inválido')
+      return
+    }
+    if(email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+      alert('Email inválido ou em uso')
+      return
+    }
+    
+    alert('Cadastro realizado com sucesso!')
+
+    limpaInputs()
+
+  }
   //Ｃｒｉａ ｃｏｍｐｏｎｅｎｔｅ ｄａｔｅ
 
   const DataInput = () => {
@@ -40,17 +72,17 @@ function CadastroFunc() {
   //functions
 
 
-    //function limpar inputs
+  //function limpar inputs
 
-    function limpaInputs() {
+  function limpaInputs() {
 
-      document.getElementById('input-nome').value = ''
-      document.getElementById('input-email').value = ''
-      document.getElementById('input-senha').value = ''
-      document.getElementById('input-telefone').value = ''
-      document.getElementById('data').value = ''
+    document.getElementById('input-nome').value = ''
+    document.getElementById('input-email').value = ''
+    document.getElementById('input-senha').value = ''
+    document.getElementById('input-telefone').value = ''
+    document.getElementById('data').value = ''
 
-    }
+  }
 
   //ａｑｕｉ ｅ ｏ ｃｏｒｐｏ ｄａ ｐａｇｉｎａ
 
@@ -62,7 +94,7 @@ function CadastroFunc() {
 
       <div className='div-navbar'>
 
-        <Navbar/>
+        <Navbar />
       </div>
       <aside className="esquerdo">
 
@@ -74,16 +106,22 @@ function CadastroFunc() {
 
 
         <section className="inputs">
-          <input id='input-nome' className="username-input" placeholder="Digite seu nome" type="text" />
-          <input id='input-email' className="email-input" placeholder="Digite seu email" type="email" />
-          <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" />
-          <input id='input-telefone' className="telefone" placeholder="Digite seu telefone" type="text" />
+          <input id='input-nome' className="username-input" placeholder="Digite seu nome" type="text"
+            onChange={(e) => setUser(e.target.value)} />
+
+          <input id='input-email' className="email-input" placeholder="Digite seu email" type="email"
+            onChange={(e) => setEmail(e.target.value)} />
+
+          <input id='input-senha' className="senha-input" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
+
+          <input id='input-telefone' className="telefone" placeholder="Digite seu telefone" type="text" onChange={(e) => setTelefone(e.target.value)} />
+
           <DataInput />
         </section>
 
 
         <section className="buttons">
-          <button className="confirma">CONFIRMAR</button>
+          <button className="confirma" onClick={cadastrar}>CONFIRMAR</button>
           <button id="botaoLimpa" className="limpa" onClick={limpaInputs} >LIMPAR</button>
         </section>
         
