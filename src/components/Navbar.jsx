@@ -60,7 +60,7 @@ function Navbar() {
             <div className="iconesidebar">
               <img src="./imagens/Settings.png" alt="Cad Func" />
             </div>
-            <div className="textsidebar">Cad Func</div>
+            <div className="textsidebar">Configurações</div>
           </Link>
         </div>
 
