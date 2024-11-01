@@ -6,11 +6,13 @@ import Login from "../pages/Login";
 import Produtos from "../pages/Produtos";
 import MaisVendidos from "../pages/MaisVendidos";
 import Desempenho from "../pages/Desempenho";
+import Config from "../pages/Config";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
     {path: "/maisVendidos", element: <MaisVendidos/>},
     {path: "/cadastrofunc", element: <CadastroFunc />},
+    {path: "/config", element: <Config />},
     {path: "/login", element: <Login />},
     {path: "/produtos", element: <Produtos />},
     {path: "/desempenho", element: <Desempenho />},

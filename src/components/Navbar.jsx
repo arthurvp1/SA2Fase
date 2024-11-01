@@ -33,7 +33,7 @@ function Navbar() {
             <div className="iconesidebar">
               <img src="./imagens/TrendUp.png" alt="Desempenho" />
             </div>
-            <div className="textsidebar">Desempenho</div>
+            <div className="textsidebar">Funcionários</div>
           </Link>
         </div>
 
@@ -55,8 +55,8 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className="cadastro">
-          <Link to="/cadastroFunc">
+        <div className="config">
+          <Link to="/config">
             <div className="iconesidebar">
               <img src="./imagens/Settings.png" alt="Cad Func" />
             </div>

@@ -68,7 +68,7 @@ a:hover {
 h2{
     margin: 0;
 }
-.inicio,.desempenho,.produtos,.vendidos,.cadastro,.logout{
+.inicio,.desempenho,.produtos,.vendidos,.config,.logout{
     width: 100%;
     height: 10%;
 }
