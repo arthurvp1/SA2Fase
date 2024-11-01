@@ -1,3 +1,6 @@
+*{
+    font-family: 'poppins';
+}
 .config-container {
     display: flex;
     justify-content: center;
@@ -22,4 +25,77 @@
 
 .body-config {
     width: 80%;
+    height: 95%;
 }
+.body-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    
+}
+.body-mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    gap: 30px;
+}
+.perfil-user,.gerar-relatorio,.gerencia-func,.historico-venda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 60%;
+    width: 20%;
+    background-color: whitesmoke;
+    
+}
+.perfil-user:hover,.gerar-relatorio:hover,.gerencia-func:hover,.historico-venda:hover{
+    
+    box-shadow: inset 0 0 20px 3px rgba(96, 103, 242, 0.80);
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s;
+}
+.icon-historico,.icon-func,.icon-relatorio,.icon-perfil{
+
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.icon-form{
+    display: flex;
+    height: 80%;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+}
+.perfil-label,.relatorio-label,.gerencia-label,.historioco-label{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    height: 50%;
+    font-size: 30px;
+}
+.img-perfil,.img-relatorio,.img-gerencia,.img-historico{
+
+    display: flex;
+    height: 90px;
+}
+    
+    
+
