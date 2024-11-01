@@ -12,7 +12,7 @@ function Config() {
 
                 <div className='div-navbar'>
 
-                    <Navbar />
+                    <Navbar/>
                 </div>
                 <div className='body-config'>
                     <div className='body-up'>
