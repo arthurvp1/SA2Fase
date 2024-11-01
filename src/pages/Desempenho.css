@@ -79,3 +79,10 @@
             border-top-right-radius: 38px;
             border-bottom-right-radius: 38px;
         }
+            .botao-meta-element{
+                border-top-right-radius: 100px;
+                
+                background-color: aquamarine;
+                height: 50px;
+                width: 50px;
+            }
