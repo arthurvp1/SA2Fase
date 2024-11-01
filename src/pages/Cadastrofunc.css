@@ -3,10 +3,10 @@ body,html,#root{
     margin: 0;
     width: 100%;
 }
-.body-container {
+/* .body-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     margin: 0%;
     height: 100%;
@@ -16,7 +16,7 @@ body,html,#root{
     background: radial-gradient(101.81% 98.73% at 51.96% 40.13%, rgba(96, 103, 242, 0.80) 0.01%, rgba(52, 52, 52, 0.80) 94.06%);
     box-shadow: 10px 28px 36px 17px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25.5px);
-}
+} */
     .Cadastrofunc-container{
         display: flex;
         justify-content: center;
