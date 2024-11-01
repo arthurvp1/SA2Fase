@@ -16,8 +16,17 @@ function Config() {
                 </div>
                 <div className='body-config'>
                     <div className='body-up'>
+                        <div className='title-config'>
+                        <h1>Configurações Rapida</h1>
 
-                        <h2>Config Rapida</h2>
+                        </div>
+                        <div className='div-but-back'>
+                            <Link to='/' className='back'>
+                                <button className='but-back'> <img src="./public/imagens/icon-but-back.svg" alt=""  className='img-but'/> </button>
+                            </Link>
+
+                        </div>
+
 
                     </div>
 

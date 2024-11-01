@@ -7,11 +7,13 @@ import Produtos from "../pages/Produtos";
 import MaisVendidos from "../pages/MaisVendidos";
 import Desempenho from "../pages/Desempenho";
 import Config from "../pages/Config";
+import AlterarCad from "../pages/AlterarCad";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
     {path: "/maisVendidos", element: <MaisVendidos/>},
-    {path: "/gerenFunc", element: <CadastroFunc />},
+    {path: "/gerenFunc", element: <AlterarCad />},
+    {path: "/cadastroFunc", element: <CadastroFunc />},
     {path: "/config", element: <Config />},
     {path: "/login", element: <Login />},
     {path: "/produtos", element: <Produtos />},

@@ -46,7 +46,7 @@
     width: 100%;
     gap: 30px;
 }
-.perfil-user,.gerar-relatorio,.gerencia-func,.historico-venda{
+.alterar-func,.cadastro-func{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,15 +58,15 @@
     background-color: whitesmoke;
     
 }
-.perfil-user:hover,.gerar-relatorio:hover,.gerencia-func:hover,.historico-venda:hover{
+.cadastro-func:hover,.alterar-func:hover{
     
     box-shadow: inset 0 0 20px 3px rgba(96, 103, 242, 0.80);
     color: rgba(0, 0, 0, 0.900);
     cursor: pointer;
-    scale: 1.03;
+    scale: 1.05;
     transition: 0.5s;
 }
-.icon-historico,.icon-func,.icon-relatorio,.icon-perfil{
+.icon-alterar,.icon-func{
 
     display: flex;
     height: 50%;
@@ -83,7 +83,7 @@
     border-radius: 100%;
     background-color: rgba(128, 128, 128, 0.575);
 }
-.perfil-label,.relatorio-label,.gerencia-label,.historioco-label{
+.cadastro-label,.alterar-label{
 
     display: flex;
     justify-content: center;
@@ -91,22 +91,22 @@
     align-items: center;
     font-weight: bolder;
     height: 50%;
-    font-size: 22px;
+    font-size: 25px;
 }
-.img-perfil,.img-relatorio,.img-gerencia,.img-historico{
+.img-alterar,.img-cadastro{
 
     display: flex;
     height: 90px;
 }
-.title-config{
+.titulo-label{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
     height: 100%;
     width: 80%;
-    
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.900);
 }
 .div-but-back{
     display: flex;
