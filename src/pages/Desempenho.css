@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins';
+}
+
 .desempenho-container {
     display: flex;
     justify-content: center;
@@ -22,4 +26,56 @@
 
 .body-desempenho {
     width: 80%;
+    height: 95%;
 }
+    .titulo-funcionarios{
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .perfil1{
+    
+        width: 100%;
+        height: 21%;
+        border-radius: 38px;
+        display: flex;
+        background-color: white;
+        box-shadow: 0 0 8px black;
+    }
+        .foto{
+            width: 15%;
+            height: 100%;
+            border-top-left-radius: 38px;
+            border-bottom-left-radius: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: coral;
+        }
+        .perfil-text{
+            width: 70%;
+            height: 100%;
+
+        }
+            .perfil-text-encima{
+                height: 47.5%;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: end
+            }
+            .perfil-text-embaixo{
+                margin-top: 0.7%;
+                display: flex;
+                align-items: start;
+                justify-content: space-evenly;
+                height: 47.5%;
+                width: 100%;
+            }
+        .botao-meta{
+            width: 15%;
+            height: 100%;
+            border-top-right-radius: 38px;
+            border-bottom-right-radius: 38px;
+        }

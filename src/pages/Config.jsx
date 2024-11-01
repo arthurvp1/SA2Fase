@@ -1,5 +1,6 @@
 import React from 'react'
 import './Config.css'
+import Navbar from '../components/Navbar'
 
 function Config() {
   return (
@@ -10,11 +11,11 @@ function Config() {
 
       <div className='div-navbar'>
 
-        <Navbar />
+        <Navbar/>
       </div>
       <div className='body-config'>
 
-        <h2>Desempenho</h2>
+        <h2>adwda</h2>
 
         
       </div>
