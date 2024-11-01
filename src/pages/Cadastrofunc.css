@@ -136,7 +136,7 @@ body,html,#root{
                 color: white;
                 border: 0;
             }
-            button:active{
+            .limpa:active{
                 width: 148px;
                 height: 54px;
                 border-radius: 20px;

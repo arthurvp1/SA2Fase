@@ -25,19 +25,19 @@ function Desempenho() {
 
               <div className='perfil-text-encima'>
 
-                  <label>Nome</label>
-                  <label>Email</label>
-                  <label>Numero</label>
-                  <label>CPF</label>
+                <label>Nome</label>
+                <label>Email</label>
+                <label>Numero</label>
+                <label>CPF</label>
 
               </div>
 
               <div className='perfil-text-embaixo'>
 
-              <label>Arthur Viecili</label>
-              <label>arthur@salesigth.com</label>
-              <label>48998092078</label>
-              <label>04626034071</label>
+                <label>Arthur Viecili</label>
+                <label>arthur@salesigth.com</label>
+                <label>48998092078</label>
+                <label>04626034071</label>
 
 
               </div>
@@ -45,12 +45,12 @@ function Desempenho() {
 
             </div>
 
+            <div className='botao-meta'>
+              <button class="botao-meta-element">➔</button>
+            </div>
 
           </section>
 
-            <div className='botao-meta'>
-                <button className='botao-meta-element'>Ola</button>
-            </div>
         </div>
 
       </div>
