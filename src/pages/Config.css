@@ -54,12 +54,14 @@
     border-radius: 15px;
     height: 60%;
     width: 20%;
+    color: rgba(0, 0, 0, 0.900);
     background-color: whitesmoke;
     
 }
 .perfil-user:hover,.gerar-relatorio:hover,.gerencia-func:hover,.historico-venda:hover{
     
     box-shadow: inset 0 0 20px 3px rgba(96, 103, 242, 0.80);
+    color: rgba(0, 0, 0, 0.900);
     cursor: pointer;
     scale: 1.05;
     transition: 0.5s;
@@ -96,6 +98,7 @@
     display: flex;
     height: 90px;
 }
+
     
     
 
