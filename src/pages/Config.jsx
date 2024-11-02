@@ -17,7 +17,7 @@ function Config() {
                 <div className='body-config'>
                     <div className='body-up'>
                         <div className='title-config'>
-                        <h1>Configurações Rapida</h1>
+                        <h1>Configurações Rápidas</h1>
 
                         </div>
                         <div className='div-but-back'>
@@ -42,7 +42,7 @@ function Config() {
 
                             <div className='perfil-label'>
 
-                                <p>User Config</p>
+                                <p>Configurações de Usuário</p>
                             </div>
                         </Link>
 

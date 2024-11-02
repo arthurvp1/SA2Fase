@@ -1,8 +1,16 @@
 import React from 'react'
 import './Desempenho.css'
 import Navbar from '../components/Navbar'
+import Button from '../components/Button'
+import { useState } from 'react'
+import Button2 from '../components/Button2'
 
 function Desempenho() {
+   const [isVisible, setIsVisible] = useState(false);
+   const toggleVisibility = () => {
+    
+setIsVisible(!isVisible);
+  };
   return (
 
     <div className='desempenho-container'>
@@ -46,7 +54,9 @@ function Desempenho() {
             </div>
 
             <div className='botao-meta'>
-              <button class="botao-meta-element">➔</button>
+              
+              <button className='botao-meta-element' onClick={toggleVisibility}>{isVisible && <Button />} {!isVisible && <Button2/>}</button>
+              
             </div>
 
           </section>
