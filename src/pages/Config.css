@@ -123,9 +123,9 @@
     width: 100%;
 }
 .but-back:hover{
-    box-shadow: inset 0 0 10px 3px rgba(96, 103, 242, 0.80);
+    
     cursor: pointer;
-    scale: 1.05;
+    scale: 1.02;
     transition: 0.2s;
 }
 .img-but{
