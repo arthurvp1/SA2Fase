@@ -2,15 +2,12 @@ import React from 'react'
 import './Desempenho.css'
 import Navbar from '../components/Navbar'
 import Button from '../components/Button'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Button2 from '../components/Button2'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 function Desempenho() {
-   const [isVisible, setIsVisible] = useState(false);
-   const toggleVisibility = () => {
-    
-setIsVisible(!isVisible);
-  };
+  const {isVisible, setIsVisible} = useContext(GlobalContext);
   return (
 
     <div className='desempenho-container'>
@@ -55,7 +52,8 @@ setIsVisible(!isVisible);
 
             <div className='botao-meta'>
               
-              <button className='botao-meta-element' onClick={toggleVisibility}>{isVisible && <Button />} {!isVisible && <Button2/>}</button>
+              {isVisible && <Button />} 
+              {!isVisible && <Button2/>}
               
             </div>
 
