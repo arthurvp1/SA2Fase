@@ -60,11 +60,11 @@
 }
 .perfil-user:hover,.gerar-relatorio:hover,.gerencia-func:hover,.historico-venda:hover{
     
-    box-shadow: inset 0 0 20px 3px rgba(96, 103, 242, 0.80);
+    
     color: rgba(0, 0, 0, 0.900);
     cursor: pointer;
-    scale: 1.03;
-    transition: 0.5s;
+    scale: 1.02;
+    transition: 0.2s;
 }
 .icon-historico,.icon-func,.icon-relatorio,.icon-perfil{
 
@@ -96,7 +96,7 @@
 .img-perfil,.img-relatorio,.img-gerencia,.img-historico{
 
     display: flex;
-    height: 90px;
+    height: 75px;
 }
 .title-config{
     display: flex;

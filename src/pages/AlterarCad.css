@@ -60,11 +60,10 @@
 }
 .cadastro-func:hover,.alterar-func:hover{
     
-    box-shadow: inset 0 0 20px 3px rgba(96, 103, 242, 0.80);
     color: rgba(0, 0, 0, 0.900);
     cursor: pointer;
-    scale: 1.05;
-    transition: 0.5s;
+    scale: 1.02;
+    transition: 0.2s;
 }
 .icon-alterar,.icon-func{
 
@@ -96,7 +95,7 @@
 .img-alterar,.img-cadastro{
 
     display: flex;
-    height: 90px;
+    height: 75px;
 }
 .titulo-label{
     display: flex;
