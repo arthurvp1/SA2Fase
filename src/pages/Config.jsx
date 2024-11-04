@@ -36,7 +36,7 @@ function Config() {
                             <div className="icon-perfil">
                                 <div className='icon-form'>
 
-                                    <img src="./public/imagens/user-config.svg" alt="" className='img-perfil' />
+                                    <img src="./public/imagens/user-config.png" alt="" className='img-perfil' />
                                 </div>
                             </div>
 
@@ -50,7 +50,7 @@ function Config() {
                             <div className="icon-relatorio">
                                 <div className='icon-form'>
 
-                                    <img src="./public/imagens/icon-vendas.svg" alt="" className='img-relatorio' />
+                                    <img src="./public/imagens/icon-vendas.png" alt="" className='img-relatorio' />
                                 </div>
                             </div>
                             <div className='relatorio-label'>
@@ -76,7 +76,7 @@ function Config() {
                             <div className="icon-historico">
                                 <div className='icon-form'>
 
-                                    <img src="./public/imagens/icon-histo.svg" alt="" className='img-historico' />
+                                    <img src="./public/imagens/icon-histo.png" alt="" className='img-historico' />
                                 </div>
                             </div>
                             <div className='historioco-label'>

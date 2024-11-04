@@ -39,7 +39,7 @@ function AlterarCad() {
                             <div className="icon-func">
                                 <div className='icon-form'>
 
-                                    <img src="./public/imagens/icon-gerencia.svg" alt="" className='img-cadastro' />
+                                    <img src="./public/imagens/addFuncionario.png" alt="" className='img-cadastro' />
                                 </div>
                             </div>
                             <div className='cadastro-label'>
@@ -52,7 +52,7 @@ function AlterarCad() {
                             <div className="icon-alterar">
                                 <div className='icon-form'>
 
-                                    <img src="./public/imagens/icon-vendas.svg" alt="" className='img-alterar' />
+                                    <img src="./public/imagens/alterar.png" alt="" className='img-alterar' />
                                 </div>
                             </div>
                             <div className='alterar-label'>
