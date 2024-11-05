@@ -157,6 +157,9 @@ p{
     margin: 0;
     height: 20%;
 }
+    h1{
+        text-align: center;
+    }
 .buttons-goo-in{
     display: flex;
     gap: 20px;
@@ -178,6 +181,7 @@ p{
 .div-inputs-login{
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
     height: 40%;
 
 }
@@ -192,7 +196,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 60px;
 }
 .lbl-check{
     display: flex;
