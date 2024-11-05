@@ -1,13 +1,13 @@
 import React from 'react'
 import './Desempenho.css'
 import Navbar from '../components/Navbar'
-import Button from '../components/Button'
 import { useState, useContext } from 'react'
-import Button2 from '../components/Button2'
 import { GlobalContext } from '../contexts/GlobalContext'
+import Funcionario from '../components/Funcionario'
 
 function Desempenho() {
   const {isVisible, setIsVisible} = useContext(GlobalContext);
+  
   return (
 
     <div className='desempenho-container'>
@@ -20,44 +20,7 @@ function Desempenho() {
 
           <label className='titulo-funcionarios'>Funcionários</label>
 
-          <section className='perfil1'>
-
-            <div className='foto'>
-              <label htmlFor="">img n carrega</label>
-            </div>
-
-            <div className='perfil-text'>
-
-              <div className='perfil-text-encima'>
-
-                <label>Nome</label>
-                <label>Email</label>
-                <label>Numero</label>
-                <label>CPF</label>
-
-              </div>
-
-              <div className='perfil-text-embaixo'>
-
-                <label>Arthur Viecili</label>
-                <label>arthur@salesigth.com</label>
-                <label>48998092078</label>
-                <label>04626034071</label>
-
-
-              </div>
-
-
-            </div>
-
-            <div className='botao-meta'>
-              
-              {isVisible && <Button />} 
-              {!isVisible && <Button2/>}
-              
-            </div>
-
-          </section>
+          <Funcionario img={'imgn n carrega'} nome ={'Luiz Filipe oliveira'} email = {'filipefln@gmail.com'} fone = {'048991836492'} cpf = {'98989889989'}/>
 
         </div>
 
