@@ -1,13 +1,25 @@
 import React from 'react'
 import './Funcionario.css'
 import Button from './Button'
-import Button2 from './Button2'
-import { useContext } from 'react'
-import { GlobalContext } from '../contexts/GlobalContext'
+// import Button2 from './Button2'
+import { useContext, useState } from 'react'
+// import { GlobalContext } from '../contexts/GlobalContext'
 
 
 function Funcionario(props) {
-    const {isVisible, setIsVisible} = useContext(GlobalContext);
+
+    // const { isVisible, setIsVisible } = useContext(GlobalContext);
+    const [imgButton, setImgButton] = useState(false)
+    const [imgButton1, setImgButton1] = useState()
+    
+
+    
+    const toggleVisibility = () => {
+
+        setImgButton(!imgButton);
+
+    }
+
     return (
 
         <section className='perfil1'>
@@ -42,8 +54,9 @@ function Funcionario(props) {
 
             <div className='botao-meta'>
 
-                {isVisible && <Button />}
-                {!isVisible && <Button2 />}
+                
+                 <Button />
+                {/* {!imgButton1 && <Button2 />} */}
 
             </div>
 

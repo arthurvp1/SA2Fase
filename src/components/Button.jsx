@@ -1,19 +1,32 @@
-import React, { useContext } from 'react'
-import { GlobalContext } from '../contexts/GlobalContext';
+import React, { useContext, useState } from 'react'
+// import { GlobalContext } from '../contexts/GlobalContext';
 import './Button.css'
 
 function Button() {
-  const {isVisible, setIsVisible} = useContext(GlobalContext);
-  const toggleVisibility = () => {
-   
-setIsVisible(!isVisible);
- };
+  const [ imgbut, setImgbut] = useState("imagens/Polygon.png");
+  const [imgButton, setImgButton] = useState(false)
+    
+    
+
+    
+    const toggleVisibility = () => {
+
+      if(imgButton === true){
+        setImgbut("imagens/Polygon.png")
+
+      }else{
+        setImgbut("imagens/Polygon 2.png")
+      }
+
+        setImgButton(!imgButton);
+
+    }
   return (
     <div className='botao-meta'>
-        <button className='botao-meta-element'><img src="imagens/Polygon.png" alt="" onClick={toggleVisibility} /></button>
+        <button className='botao-meta-element'><img src={imgbut}alt="Toggle" onClick={toggleVisibility} /></button>
       
     </div>
   )
-}
+  }
 
 export default Button
