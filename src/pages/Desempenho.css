@@ -21,11 +21,13 @@
     }
 
     .div-funcionarios{
-        display: flex;
+        display: block;
+        align-items: center;
         flex-direction: column;
         height: 90%;
         gap: 20px;
-        overflow-y: scroll;
+        overflow-y: auto;
+        
     }
     .div-funcionarios::-webkit-scrollbar {
         width: 10px;
@@ -39,5 +41,5 @@
         border-radius: 10px;
     }
     .div-funcionarios::-webkit-scrollbar-thumb:hover {
-        background-color: #5321CA;
+        background-color: gray;
     }

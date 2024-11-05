@@ -1,11 +1,12 @@
 .perfil1{
     
-    width: 100%;
-    height: 21%;
+    width: 95%;
+    height: 20%;
     border-radius: 38px;
     display: flex;
     background-color: white;
     box-shadow: 0 0 8px black;
+    margin: 15px;
 }
     .foto{
         width: 15%;
