@@ -27,6 +27,7 @@ input{
 }
 h1{
     margin: 0;
+    text-align: center;
 }
 button{
     height: 40px;
@@ -156,10 +157,9 @@ p{
     display: flex;
     margin: 0;
     height: 20%;
+    padding-top: 20px;
 }
-    h1{
-        text-align: center;
-    }
+
 .buttons-goo-in{
     display: flex;
     gap: 20px;
