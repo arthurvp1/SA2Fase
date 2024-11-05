@@ -20,8 +20,22 @@ function Desempenho() {
 
           <label className='titulo-funcionarios'>Funcionários</label>
 
+          <div className="div-funcionarios">
           <Funcionario img={'imgn n carrega'} nome ={'Luiz Filipe oliveira'} email = {'filipefln@gmail.com'} fone = {'048991836492'} cpf = {'98989889989'}/>
-
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          </div>
+          
         </div>
 
       </div>

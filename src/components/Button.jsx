@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext';
+import './Button.css'
 
 function Button() {
   const {isVisible, setIsVisible} = useContext(GlobalContext);
