@@ -51,7 +51,7 @@ function Navbar() {
             <div className="iconesidebar">
               <img src="./imagens/directions_car.png" alt="Mais Vendidos" />
             </div>
-            <div className="textsidebar">Mais Vendidos</div>
+            <div className="textsidebar">Estoque</div>
           </Link>
         </div>
 
