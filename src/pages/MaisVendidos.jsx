@@ -1,6 +1,7 @@
 import React from 'react'
 import './MaisVendidos.css'
 import Navbar from '../components/Navbar'
+import ProdutoEstoque from '../components/ProdutoEstoque'
 
 function MaisVendidos() {
   return (
@@ -17,42 +18,20 @@ function MaisVendidos() {
           
           <div className="dadosEstoque">
 
+            <div className='header-estoque'>
 
-            <div className='div-marcas'>
+              <label htmlFor="">Marca</label>
+              <label htmlFor="">Modelo</label>
+              <label htmlFor="">Ano</label>
+              <label htmlFor="">Km</label>
+              <label htmlFor="">Cor</label>
+              <label htmlFor="">ID</label>
+              <label htmlFor="">Status</label>
 
-              <label className='lblDados'>Marca</label>
-
-              <label>avava</label>
             </div>
-            <div className='div-modelos'>
+            <ProdutoEstoque/>
 
-              <label className='lblDados' htmlFor="">Modelo</label>
             </div>
-            <div className='div-ano'>
-
-              <label className='lblDados' htmlFor="">Ano</label>
-            </div>
-            <div className='div-km'>
-
-              <label className='lblDados' htmlFor="">Km</label>
-            </div>
-            <div className='div-cor'>
-
-              <label className='lblDados' htmlFor="">Cor</label>
-            </div>
-            <div className='div-ID'>
-
-              <label className='lblDados' htmlFor="">ID</label>
-            </div>
-            <div className='div-status'>
-
-              <label className='lblDados' htmlFor="">Status</label>
-            </div>
-
-
-          </div>
-
-
         </div>
 
       </div>

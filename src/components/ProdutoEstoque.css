@@ -1,0 +1,13 @@
+.spanDados{
+    overflow-wrap:break-word ;
+    font-size: 14px
+    
+}
+.btnStatus{
+    background-color: rgb(108, 211, 151);
+    width: 80%;
+    height: 5%;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgba(53, 53, 53, 0.877);
+}

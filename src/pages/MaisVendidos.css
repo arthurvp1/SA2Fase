@@ -32,21 +32,12 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 20px;
+    width: 18%;
+    display: flex;
+    justify-content: center;
     height: 5%;
 }
-/* .btnnn{
-    background-color: rgb(49, 108, 185);
-    width: 150px;
-    height: 35px;
-    border-radius: 5px;
-    color: white;
-    border: 2px solid blue;
-} */
-
-
 .dadosEstoque{
     font-size: 16px;
     margin-left: 10px;
@@ -64,7 +55,15 @@
     display: flex;
     margin-bottom: 10px;
     flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 10%;
+    gap: 15px;
 }
+.header-estoque{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 
