@@ -15,6 +15,9 @@ html,body,#root{
 .body-produtos {
     width: 80%;
     height: 95%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .but-add-produto{
     background-color: #494A99;

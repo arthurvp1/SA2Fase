@@ -2,6 +2,8 @@ import React from 'react'
 import './Produto.css'
 
 function Produto(props) {
+    let produto = props.produto
+    
     return (
         <section className='body-produto'>
             <div className='img-produto'>
@@ -9,26 +11,26 @@ function Produto(props) {
 
             </div>
             <div className='dados-produto'>
-                <p>{props.marca} {props.modelo}</p>
-                <p>{props.versao}</p>
+                <p>{produto.marca} {produto.modelo}</p>
+                <p className='p-versao'>{produto.versao}</p>
 
             </div>
             <div className='dados-produto-preco'>
                 <div className='preco-ano'>
-                    <p>{props.ano}</p>
-                    <p>{props.preco}</p>
+                    <p>R$ {produto.preco}</p>
+                    <p className='p-ano'>{produto.ano}</p>
                 </div>
                 <div className='KM'>
-                    <p>{props.km}</p>
+                    <p>{produto.km} Km</p>
 
                 </div>
             </div>
             <div className='div-but-produto'>
 
-                <button>Editar</button>
+                <button className='but-produto-editar'>Editar</button>
             </div>
             <div className='prouto-localiza'>
-                <p>{props.localizacao}</p>
+                <p><img src="./public/imagens/icon-loca.png" alt="" />  {produto.localizacao}</p>
 
             </div>
 
