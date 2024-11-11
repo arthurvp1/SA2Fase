@@ -2,35 +2,44 @@ import React from 'react'
 import './Funcionario.css'
 import { useContext, useState } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
+import Meta from './Meta';
 
 
 function Funcionario(props) {
 
-    const { isVisible, setIsVisible } = useContext(GlobalContext);
-
-    
+    // const { isVisible, setIsVisible } = useContext(GlobalContext);
+    const [visible, setVisible] = useState(false);    
     const [imgbut, setImgbut] = useState("imagens/Polygon.png");
     const [imgButton, setImgButton] = useState(false)
+    
+
+    let visibles = false
 
 
 
 
     const toggleVisibility = () => {
 
-        if (imgButton === true) {
-            setImgbut("imagens/Polygon.png")
-
-        } else {
+        if (imgButton === false) {
             setImgbut("imagens/Polygon 2.png")
+            visibles = true
+            
+        } else {
+            setImgbut("imagens/Polygon.png")
+            visibles = false
+            
+
         }
 
         setImgButton(!imgButton);
 
+        setVisible(visibles);
     }
 
 
     return (
 
+        <div className={'fun-container'}>
         <section className='perfil1'>
 
             <div className='foto'>
@@ -66,8 +75,10 @@ function Funcionario(props) {
             </div>
 
         </section>
+        {visible && <Meta />}
+        </div>
 
-    )
+    )   
 }
 
 export default Funcionario

@@ -29,6 +29,11 @@ function Desempenho() {
           <Funcionario />
           <Funcionario />
           <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+          <Funcionario />
+
           </div>
 
         </div>
