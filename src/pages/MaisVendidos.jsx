@@ -13,7 +13,46 @@ function MaisVendidos() {
         </div>
         <div className='body-maisVendidos'>
 
-          <h2>Mais Vendidos</h2>
+          <label title='titulo' className='titulo-Estoque' htmlFor="">Estoque</label>
+          
+          <div className="dadosEstoque">
+
+
+            <div className='div-marcas'>
+
+              <label className='lblDados'>Marca</label>
+
+              <label>avava</label>
+            </div>
+            <div className='div-modelos'>
+
+              <label className='lblDados' htmlFor="">Modelo</label>
+            </div>
+            <div className='div-ano'>
+
+              <label className='lblDados' htmlFor="">Ano</label>
+            </div>
+            <div className='div-km'>
+
+              <label className='lblDados' htmlFor="">Km</label>
+            </div>
+            <div className='div-cor'>
+
+              <label className='lblDados' htmlFor="">Cor</label>
+            </div>
+            <div className='div-ID'>
+
+              <label className='lblDados' htmlFor="">ID</label>
+            </div>
+            <div className='div-status'>
+
+              <label className='lblDados' htmlFor="">Status</label>
+            </div>
+
+
+          </div>
+
+
         </div>
 
       </div>
