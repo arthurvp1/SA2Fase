@@ -6,15 +6,21 @@ function Produtos() {
     <div className='produtos-container'>
       <div className='body-container'>
 
-      <div className='div-navbar'>
+        <div className='div-navbar'>
 
-        <Navbar />
-      </div>
-      <div className='body-produtos'>
+          <Navbar />
+        </div>
+        <div className='body-produtos'>
 
-      <h2>Produtos</h2>
-      </div>
-
+          <div className='add-produto'>
+            <div className='add-produto-img'>
+              <img src='./public/imagens/add-produto.png' alt='Toggle' />
+            </div>
+            <div className='produto-but'>
+              <button className='but-add-produto'>Adicionar Produto</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

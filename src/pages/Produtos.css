@@ -12,19 +12,41 @@ html,body,#root{
     height: 100%;
 }
 
-/* .body-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    height: 94%;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.54);
-    background: radial-gradient(101.81% 98.73% at 51.96% 40.13%, rgba(96, 103, 242, 0.80) 0.01%, rgba(52, 52, 52, 0.80) 94.06%);
-    box-shadow: 10px 28px 36px 17px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(25.5px);
-} */
 .body-produtos {
     width: 80%;
+    height: 95%;
 }
+.but-add-produto{
+    background-color: #494A99;
+    font-size: 15px;
+    color: whitesmoke;
+    border: none;
+}
+.but-add-produto:hover{
+    background-color: #494a9954;
+    transition: 0.2s;
+    color: #494A99;
+}
+.add-produto{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 160px;
+    width: 220px;
+    border-radius: 35px;
+}
+.add-produto-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    
+}
+.produto-but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    
+}
+    
