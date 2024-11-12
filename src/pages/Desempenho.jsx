@@ -2,9 +2,11 @@ import React from 'react'
 import './Desempenho.css'
 import Navbar from '../components/Navbar'
 import Funcionario from '../components/Funcionario'
+import { useContext } from 'react'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 function Desempenho() {
-  
+  const {funcionarios, setFuncionarios} = useContext(GlobalContext) 
   
   
   return (
@@ -20,19 +22,11 @@ function Desempenho() {
           <label className='titulo-funcionarios'>Funcionários</label>
 
           <div className="div-funcionarios">
-          <Funcionario img={'imgn n carrega'} nome ={'Luiz Filipe oliveira'} email = {'filipefln@gmail.com'} fone = {'048991836492'} cpf = {'98989889989'}/>
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
-          <Funcionario />
+          {
+            funcionarios.map((f) => (
+              <Funcionario funcionario={f} />
+            ))
+          }
 
           </div>
 

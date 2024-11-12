@@ -7,6 +7,8 @@ import Meta from './Meta';
 
 function Funcionario(props) {
 
+    let funcionario = props.funcionario
+
     // const { isVisible, setIsVisible } = useContext(GlobalContext);
     const [visible, setVisible] = useState(false);    
     const [imgbut, setImgbut] = useState("imagens/Polygon.png");
@@ -43,7 +45,7 @@ function Funcionario(props) {
         <section className='perfil1'>
 
             <div className='foto'>
-                <label htmlFor="">{props.img}</label>
+                <label htmlFor="">{funcionario.img}</label>
             </div>
 
             <div className='perfil-text'>
@@ -59,10 +61,10 @@ function Funcionario(props) {
 
                 <div className='perfil-text-embaixo'>
 
-                    <label>{props.nome}</label>
-                    <label>{props.email}</label>
-                    <label>{props.fone}</label>
-                    <label>{props.cpf}</label>
+                    <label>{funcionario.nome}</label>
+                    <label>{funcionario.email}</label>
+                    <label>{funcionario.fone}</label>
+                    <label>{funcionario.cpf}</label>
 
 
                 </div>
