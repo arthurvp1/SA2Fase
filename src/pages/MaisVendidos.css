@@ -40,14 +40,12 @@
 }
 .dadosEstoque{
     font-size: 16px;
-    margin-left: 10px;
     margin-bottom: 5px;
-    flex-direction: line;
+    flex-direction: column;
     display: flex;
-    /* gap: 120px; */
-    justify-content: space-around;
+    justify-content:flex-start;
+    align-items: center;
     margin-top: 20px;
-    /* margin-left: 5px; */
     width: 100%;
     height: 100%;
 }
@@ -58,12 +56,25 @@
     align-items: center;
     height: 100%;
     width: 10%;
-    gap: 15px;
+    gap: 2px;
 }
 .header-estoque{
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    margin-bottom: 10px;
+    gap: 115px;
+    padding-left: 65px;
+}
+.componente-produtoEstoque{
+    width: 99%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(161, 60, 192, 0.25);
+    
 }
 
 

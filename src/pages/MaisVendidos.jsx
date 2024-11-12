@@ -29,7 +29,12 @@ function MaisVendidos() {
               <label htmlFor="">Status</label>
 
             </div>
+
+            <div className='componente-produtoEstoque'>
+
             <ProdutoEstoque/>
+
+            </div>
 
             </div>
         </div>
