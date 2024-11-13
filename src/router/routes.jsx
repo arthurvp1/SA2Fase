@@ -8,6 +8,7 @@ import MaisVendidos from "../pages/MaisVendidos";
 import Desempenho from "../pages/Desempenho";
 import Config from "../pages/Config";
 import AlterarCad from "../pages/AlterarCad";
+import CadastroProduto from "../pages/CadastroProduto";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     {path: "/login", element: <Login />},
     {path: "/produtos", element: <Produtos />},
     {path: "/desempenho", element: <Desempenho />},
+    {path: "/cadProduto", element: <CadastroProduto />},
 
 
     

@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar'
 import Produto from '../components/Produto'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
+import { Link } from 'react-router-dom'
+
 function Produtos() {
   const { produtos, setProdutos } = useContext(GlobalContext)
   return (
@@ -27,7 +29,11 @@ PDK' preco='1.299.900' ano='2023/2024' km='0' localizacao='Balneário Camburiú 
               <img src='./public/imagens/add-produto.png' alt='Toggle' />
             </div>
             <div className='produto-but'>
+              <Link to = '/cadProduto'>
+
               <button className='but-add-produto'>Adicionar Produto</button>
+
+              </Link>
             </div>
           </div>
         </div>
