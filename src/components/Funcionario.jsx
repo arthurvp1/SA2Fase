@@ -10,12 +10,14 @@ function Funcionario(props) {
     let funcionario = props.funcionario
 
     // const { isVisible, setIsVisible } = useContext(GlobalContext);
+    const [estado,setStado] = useState('perfil1')
     const [visible, setVisible] = useState(false);    
     const [imgbut, setImgbut] = useState("imagens/Polygon.png");
     const [imgButton, setImgButton] = useState(false)
     
 
     let visibles = false
+    let estado1 = 'perfil1'
 
 
 
@@ -25,15 +27,18 @@ function Funcionario(props) {
         if (imgButton === false) {
             setImgbut("imagens/Polygon 2.png")
             visibles = true
+            estado1 = 'perfil12'
             
         } else {
             setImgbut("imagens/Polygon.png")
             visibles = false
+            estado1 = 'perfil1'
             
 
         }
 
         setImgButton(!imgButton);
+        setStado(estado1);
 
         setVisible(visibles);
     }
@@ -41,8 +46,8 @@ function Funcionario(props) {
 
     return (
 
-        <div className={'fun-container'}>
-        <section className='perfil1'>
+        <div className='fun-container'>
+        <section className= {estado} >
 
             <div className='foto'>
                 <label htmlFor="">{funcionario.img}</label>

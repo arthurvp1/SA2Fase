@@ -10,24 +10,25 @@ export const GlobalContextProvider = ({ children }) => {
         fone: '48991836492',
         cpf: '99898789878',
     }
-])
-        
-    const [produtos,setProdutos] = useState([
+    ])
+
+
+    const [produtos, setProdutos] = useState([
         {
-        marca: 'Porche',
-        modelo: '911',
-        versao: '3.0 24V  GASOLINA CARRERA S PDK',
-        preco: '1.299.900',
-        ano: '2023/2024',
-        km: '0',
-        localizacao: 'Balneário Camburiú - SC'
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V  GASOLINA CARRERA S PDK',
+            preco: '1.299.900',
+            ano: '2023/2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC'
         }
-])
+    ])
     let usuarioLogado = 'Joabe'
 
 
     return (
-        <GlobalContext.Provider value={{ usuarioLogado,isVisible, setIsVisible,produtos,setProdutos,funcionarios, setFuncionarios }}>
+        <GlobalContext.Provider value={{ usuarioLogado, isVisible, setIsVisible, produtos, setProdutos, funcionarios, setFuncionarios }}>
             {children}
         </GlobalContext.Provider>
     )

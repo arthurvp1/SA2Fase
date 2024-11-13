@@ -1,11 +1,21 @@
 import React, { useContext, useState } from 'react'
 import './Cadastrofunc.css'
 import Navbar from '../components/Navbar'
+import { GlobalContext } from '../contexts/GlobalContext'
+
 
 
 function CadastroFunc() {
 
-  const [user, setUser] = useState('')
+  const {funcionarios, setFuncionarios} = useContext(GlobalContext)
+  let objeto = {
+    nome: '',
+    email: '',
+    fone: '',
+    cpf: '',
+    data: ''
+  }
+  const [nome, setUser] = useState('')
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [telefone, setTelefone] = useState()
@@ -16,7 +26,7 @@ function CadastroFunc() {
 
   function cadastrar() {
 
-    if (user === '' || email === '' || senha === '' || telefone === '') {
+    if (nome === '' || email === '' || senha === '' || telefone === '') {
       alert('Preencha todos os campos');
       return;
     }
@@ -38,9 +48,17 @@ function CadastroFunc() {
     }
     else{
       alert('Cadastro realizado com sucesso!')
-  
-      limpaInputs()
 
+      objeto.nome = nome
+      objeto.email = email 
+      objeto.fone = telefone
+      objeto.cpf = cpf
+      objeto.data = data
+
+      setFuncionarios([...funcionarios, objeto])
+
+      limpaInputs()  
+      
       return;
     }
 
@@ -149,7 +167,7 @@ function CadastroFunc() {
 
         <aside className="direito">
           <div className="profile-section">
-            <img className="profile-picture" src="./images/user.png" alt="Profile" />
+            <img className="profile-picture" src="./images/nome.png" alt="Profile" />
             <button className="change-photo-button">Trocar Foto</button>
           </div>
         </aside>

@@ -6,7 +6,16 @@
     display: flex;
     background-color: white;
     box-shadow: 0 0 8px black;
-    margin: 15px;
+}
+.perfil12{
+    
+    width: 95%;
+    height: 80px;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 8px black;
 }
 .fun-container{
     
