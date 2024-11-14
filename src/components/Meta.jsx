@@ -2,12 +2,12 @@ import React from 'react'
 import './Meta.css'
 import GraficoBar from './GraficoBar'
 
-function Meta() {
+function Meta(props) {
   return (
     <div className='meta-container'>
 
 
-    <GraficoBar />
+    <GraficoBar  meta = {props.meta}/>
       
     </div>
   )

@@ -21,6 +21,7 @@ function CadastroFunc() {
   const [telefone, setTelefone] = useState()
   const [cpf, setCpf] = useState()
   const [data, setData] = useState('');
+  const [meta, setMeta] = useState()
   const [isValid, setIsValid] = useState(true);
 
 
@@ -54,6 +55,9 @@ function CadastroFunc() {
       objeto.fone = telefone
       objeto.cpf = cpf
       objeto.data = data
+      objeto.senha = senha
+      objeto.id = funcionarios.length + 1
+      objeto.meta = meta
 
       setFuncionarios([...funcionarios, objeto])
 
@@ -72,6 +76,7 @@ function CadastroFunc() {
     document.getElementById('input-telefone').value = ''
     document.getElementById('cpf').value = ''
     document.getElementById('data').value = ''
+    setMeta('')
 
   }
 
@@ -154,6 +159,15 @@ function CadastroFunc() {
               }}
               maxLength="10"
               placeholder="dd/mm/aaaa"
+            />
+            <input
+              type="number"
+              id='input-meta'
+              className="meta"
+              value={meta}
+              onChange={(e) => setMeta(e.target.value)} // Remove todos os caracteres não numéricos
+              maxLength="7"
+              placeholder="Digite a meta (TESTE)"
             />
           </section>
 

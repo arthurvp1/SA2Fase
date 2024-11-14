@@ -82,7 +82,7 @@ function Funcionario(props) {
             </div>
 
         </section>
-        {visible && <Meta />}
+        {visible && <Meta meta = {funcionario.meta}/>}
         </div>
 
     )   

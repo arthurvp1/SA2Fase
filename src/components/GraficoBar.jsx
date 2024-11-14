@@ -6,7 +6,6 @@ class GraficoBar extends Component {
 
   constructor(props) {
     super(props);
-    let progresso = props.progresso;
     this.state = {
       options: {
         chart: {
@@ -44,7 +43,7 @@ class GraficoBar extends Component {
       },
       series: [
         {
-          data: [10] // Define o valor da barra
+          data: [props.meta] // Define o valor da barra
         }
       ]
     };
