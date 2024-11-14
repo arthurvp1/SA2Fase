@@ -2,8 +2,13 @@ import React from 'react'
 import './CadastroProduto.css'
 import Navbar from '../components/Navbar'
 import { useState } from 'react'
+import { useContext } from 'react'
+import { GlobalContext } from '../contexts/GlobalContext'
+
 
 function CadastroProduto() {
+
+    const { produtos, setProdutos } = useContext(GlobalContext)
 
     const [marca, setMarca] = useState('')
     const [modelo, setModelo] = useState('')
@@ -18,6 +23,64 @@ function CadastroProduto() {
     const [descri, setDescri] = useState('')
     const [localizacao, setLocalizacao] = useState('')
     const [produtoID, setProdutoID] = useState('')
+    let objeto = { 
+        marca: '',
+        modelo: '',
+        anoFabri: '',
+        anoModelo: '',
+        combustivel: '',
+        versao: '',
+        km: '',
+        cambio: '',
+        preco: '',
+        localizacao: '',
+        
+    }
+    function limpaInputs(){
+        setMarca('')
+        setModelo('')
+        setAnoFabri('')
+        setAnoModelo('')
+        setCor('')
+        setCombustivel('')
+        setVersao('')
+        setKm('')
+        setCambio('')
+        setPreco('')
+        setDescri('')
+        setLocalizacao('')
+        setProdutoID('')
+    }
+
+    function cadastrar(){
+        if (marca == '' || modelo == '' || anoFabri == '' || anoModelo == '' || cor == '' || combustivel == '' || versao == '' || km == '' || cambio == '' || preco == '' || descri == '' || localizacao == '' || produtoID == '') {
+            alert('Preencha todos os campos');
+            return;
+        }else{
+
+            objeto.marca = marca
+            objeto.modelo = modelo
+            objeto.anoFabri = anoFabri
+            objeto.anoModelo = anoModelo
+            objeto.cor = cor
+            objeto.combustivel = combustivel
+            objeto.versao = versao
+            objeto.km = km
+            objeto.cambio = cambio
+            objeto.preco = preco
+            objeto.localizacao = localizacao
+            objeto.produtoID = produtoID
+            
+
+            alert('Produto cadastrado com sucesso!')
+            setProdutos([...produtos, objeto])
+            
+            limpaInputs()
+
+            return;
+        
+        }
+    }
 
 
 
@@ -49,13 +112,13 @@ function CadastroProduto() {
                                     id='inp-marca'
                                     className='inp-marca'
                                     type="text"
-                                    onChange={(e) => setUser(e.target.value)} />
+                                    onChange={(e) => setMarca(e.target.value)} />
 
                                 <label htmlFor="inp-anoFabri">Ano Fabriação</label>
                                 <input
                                     id='inp-anoFabri'
                                     className='inp-anoFabri'
-                                    type="text"
+                                    type="number"
                                     onChange={(e) => setAnoFabri(e.target.value)}
                                 />
                                 <label htmlFor="inp-cor">Cor</label>
@@ -69,7 +132,7 @@ function CadastroProduto() {
                                 <input
                                     id='inp-preco'
                                     className='inp-preco'
-                                    type="text"
+                                    type="number"
                                     onChange={(e) => setPreco(e.target.value)}
                                 />
 
@@ -88,7 +151,7 @@ function CadastroProduto() {
                                         <input
                                             id='inp-anoModelo'
                                             className='inp-anoModelo'
-                                            type="text"
+                                            type="number"
                                             onChange={(e) => setAnoModelo(e.target.value)}
                                         />
                                         <label htmlFor="inp-combustivel">Combustivel</label>
@@ -113,7 +176,7 @@ function CadastroProduto() {
                                         <input
                                             id='inp-km'
                                             className='inp-km'
-                                            type="text"
+                                            type="number"
                                             onChange={(e) => setKm(e.target.value)}
                                         />
                                         <label htmlFor="inp-cambio">Câmbio</label>
@@ -136,12 +199,12 @@ function CadastroProduto() {
                                         type="text"
                                         onChange={(e) => setDescri(e.target.value)}
                                     />
-                                     <label htmlFor="">Localização</label>
+                                    <label htmlFor="">Localização</label>
                                     <input
                                         id='inp-local'
                                         className='inp-local'
                                         type="text"
-                                        onChange={(e) => setDescri(e.target.value)}
+                                        onChange={(e) => setLocalizacao(e.target.value)}
                                     />
 
 
@@ -158,9 +221,12 @@ function CadastroProduto() {
                                 type="text"
                                 onChange={(e) => setProdutoID(e.target.value)}
                             />
-                            <button>Comfirma</button>
+                            <button className='but-cadastro' onClick={cadastrar}>Comfirma</button>
 
                         </div>
+                        {
+                            console.log(marca, modelo, anoFabri, anoModelo, cor, combustivel, versao, km, cambio, preco, descri, localizacao, produtoID)
+                        }
 
 
                     </section>

@@ -17,11 +17,16 @@ export const GlobalContextProvider = ({ children }) => {
         {
             marca: 'Porche',
             modelo: '911',
-            versao: '3.0 24V  GASOLINA CARRERA S PDK',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
             preco: '1.299.900',
-            ano: '2023/2024',
+            anoFabri: '2023',
+            anoModelo: '2024',
             km: '0',
-            localizacao: 'Balneário Camburiú - SC'
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
         }
     ])
     let usuarioLogado = 'Joabe'

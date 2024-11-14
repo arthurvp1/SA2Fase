@@ -7,7 +7,7 @@ import { GlobalContext } from '../contexts/GlobalContext'
 import { Link } from 'react-router-dom'
 
 function Produtos() {
-  const { produtos, setProdutos } = useContext(GlobalContext)
+  const { produtos } = useContext(GlobalContext)
   return (
     <div className='produtos-container'>
       <div className='body-container'>
@@ -17,8 +17,6 @@ function Produtos() {
           <Navbar />
         </div>
         <div className='body-produtos'>
-          {/* <Produto marca='Porche' modelo='911' versao='3.0 24V  GASOLINA CARRERA S 
-PDK' preco='1.299.900' ano='2023/2024' km='0' localizacao='Balneário Camburiú - SC' /> */}
           {
             produtos.map((p) => (
                <Produto produto={p} />

@@ -12,13 +12,13 @@ function Produto(props) {
             </div>
             <div className='dados-produto'>
                 <p>{produto.marca} {produto.modelo}</p>
-                <p className='p-versao'>{produto.versao}</p>
+                <p className='p-versao'>{produto.versao}  {produto.combustivel}  {produto.cambio}</p>
 
             </div>
             <div className='dados-produto-preco'>
                 <div className='preco-ano'>
                     <p>R$ {produto.preco}</p>
-                    <p className='p-ano'>{produto.ano}</p>
+                    <p className='p-ano'>{produto.anoFabri} / {produto.anoModelo}</p>
                 </div>
                 <div className='KM'>
                     <p>{produto.km} Km</p>
