@@ -73,7 +73,8 @@
     justify-content: center;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(161, 60, 192, 0.25);
+    /* box-shadow: 5px 5px 5px 5px rgba(161, 60, 192, 0.25); */
+    border: solid 1px rgba(0, 0, 0, 0.432);
     
 }
 
