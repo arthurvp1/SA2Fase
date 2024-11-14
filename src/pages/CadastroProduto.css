@@ -77,7 +77,7 @@
     align-items: top;
     flex-direction: column;
 }
-.inp-marca,.inp-anoFabri,.inp-cor,.inp-preco,.inp-modelo,.inp-anoModelo,.inp-combustivel,.inp-versao,.inp-km,.inp-cambio,.inp-produtoID,.inp-descri{
+.inp-marca,.inp-anoFabri,.inp-cor,.inp-preco,.inp-modelo,.inp-anoModelo,.inp-combustivel,.inp-versao,.inp-km,.inp-cambio,.inp-produtoID,.inp-descri,.inp-local{
     width: 80%;
     height: 10%;
     margin-top: 10px;

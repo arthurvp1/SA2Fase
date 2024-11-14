@@ -16,6 +16,7 @@ function CadastroProduto() {
     const [cambio, setCambio] = useState('')
     const [preco, setPreco] = useState('')
     const [descri, setDescri] = useState('')
+    const [localizacao, setLocalizacao] = useState('')
     const [produtoID, setProdutoID] = useState('')
 
 
@@ -135,6 +136,13 @@ function CadastroProduto() {
                                         type="text"
                                         onChange={(e) => setDescri(e.target.value)}
                                     />
+                                     <label htmlFor="">Localização</label>
+                                    <input
+                                        id='inp-local'
+                                        className='inp-local'
+                                        type="text"
+                                        onChange={(e) => setDescri(e.target.value)}
+                                    />
 
 
                                 </div>
@@ -150,6 +158,7 @@ function CadastroProduto() {
                                 type="text"
                                 onChange={(e) => setProdutoID(e.target.value)}
                             />
+                            <button>Comfirma</button>
 
                         </div>
 
