@@ -32,10 +32,10 @@ class GraficoBar extends Component {
           }
         },
         dataLabels: {
-          enabled: false // Desativa os rótulos de dados na barra
+          enabled: true // Desativa os rótulos de dados na barra
         },
         xaxis: {
-          max: 100 // Define o valor máximo do eixo x
+          max: 100  // Define o valor máximo do eixo x
         },
         yaxis: {
           show: false // Oculta o eixo y e seus rótulos
@@ -58,7 +58,7 @@ class GraficoBar extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="1140" // Define a largura do gráfico
+              width="95%" // Define a largura do gráfico
               height="100" // Define a altura do gráfico
             />
           </div>

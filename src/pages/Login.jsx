@@ -1,8 +1,17 @@
 import React from 'react'
 import './Login.css'
 import { Link } from "react-router-dom"
+import { GlobalContext } from '../contexts/GlobalContext'
+import { useContext } from 'react'
+import { useState } from 'react'
+
+
 
 function Login() {
+    const { admin, setAdmin } = useContext(GlobalContext)
+    const [usuario, setUsuario] = useState('')
+    const [senha, setSenha] = useState('')
+    let login = false
 
 
     function logar() {
@@ -18,6 +27,21 @@ function Login() {
             alert('não está marcado')
             document.getElementById('user').setAttribute(autoComplete = 'off')
         }
+
+        admin.map((item) => {
+
+            if (item.userName == usuario && item.password == senha) {
+                login = true;
+                alert('Login efetuado com sucesso');
+                window.location.href = '/'
+            } else {
+                login = false;
+                alert('Usuario ou senha incorretos');
+            }
+        })
+
+    
+
     }
     return (
         <div className='login-container'>
@@ -66,9 +90,22 @@ function Login() {
                     <div className='div-inputs-login'>
                         <div className='form'>
                             <label htmlFor="user">Usuário:</label>
-                            <input autoComplete='on' type="text" id='user' />
+                            <input
+                                autoComplete='on'
+                                type="text"
+                                id='user'
+                                className='user'
+                                onChange={(e) => setUsuario(e.target.value)}
+                                value={usuario}
+                            />
                             <label htmlFor="senha">Senha:</label>
-                            <input type="password" id='senha' />
+                            <input
+                                type="password"
+                                id='senha'
+                                className='password'
+                                onChange={(e) => setSenha(e.target.value)}
+                                value={senha}
+                            />
                         </div>
                         <div className='form2'>
 
@@ -81,7 +118,7 @@ function Login() {
 
                             </div>
                             <div className='div-but-entrar'>
-                                <Link to="/"><button onClick={logar} className='but-entrar'>Entrar</button></Link>
+                                <button onClick={logar} className='but-entrar'>Entrar</button>
 
 
                             </div>

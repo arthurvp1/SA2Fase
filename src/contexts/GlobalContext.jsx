@@ -4,6 +4,13 @@ export const GlobalContext = createContext()
 
 export const GlobalContextProvider = ({ children }) => {
     const [isVisible, setIsVisible] = useState(false);
+    const [admin, setAdmin] = useState([
+        {
+        userName: 'admin',
+        password: 'admin'
+    }
+]);
+
     const [funcionarios, setFuncionarios] = useState([{
         nome: 'Luiz Filipe Oliveira',
         email: 'filipefln@gmail.com',
@@ -34,7 +41,7 @@ export const GlobalContextProvider = ({ children }) => {
 
 
     return (
-        <GlobalContext.Provider value={{ usuarioLogado, isVisible, setIsVisible, produtos, setProdutos, funcionarios, setFuncionarios }}>
+        <GlobalContext.Provider value={{ usuarioLogado, isVisible, setIsVisible, produtos, setProdutos, funcionarios, setFuncionarios,admin, setAdmin }}>
             {children}
         </GlobalContext.Provider>
     )
