@@ -15,32 +15,32 @@ function Login() {
 
 
     function logar() {
+        admin.map((user) => {
 
-        var checkbox = document.getElementById('check')
-        alert(checkbox.value)
 
-        if (checkbox.value == 'sim') {
-            alert('está marcado')
-            document.getElementById('user').setAttribute(autoComplete = 'on')
-        }
-        if (checkbox.value != 'sim') {
-            alert('não está marcado')
-            document.getElementById('user').setAttribute(autoComplete = 'off')
-        }
-
-        admin.map((item) => {
-
-            if (item.userName == usuario && item.password == senha) {
+            if (user.userName == usuario && user.password == senha) {
                 login = true;
                 alert('Login efetuado com sucesso');
+
                 window.location.href = '/'
+
             } else {
                 login = false;
                 alert('Usuario ou senha incorretos');
             }
         })
 
-    
+        var checkbox = document.getElementById('check');
+
+        alert(checkbox.checked);
+        if (checkbox.checked) {
+            alert('está marcado');
+            document.getElementById('user').setAttribute('autoComplete', 'on');
+        } else {
+            alert('não está marcado');
+            document.getElementById('user').setAttribute('autoComplete', 'off');
+        }
+
 
     }
     return (
