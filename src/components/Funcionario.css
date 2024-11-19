@@ -2,7 +2,7 @@
     
     width: 95%;
     height: 80px;
-    border-radius: 38px;
+    border-radius: 20px;
     display: flex;
     background-color: white;
     box-shadow: 0 0 8px black;
@@ -11,8 +11,8 @@
     
     width: 95%;
     height: 80px;
-    border-top-left-radius: 38px;
-    border-top-right-radius: 38px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     display: flex;
     background-color: white;
     box-shadow: 0 0 8px black;
@@ -29,8 +29,8 @@
     .foto{
         width: 15%;
         height: 100%;
-        border-top-left-radius: 38px;
-        border-bottom-left-radius: 38px;
+        border-top-left-radius: 20px;
+        /* border-bottom-left-radius: 20px; */
         display: flex;
         justify-content: center;
         align-items: center;
