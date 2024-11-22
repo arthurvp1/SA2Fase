@@ -1,0 +1,86 @@
+.spanDados{
+    overflow-wrap:break-word ;
+    font-size: 14px;
+    
+    
+}
+.btnStatus{
+    background-color: rgb(108, 211, 151);
+    width: 65%;
+    height: 4%;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgba(53, 53, 53, 0.877);
+}
+.produtos-componente{
+    display: flex;  
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+.div-marca{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-modelo{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-ano{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.div-km{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.div-cor{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.div-id{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+.div-status{
+    width: 14.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.btnStatus1{
+    background-color: rgb(108, 211, 151);
+    width: 65%;
+    height: 4%;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgba(53, 53, 53, 0.185);
+}
+.btnStatus2{
+    background-color: rgb(233, 87, 68);
+    width: 65%;
+    height: 4%;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgba(53, 53, 53, 0.185);
+}

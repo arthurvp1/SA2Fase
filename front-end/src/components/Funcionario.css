@@ -1,0 +1,86 @@
+.perfil1{
+    
+    width: 95%;
+    height: 80px;
+    border-radius: 38px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 8px black;
+}
+.perfil12{
+    
+    width: 95%;
+    height: 80px;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 8px black;
+}
+.fun-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+}
+    .foto{
+        width: 15%;
+        height: 100%;
+        border-top-left-radius: 38px;
+        border-bottom-left-radius: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: coral;
+    }
+    .perfil-text{
+        width: 70%;
+        height: 100%;
+
+    }
+        .perfil-text-encima{
+            height: 47.5%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: end
+        }
+        .perfil-text-embaixo{
+            margin-top: 0.7%;
+            display: flex;
+            align-items: start;
+            justify-content: space-evenly;
+            height: 47.5%;
+            width: 100%;
+        }
+
+        .botao-meta{
+            width: 10%;
+            height: 100%;
+            border-top-right-radius: 38px;
+            border-bottom-right-radius: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .botao-meta-element{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: none;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition-duration: 0.3s;
+                    position: relative;
+                    color: white;
+                  }
+                  
+                  .botao-meta-element:hover{
+                      scale: 1.1;
+                    }

@@ -1,0 +1,138 @@
+*{
+    font-family: 'poppins';
+}
+.config-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* .body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    height: 94%;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    background: radial-gradient(101.81% 98.73% at 51.96% 40.13%, rgba(96, 103, 242, 0.80) 0.01%, rgba(52, 52, 52, 0.80) 94.06%);
+    box-shadow: 10px 28px 36px 17px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25.5px);
+} */
+
+.body-config {
+    width: 80%;
+    height: 95%;
+}
+.body-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    
+}
+.body-mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    gap: 30px;
+}
+.perfil-user,.gerar-relatorio,.gerencia-func,.historico-venda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 60%;
+    width: 20%;
+    color: rgba(0, 0, 0, 0.900);
+    background-color: whitesmoke;
+    
+}
+.perfil-user:hover,.gerar-relatorio:hover,.gerencia-func:hover,.historico-venda:hover{
+    
+    
+    color: rgba(0, 0, 0, 0.900);
+    cursor: pointer;
+    scale: 1.02;
+    transition: 0.2s;
+}
+.icon-historico,.icon-func,.icon-relatorio,.icon-perfil{
+
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.icon-form{
+    display: flex;
+    height: 80%;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+}
+.perfil-label,.relatorio-label,.gerencia-label,.historioco-label{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    height: 50%;
+    font-size: 22px;
+}
+.img-perfil,.img-relatorio,.img-gerencia,.img-historico{
+
+    display: flex;
+    height: 75px;
+}
+.title-config{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 100%;
+    width: 80%;
+    
+}
+.div-but-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+.but-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+.but-back:hover{
+    
+    cursor: pointer;
+    scale: 1.02;
+    transition: 0.2s;
+}
+.img-but{
+    height: 40px;
+    
+}
+
+    
+    
+
