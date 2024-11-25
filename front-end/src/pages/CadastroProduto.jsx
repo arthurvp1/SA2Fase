@@ -23,7 +23,7 @@ function CadastroProduto() {
     const [descri, setDescri] = useState('')
     const [localizacao, setLocalizacao] = useState('')
     const [produtoID, setProdutoID] = useState('')
-    let objeto = { 
+    let objeto = {
         marca: '',
         modelo: '',
         anoFabri: '',
@@ -34,9 +34,9 @@ function CadastroProduto() {
         cambio: '',
         preco: '',
         localizacao: '',
-        
+
     }
-    function limpaInputs(){
+    function limpaInputs() {
         setMarca('')
         setModelo('')
         setAnoFabri('')
@@ -52,11 +52,11 @@ function CadastroProduto() {
         setProdutoID('')
     }
 
-    function cadastrar(){
+    function cadastrar() {
         if (marca == '' || modelo == '' || anoFabri == '' || anoModelo == '' || cor == '' || combustivel == '' || versao == '' || km == '' || cambio == '' || preco == '' || descri == '' || localizacao == '' || produtoID == '') {
             alert('Preencha todos os campos');
             return;
-        }else{
+        } else {
 
             objeto.marca = marca
             objeto.modelo = modelo
@@ -69,16 +69,16 @@ function CadastroProduto() {
             objeto.cambio = cambio
             objeto.preco = preco
             objeto.localizacao = localizacao
-            
-            
+
+
 
             alert('Produto cadastrado com sucesso!')
             setProdutos([...produtos, objeto])
-            
+
             limpaInputs()
 
             return;
-        
+
         }
     }
 
@@ -192,19 +192,19 @@ function CadastroProduto() {
                                 </div>
                                 <div className='container-dados-produto-direita-baixo'>
 
-                                    <label htmlFor="">Descriçao</label>
-                                    <input
-                                        id='inp-descri'
-                                        className='inp-descri'
-                                        type="text"
-                                        onChange={(e) => setDescri(e.target.value)}
-                                    />
                                     <label htmlFor="">Localização</label>
                                     <input
                                         id='inp-local'
                                         className='inp-local'
                                         type="text"
                                         onChange={(e) => setLocalizacao(e.target.value)}
+                                    />
+                                    <label htmlFor="">Descriçao</label>
+                                    <input
+                                        id='inp-descri'
+                                        className='inp-descri'
+                                        type="text"
+                                        onChange={(e) => setDescri(e.target.value)}
                                     />
 
 
@@ -214,7 +214,7 @@ function CadastroProduto() {
 
                         </div>
                         <div className='bot'>
-                            
+
                             <button className='but-cadastro' onClick={cadastrar}>Comfirma</button>
 
                         </div>

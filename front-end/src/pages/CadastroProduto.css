@@ -24,7 +24,7 @@
 .container-dados-produto{
     display: flex;
     width: 100%;
-    height: 70%;
+    height: 80%;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -38,7 +38,7 @@
 }
 .container-dados-produto-direita{
     display: flex;
-    width: 70%;
+    width: 70%; 
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -47,23 +47,9 @@
 .container-dados-produto-direita-cima{
     display: flex;
     width: 100%;
-    height: 50%;
+    height: 60%;
     flex-direction: row;
-    justify-content: space-between;
-}
-.container-dados-produto-direita-cima-esquerda{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    gap: 10px;
-}
-.container-dados-produto-direita-cima-direita{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    gap: 10px;
+    
 }
 .container-dados-produto-direita-baixo{
     display: flex;
@@ -72,36 +58,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 5px;
-    margin-top: 10px;
+    
+    
+    
+}
+.container-dados-produto-direita-cima-esquerda{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.container-dados-produto-direita-cima-direita{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 .bot{
     display: flex;
     width: 100%;
-    height: 30%;
+    height: 20%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-.inp-produtoID{
-    width: 50%;
-    height: 10%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid #cccc;
-    background-color: #dfdfdf;
-
+    
 }
 .inp-marca,.inp-anoFabri,.inp-cor{
     width: 80%;
-    height: 22px;
-    margin-bottom: 10px;
-    padding: 5px;
+    height: 8%;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #dfdfdf;
@@ -109,20 +97,18 @@
 }
 .inp-preco{
     width: 80%;
-    height: 80px;
-    padding: 5px;
+    height: 12%;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-top: 10px;
     background-color: #dfdfdf;
 
 }
 .inp-modelo,.inp-anoModelo,.inp-combustivel{
 
     width: 80%;
-    height: 22px;
-    margin-bottom: 10px;
+    height: 10%;
     padding: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #dfdfdf;
@@ -131,7 +117,7 @@
 .inp-versao,.inp-km,.inp-cambio{
 
     width: 80%;
-    height: 22px;
+    height: 10%;
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -139,10 +125,20 @@
     background-color: #dfdfdf;
 
 }
-.inp-descri,.inp-local{
+.inp-descri{
+    width: 90%;
+    height: 30%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #dfdfdf;
+
+}
+.inp-local{
 
     width: 90%;
-    height: 22px;
+    height: 13%;
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -152,7 +148,7 @@
 }
 .but-cadastro{
     width: 35%;
-    height: 85px;
+    height: 39%;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -162,7 +158,7 @@
 }
 .but-cadastro:hover{
     width: 35%;
-    height: 85px;
+    height: 39%;
     background-color: #c0c0c0;
     color: rgb(70, 70, 70);
     border: none;
