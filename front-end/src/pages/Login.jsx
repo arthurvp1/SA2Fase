@@ -6,17 +6,16 @@ function Login() {
 
 
     function logar() {
-
-        var checkbox = document.getElementById('check')
-        alert(checkbox.value)
-
-        if (checkbox.value == 'sim') {
-            alert('está marcado')
-            document.getElementById('user').setAttribute(autoComplete = 'on')
-        }
-        if (checkbox.value != 'sim') {
-            alert('não está marcado')
-            document.getElementById('user').setAttribute(autoComplete = 'off')
+        // Capturar o checkbox
+        var checkbox = document.getElementById('check');
+    
+        // Verificar se está marcado
+        if (checkbox.checked) {
+            alert('O checkbox está marcado');
+            document.getElementById('user').setAttribute('autocomplete', 'on');
+        } else {
+            alert('O checkbox não está marcado');
+            document.getElementById('user').setAttribute('autocomplete', 'off');
         }
     }
     return (
@@ -66,16 +65,16 @@ function Login() {
                     <div className='div-inputs-login'>
                         <div className='form'>
                             <label htmlFor="user">Usuário:</label>
-                            <input autoComplete='on' type="text" id='user' />
+                            <input type="text" id='user' />
                             <label htmlFor="senha">Senha:</label>
                             <input type="password" id='senha' />
                         </div>
                         <div className='form2'>
 
                             <div className='lbl-check'>
+
                                 <input type="checkbox"
-                                    id='check'
-                                    value={'sim'} />
+                                    id='check' />
 
                                 <label htmlFor="check">Lembrar-me</label>
 
