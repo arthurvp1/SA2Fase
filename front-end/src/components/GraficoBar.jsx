@@ -58,7 +58,7 @@ class GraficoBar extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="1140" // Define a largura do gráfico
+              width="98%" // Define a largura do gráfico
               height="100" // Define a altura do gráfico
             />
           </div>
