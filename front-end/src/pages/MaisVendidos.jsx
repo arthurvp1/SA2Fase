@@ -2,8 +2,12 @@ import React from 'react'
 import './MaisVendidos.css'
 import Navbar from '../components/Navbar'
 import ProdutoEstoque from '../components/ProdutoEstoque'
+import { useContext } from 'react'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 function MaisVendidos() {
+  const { produtos } = useContext(GlobalContext)
+
   return (
     <div className='maisVendidos-container'>
       <div className='body-container'>
@@ -15,7 +19,7 @@ function MaisVendidos() {
         <div className='body-maisVendidos'>
 
           <label title='titulo' className='titulo-Estoque' htmlFor="">Estoque</label>
-          
+
           <div className="dadosEstoque">
 
             <div className='header-estoque'>
@@ -32,11 +36,15 @@ function MaisVendidos() {
 
             <div className='componente-produtoEstoque'>
 
-            <ProdutoEstoque/>
+              {
+                produtos.map((p) => (
+                  <ProdutoEstoque estoque={p} />
+                ))
+              }
 
             </div>
 
-            </div>
+          </div>
         </div>
 
       </div>

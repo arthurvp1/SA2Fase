@@ -53,7 +53,7 @@ function CadastroProduto() {
     }
 
     function cadastrar() {
-        if (marca == '' || modelo == '' || anoFabri == '' || anoModelo == '' || cor == '' || combustivel == '' || versao == '' || km == '' || cambio == '' || preco == '' || descri == '' || localizacao == '' || produtoID == '') {
+        if (marca == '' || modelo == '' || anoFabri == '' || anoModelo == '' || cor == '' || combustivel == '' || versao == '' || km == '' || cambio == '' || preco == '' || descri == '' || localizacao == '') {
             alert('Preencha todos os campos');
             return;
         } else {
