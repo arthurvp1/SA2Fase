@@ -69,7 +69,7 @@ function CadastroProduto() {
             objeto.cambio = cambio
             objeto.preco = preco
             objeto.localizacao = localizacao
-            objeto.produtoID = produtoID
+            
             
 
             alert('Produto cadastrado com sucesso!')
@@ -214,13 +214,7 @@ function CadastroProduto() {
 
                         </div>
                         <div className='bot'>
-                            <label htmlFor="inp-produtoID">id Produto</label>
-                            <input
-                                id='inp-produtoID'
-                                className='inp-produtoID'
-                                type="text"
-                                onChange={(e) => setProdutoID(e.target.value)}
-                            />
+                            
                             <button className='but-cadastro' onClick={cadastrar}>Comfirma</button>
 
                         </div>
