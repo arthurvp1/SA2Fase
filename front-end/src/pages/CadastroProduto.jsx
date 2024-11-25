@@ -4,9 +4,13 @@ import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
+import { Navigate, useNavigate } from "react-router-dom"; 
 
 
 function CadastroProduto() {
+
+    const Navigate = useNavigate()
+
 
     const { produtos, setProdutos } = useContext(GlobalContext)
 
@@ -53,7 +57,7 @@ function CadastroProduto() {
     }
 
     function cadastrar() {
-        if (marca == '' || modelo == '' || anoFabri == '' || anoModelo == '' || cor == '' || combustivel == '' || versao == '' || km == '' || cambio == '' || preco == '' || descri == '' || localizacao == '' || produtoID == '') {
+        if (marca == '' || modelo == '' || anoFabri == '' || anoModelo == '' || cor == '' || combustivel == '' || versao == '' || km == '' || cambio == '' || preco == '' || descri == '' || localizacao == '') {
             alert('Preencha todos os campos');
             return;
         } else {
@@ -76,6 +80,7 @@ function CadastroProduto() {
             setProdutos([...produtos, objeto])
 
             limpaInputs()
+            Navigate("/produtos")
 
             return;
 
