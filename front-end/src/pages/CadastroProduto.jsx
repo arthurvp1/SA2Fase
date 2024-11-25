@@ -4,9 +4,13 @@ import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
+import { Navigate, useNavigate } from "react-router-dom"; 
 
 
 function CadastroProduto() {
+
+    const Navigate = useNavigate()
+
 
     const { produtos, setProdutos } = useContext(GlobalContext)
 
@@ -76,6 +80,7 @@ function CadastroProduto() {
             setProdutos([...produtos, objeto])
 
             limpaInputs()
+            Navigate("/produtos")
 
             return;
 
