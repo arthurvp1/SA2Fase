@@ -51,7 +51,7 @@ class GraficoBar extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="grafico-bar">
         <div className="row">
           <div className="mixed-chart">
             <Chart

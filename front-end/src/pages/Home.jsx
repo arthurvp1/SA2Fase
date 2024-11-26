@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import { useContext, useState } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
 import "./Home.css"
+import ColunaBar from "../components/ColunaBar"
 
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
 
           <h1>Página home do site</h1>
           <p>Olá {usuarioLogado}</p>
+          <ColunaBar />
         </div>
 
       </div>

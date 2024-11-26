@@ -10,7 +10,37 @@ export const GlobalContextProvider = ({ children }) => {
         fone: '48991836492',
         cpf: '99898789878',
         meta: 10
-    }
+    },{
+        nome: 'Luiz Filipe Oliveira',
+        email: 'filipefln@gmail.com',
+        fone: '48991836492',
+        cpf: '99898789878',
+        meta: 10
+    },{
+        nome: 'Luiz Filipe Oliveira',
+        email: 'filipefln@gmail.com',
+        fone: '48991836492',
+        cpf: '99898789878',
+        meta: 10
+    },{
+        nome: 'Luiz Filipe Oliveira',
+        email: 'filipefln@gmail.com',
+        fone: '48991836492',
+        cpf: '99898789878',
+        meta: 10
+    },{
+        nome: 'Luiz Filipe Oliveira',
+        email: 'filipefln@gmail.com',
+        fone: '48991836492',
+        cpf: '99898789878',
+        meta: 10
+    },{
+        nome: 'Luiz Filipe Oliveira',
+        email: 'filipefln@gmail.com',
+        fone: '48991836492',
+        cpf: '99898789878',
+        meta: 10
+    },
     ])
 
 
@@ -28,7 +58,150 @@ export const GlobalContextProvider = ({ children }) => {
             localizacao: 'Balneário Camburiú - SC',
             cor:  'Branco',
             produtoID: '1'
-        }
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },{
+            marca: 'Porche',
+            modelo: '911',
+            versao: '3.0 24V CARRERA S ',
+            combustivel: 'Gasolina',
+            cambio: 'PDK',
+            preco: '1.299.900',
+            anoFabri: '2023',
+            anoModelo: '2024',
+            km: '0',
+            localizacao: 'Balneário Camburiú - SC',
+            cor:  'Branco',
+            produtoID: '1'
+        },
     ])
     let usuarioLogado = 'Joabe'
 
