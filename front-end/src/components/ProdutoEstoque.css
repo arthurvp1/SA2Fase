@@ -70,23 +70,23 @@
 }
 .btnStatus1{
     background-color: rgb(108, 211, 151);
-    width: 65%;
-    height: 4%;
+    width: 80%;
+    height: 25px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.87);
     border: 1px solid rgba(53, 53, 53, 0.185);
 }
 .btnStatus2{
     background-color: rgb(233, 87, 68);
-    width: 65%;
-    height: 4%;
+    width: 80%;
+    height: 25px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.87);
     border: 1px solid rgba(53, 53, 53, 0.185);
 }
 .componente-produto-estoque{
     width: 99%;
-    height: 15%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
