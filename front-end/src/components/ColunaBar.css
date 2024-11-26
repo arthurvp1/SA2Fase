@@ -1,6 +1,7 @@
 .coluna-bar {
   background-color: #f4f4f4; /* Cor de fundo geral */
-  width: 50%; /* Define a largura do container */
+  width: 100%; /* Define a largura do container */
+  height: 100%;
   margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
   padding: 20px; /* Adiciona espaçamento interno */
 }

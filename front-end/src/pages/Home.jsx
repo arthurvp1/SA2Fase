@@ -23,7 +23,10 @@ function Home() {
 
           <h1>Página home do site</h1>
           <p>Olá {usuarioLogado}</p>
+          <div className="colunabar">
           <ColunaBar />
+
+          </div>
         </div>
 
       </div>
