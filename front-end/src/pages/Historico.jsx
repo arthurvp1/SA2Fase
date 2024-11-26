@@ -3,38 +3,30 @@ import './Historico.css'
 import Navbar from '../components/Navbar'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
+import VendaHistorico from '../components/VendaHistorico'
 
 function Historico() {
   const { produtos } = useContext(GlobalContext)
 
   return (
-    <div className='maisVendidos-container'>
+    <div className='historico-container'>
       <div className='body-container'>
 
         <div className='div-navbar'>
 
           <Navbar />
         </div>
-        <div className='body-maisVendidos'>
+        <div className='body-historico'>
 
-          <label title='titulo' className='titulo-Estoque' htmlFor="">Estoque</label>
+          <label title='titulo' className='titulo-Historico' htmlFor="">Histórico de Vendas</label>
 
-          <div className="dadosEstoque">
+          <div className="dadosHistorico">
 
-            <div className='header-estoque'>
+            
 
-              <label htmlFor="">Marca</label>
-              <label htmlFor="">Modelo</label>
-              <label htmlFor="">Ano</label>
-              <label htmlFor="">Km</label>
-              <label htmlFor="">Cor</label>
-              <label htmlFor="">ID</label>
-              <label htmlFor="">Status</label>
+            <div className='componente-VendaHistorico'>
 
-            </div>
-
-            <div className='componente-produtoEstoque'>
-
+                <VendaHistorico/>
              
             </div>
 

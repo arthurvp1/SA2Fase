@@ -1,0 +1,43 @@
+.spanDados{
+    overflow-wrap:break-word ;
+    font-size: 14px;
+    
+    
+}
+.btnStatus{
+    background-color: rgb(108, 211, 151);
+    width: 65%;
+    height: 4%;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgba(53, 53, 53, 0.877);
+}
+.produtos-componente{
+    display: flex;  
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+.div-vendaID,.div-data,.div-valor,.div-produtoID,.div-funcionarioID{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+}
+.componente-produto-estoque{
+    width: 99%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.432);
+    margin-bottom: 2px;
+    
+}
