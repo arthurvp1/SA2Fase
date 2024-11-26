@@ -30,3 +30,9 @@ html,body,#root{
 .body-home {
     width: 80%;
 }
+.colunabar{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: baseline;
+}
