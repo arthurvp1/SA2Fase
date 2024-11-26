@@ -1,0 +1,7 @@
+.radial-bar {
+    background-color: white; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    height: 350%; /* Altura total */
+  }

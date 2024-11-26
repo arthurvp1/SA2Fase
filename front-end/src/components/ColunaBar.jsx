@@ -15,7 +15,11 @@ class ColunaBar extends Component {
           },
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996],
+          categories: ['Arthur', 'Giovani', 'Carlos', 'Luiz Felipe', 'Joabe', 'Pedro'],
+
+        },
+        yaxis: {
+          max: 100
         },
         plotOptions: {
           bar: {
@@ -52,7 +56,7 @@ class ColunaBar extends Component {
             series={this.state.series}
             type="bar"
             width="100%"
-            height="300"
+            height="100%"
           />
         </div>
       </div>
