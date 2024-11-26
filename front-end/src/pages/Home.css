@@ -16,8 +16,8 @@ html,body,#root{
 .body-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     margin: 2%;
     height: 94%;
     width: 100%;
@@ -35,4 +35,8 @@ html,body,#root{
     height: 20%;
     display: flex;
     justify-content: baseline;
+}
+
+.h1-home{
+    color: #fff;
 }

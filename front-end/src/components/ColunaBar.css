@@ -1,10 +1,10 @@
-.coluna-bar {
-  background-color: #f4f4f4; /* Cor de fundo geral */
-  width: 100%; /* Define a largura do container */
+/* .coluna-bar {
+  background-color: #f4f4f4; Cor de fundo geral
+  width: 100%; Define a largura do container
   height: 100%;
-  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-  padding: 20px; /* Adiciona espaçamento interno */
-}
+  margin: 0 auto; Centraliza o conteúdo horizontalmente
+  padding: 20px; Adiciona espaçamento interno
+}  */
 
 .chart-container {
   background-color: #fff; /* Fundo branco do gráfico */
@@ -21,11 +21,13 @@
   font-weight: 500; /* Peso da fonte */
   line-height: 1.2; /* Altura da linha */
   margin-bottom: 10px; /* Espaçamento abaixo do título */
+  
 }
 
 .apexcharts-bar-series .apexcharts-bar {
   fill: url(#gradient); /* Aplica um gradiente nas barras */
   stroke-width: 0; /* Remove a borda */
+  
 }
 
 
