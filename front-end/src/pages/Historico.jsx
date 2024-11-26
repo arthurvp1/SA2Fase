@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
 
-function MaisVendidos() {
+function Historico() {
   const { produtos } = useContext(GlobalContext)
 
   return (
@@ -35,12 +35,7 @@ function MaisVendidos() {
 
             <div className='componente-produtoEstoque'>
 
-              {
-                produtos.map((p) => (
-                  <ProdutoEstoque estoque={p} />
-                ))
-              }
-
+             
             </div>
 
           </div>

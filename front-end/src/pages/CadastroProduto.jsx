@@ -61,7 +61,7 @@ function CadastroProduto() {
             alert('Preencha todos os campos');
             return;
         } else {
-
+            
             objeto.marca = marca
             objeto.modelo = modelo
             objeto.anoFabri = anoFabri
@@ -73,12 +73,10 @@ function CadastroProduto() {
             objeto.cambio = cambio
             objeto.preco = preco
             objeto.localizacao = localizacao
-
-
-
+            
             alert('Produto cadastrado com sucesso!')
             setProdutos([...produtos, objeto])
-
+            
             limpaInputs()
             Navigate("/produtos")
 

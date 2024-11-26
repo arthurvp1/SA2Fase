@@ -9,6 +9,7 @@ import Desempenho from "../pages/Desempenho";
 import Config from "../pages/Config";
 import AlterarCad from "../pages/AlterarCad";
 import CadastroProduto from "../pages/CadastroProduto";
+import Historico from "../pages/Historico";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     {path: "/produtos", element: <Produtos />},
     {path: "/desempenho", element: <Desempenho />},
     {path: "/cadProduto", element: <CadastroProduto />},
-
+    {path: "/historico", element: <Historico/>},
 
     
 ])

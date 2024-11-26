@@ -203,7 +203,7 @@ export const GlobalContextProvider = ({ children }) => {
             produtoID: '1'
         },
     ])
-    let usuarioLogado = 'Joabe'
+    let usuarioLogado = 'Arthur'
 
 
     return (

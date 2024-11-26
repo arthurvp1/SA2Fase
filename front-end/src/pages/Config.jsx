@@ -72,7 +72,7 @@ function Config() {
                             </div>
                         </Link>
 
-                        <Link to='/gerenFunc' className='historico-venda'>
+                        <Link to='/historico' className='historico-venda'>
                             <div className="icon-historico">
                                 <div className='icon-form'>
 
