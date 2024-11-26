@@ -28,6 +28,9 @@ function Produto(props) {
             <div className='div-but-produto'>
 
                 <button className='but-produto-editar'>Editar</button>
+                
+                <button className='but-produto-editar'>Vender</button>
+
             </div>
             <div className='prouto-localiza'>
                 <p><img src="./public/imagens/icon-loca.png" alt="" />  {produto.localizacao}</p>
