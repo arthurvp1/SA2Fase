@@ -34,6 +34,7 @@ function SelectVenda() {
           </option>
         ))}
       </select>
+      <p>Pessoa selecionada: {selecionado ? `ID: ${selecionado}` : 'Nenhuma selecionada'}</p>
 
           <button className='but-select-venda' onClick={visibilidade}>OK</button>
       
