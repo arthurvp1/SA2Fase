@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-
 class GraficoBar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       options: {
         chart: {
-          type: 'bar',
+          type: "bar",
           height: 350,
           toolbar: {
             show: false // Remove o menu do gráfico
@@ -18,14 +16,14 @@ class GraficoBar extends Component {
         plotOptions: {
           bar: {
             borderRadius: 4,
-            borderRadiusApplication: 'end',
+            borderRadiusApplication: "end",
             horizontal: true, // Garantir que a barra seja horizontal
             colors: {
               ranges: [
                 {
                   from: 0,
-                  to: 100,
-                  color: '#80FF00' // Cor verde para a barra
+                  to: 200,
+                  color: "#80FF00" // Cor verde para a barra
                 }
               ]
             }
@@ -35,7 +33,12 @@ class GraficoBar extends Component {
           enabled: false // Desativa os rótulos de dados na barra
         },
         xaxis: {
-          max: 100 // Define o valor máximo do eixo x
+          max: 200, // Define o valor máximo do eixo x
+          labels: {
+            formatter: function (value) {
+              return `${value}k`; // Adiciona o sufixo "k" aos valores
+            }
+          }
         },
         yaxis: {
           show: false // Oculta o eixo y e seus rótulos

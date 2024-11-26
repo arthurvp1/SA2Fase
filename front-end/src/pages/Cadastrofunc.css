@@ -49,7 +49,7 @@ body,html,#root{
         }
             .texts{
                 text-align: left;
-                height: 20%;
+                height: 17%;
                 width: 100%;
                 margin-left: 3%;
             }
@@ -65,13 +65,12 @@ body,html,#root{
                 }
                 .inputs{
                     margin-left: 3%;
-                    height: 45%;
                     width: 100%;
                 }
                 input::placeholder{
                     color: rgb(100, 98, 98);
                 }
-                .username-input,.email-input,.senha-input,.telefone,.nascimento-input,.cpf-input{
+                .username-input,.email-input,.senha-input,.telefone,.nascimento-input,.cpf-input,.meta{
                     width: 600px;
                     height: 45px;
                     border-top: 0px;
@@ -87,7 +86,7 @@ body,html,#root{
                 .buttons{
                     display: flex;
                     width: 100%;
-                    height: 30%;
+                    height: 20%;
                     align-items: center;
                     justify-content: space-evenly;
                 }

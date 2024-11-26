@@ -181,7 +181,7 @@ function CadastroFunc() {
 
         <aside className="direito">
           <div className="profile-section">
-            <img className="profile-picture" src="./images/nome.png" alt="Profile" />
+            <img className="profile-picture" src="./images/nome.png" />
             <button className="change-photo-button">Trocar Foto</button>
           </div>
         </aside>
