@@ -25,9 +25,9 @@ function Home() {
 
           <h1 className="h1-home">Página home do site</h1>
           <div className="colunabar">
+          <LineBar />
           {/* <ColunaBar /> */}
           {/* <RadialBar /> */}
-          <LineBar />
 
           </div>
         </div>
