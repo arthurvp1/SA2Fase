@@ -18,7 +18,7 @@ function Historico() {
         </div>
         <div className='body-historico'>
 
-          <label title='titulo' className='titulo-Historico' htmlFor="">Histórico de Vendas</label>
+          <label title='titulo' className='titulo-Historico' htmlFor="">Histórico de Vendas 🧾</label>
 
           <div className="dadosHistorico">
 

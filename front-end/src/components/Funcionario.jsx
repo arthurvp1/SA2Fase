@@ -79,7 +79,7 @@ function Funcionario(props) {
 
             <div className='botao-meta'>
                 <button className='botao-meta-element'><img src={imgbut} alt="Toggle" onClick={toggleVisibility} /></button>
-            </div>
+            </div >
 
         </section>
         {visible && <Meta meta = {funcionario.meta}/>}

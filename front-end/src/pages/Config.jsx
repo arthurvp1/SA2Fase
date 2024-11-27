@@ -17,7 +17,8 @@ function Config() {
                 <div className='body-config'>
                     <div className='body-up'>
                         <div className='title-config'>
-                        <h1>Configurações Rápidas</h1>
+                        {/* <h1>Configurações Rápidas</h1> */}
+                        <label htmlFor="" className='lbl-title'>Configurações Rápidas</label>
 
                         </div>
                         <div className='div-but-back'>

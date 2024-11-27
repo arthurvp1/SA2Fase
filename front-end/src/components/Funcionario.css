@@ -2,7 +2,7 @@
     
     width: 95%;
     height: 80px;
-    border-radius: 38px;
+    border-radius: 10px;
     display: flex;
     background-color: white;
     box-shadow: 0 0 8px black;
@@ -11,8 +11,8 @@
     
     width: 95%;
     height: 80px;
-    border-top-left-radius: 38px;
-    border-top-right-radius: 38px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: flex;
     background-color: white;
     box-shadow: 0 0 8px black;

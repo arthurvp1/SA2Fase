@@ -108,6 +108,17 @@
     width: 80%;
     
 }
+.lbl-title{
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    /* align-items: center; */
+    display: flex;
+    justify-content: start;
+    padding-left: 55px;
+    height: 15%;
+    color: rgba(255, 255, 255, 0.897);
+}
 .div-but-back{
     display: flex;
     justify-content: center;
