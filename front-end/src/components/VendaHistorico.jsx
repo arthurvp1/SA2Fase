@@ -3,6 +3,8 @@ import './VendaHistorico.css'
 
 function VendaHistorico(props) {
   
+    let historico = props.historico
+
   
   return (
     
@@ -12,34 +14,34 @@ function VendaHistorico(props) {
         <div className="div-vendaID">
             
             <label htmlFor="">Venda ID:</label>
-            <span className='spanDados'>{'001'}</span>
+            <span className='spanDados'>{historico.vendaID}</span>
 
         </div>
         <div className="div-data">
             
             <label htmlFor="">Data:</label>
-            <span className='spanDados'>{'26/11/2024'}</span>
+            <span className='spanDados'>{historico.data}</span>
 
         </div>
         <div className="div-valor">
             
             <label htmlFor="">Valor:</label>
-            <span className='spanDados'>{'1.299.000'}</span>
+            <span className='spanDados'>{historico.valor}</span>
 
         </div>
         <div className="div-produtoID">
             
             <label htmlFor="">Produto ID:</label>
-            <span className='spanDados'>{'0001'}</span>
+            <span className='spanDados'>{historico.produtoID}</span>
 
         </div>
         <div className="div-funcionarioID">
             
             <label htmlFor="">Func. ID:</label>
-            <span className='spanDados'>{'0001'}</span>
+            <span className='spanDados'>{historico.funcionarioID}</span>
 
         </div>
-        <div className="div-funcionarioID"><span className='spanDados'>{}</span></div>
+        
         
        
 

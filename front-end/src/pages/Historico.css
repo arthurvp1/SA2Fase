@@ -53,7 +53,7 @@
 .componente-VendaHistorico{
     width: 99%;
     height: 100%;
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 5px;
     align-items: center;
@@ -61,3 +61,18 @@
     border-radius: 10px;
     overflow-y: auto;  
 }
+.componente-VendaHistorico::-webkit-scrollbar {
+    width: 10px;
+}
+.componente-VendaHistorico::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 10px;
+}
+.componente-VendaHistorico::-webkit-scrollbar-thumb {
+    background-color: #5321ca;
+    border-radius: 10px;
+}
+.componente-VendaHistorico::-webkit-scrollbar-thumb:hover {
+    background-color: #5421cac5;
+}
+

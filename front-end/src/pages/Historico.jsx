@@ -6,7 +6,7 @@ import { GlobalContext } from '../contexts/GlobalContext'
 import VendaHistorico from '../components/VendaHistorico'
 
 function Historico() {
-  const { produtos } = useContext(GlobalContext)
+  const { historico } = useContext(GlobalContext)
 
   return (
     <div className='historico-container'>
@@ -26,7 +26,12 @@ function Historico() {
 
             <div className='componente-VendaHistorico'>
 
-                <VendaHistorico/>
+            {
+                historico.map((p) => (
+                  <VendaHistorico historico ={p} />
+                ))
+              }
+                
              
             </div>
 
