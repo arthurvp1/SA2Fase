@@ -21,7 +21,7 @@ class RadialBar extends Component {
           radialBar: {
             hollow: {
               margin: 5,
-              size: '48%',
+              size: '50%',
               background: 'transparent',
             },
             track: {
@@ -37,9 +37,9 @@ class RadialBar extends Component {
         legend: {
           show: true,
           floating: true,
-          position: 'right',
-          offsetX: -40,
-          offsetY: 230,
+          position: 'left',
+          offsetX: -30,
+          offsetY: -20,
         },
       },
     };
@@ -53,7 +53,7 @@ class RadialBar extends Component {
           series={this.state.options.series}
           type="radialBar"
           height={350}
-          
+          className="radial-chart"
         />
       </div>
     );

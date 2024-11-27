@@ -22,7 +22,7 @@ class GraficoBar extends Component {
               ranges: [
                 {
                   from: 0,
-                  to: 200,
+                  to: 100,
                   color: "#80FF00" // Cor verde para a barra
                 }
               ]
@@ -33,10 +33,10 @@ class GraficoBar extends Component {
           enabled: false // Desativa os rótulos de dados na barra
         },
         xaxis: {
-          max: 200, // Define o valor máximo do eixo x
+          max: 100, // Define o valor máximo do eixo x
           labels: {
             formatter: function (value) {
-              return `${value}k`; // Adiciona o sufixo "k" aos valores
+              return `${value}%`; // Adiciona o sufixo "k" aos valores
             }
           }
         },
