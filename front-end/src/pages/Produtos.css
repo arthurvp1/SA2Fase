@@ -51,7 +51,7 @@ html,body,#root{
     background-color: whitesmoke;
     height: 160px;
     width: 220px;
-    border-radius: 35px;
+    border-radius: 10px;
 }
 .add-produto-img{
     display: flex;

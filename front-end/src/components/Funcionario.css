@@ -29,8 +29,8 @@
     .foto{
         width: 15%;
         height: 100%;
-        border-top-left-radius: 38px;
-        border-bottom-left-radius: 38px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -1,6 +1,6 @@
 .maisVendidos-container {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     height: 100%;
 }
@@ -11,7 +11,7 @@
     background-color: whitesmoke;
     display: flex;
     border-radius: 15px;
-    margin-top: 5px;
+    margin-top: 15px;
     flex-direction: column;
 }
 .titulo-Estoque{
@@ -21,8 +21,8 @@
     align-items: center;
     display: flex;
     justify-content: top;
-    padding-left: 30px;
-    height: 15%;
+    padding-left: 35px;
+    height: 12%;
 }
 .dadosEstoque{
     font-size: 16px;
@@ -33,6 +33,7 @@
     width: 100%;
     height: 85%;
     margin-bottom: 10px;
+    
 }
 .div-marcas,.div-modelos,.div-ano,.div-km,.div-cor,.div-ID,.div-status{
     display: flex;
@@ -60,6 +61,7 @@
     background-color: white;
     border-radius: 10px;
     overflow-y: auto;  
+    
 }
 .componente-produtoEstoque::-webkit-scrollbar {
     width: 10px;

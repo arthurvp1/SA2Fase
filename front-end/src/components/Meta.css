@@ -2,7 +2,7 @@
     height:100px ;
     width: 95%;
     
-    border-bottom-right-radius: 38px;
-    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: aliceblue;
 }
