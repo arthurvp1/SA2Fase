@@ -139,11 +139,11 @@ function CadastroProduto() {
                                     onChange={(e) => setPreco(e.target.value)}
                                 />
 
-                                <label htmlFor="inp-preco">Preço</label>
+                                <label htmlFor="inp-preco">Imagem</label>
                                 <input
                                     id='inp-preco'
                                     className='inp-preco'
-                                    type="number"
+                                    type="text"
                                     onChange={(e) => setPreco(e.target.value)}
                                 />
 
