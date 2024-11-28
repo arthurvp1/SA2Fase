@@ -109,13 +109,13 @@
     
 }
 .lbl-title{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     width: 100%;
-    /* align-items: center; */
+    align-items: center;
     display: flex;
-    justify-content: start;
-    padding-left: 55px;
+    justify-content:center;
+    /* padding-left: 55px; */
     height: 15%;
     color: rgba(255, 255, 255, 0.897);
 }
