@@ -16,8 +16,7 @@ function Config() {
                 </div>
                 <div className='body-config'>
                     <div className='body-up'>
-                        <div className='title-config'>
-                        {/* <h1>Configurações Rápidas</h1> */}
+                        <div className='title-config'>  
                         <label htmlFor="" className='lbl-title'>Configurações Rápidas</label>
 
                         </div>
@@ -44,19 +43,6 @@ function Config() {
                             <div className='perfil-label'>
 
                                 <p>Configurações de Usuário</p>
-                            </div>
-                        </Link>
-
-                        <Link to='/relatorio' className='gerar-relatorio'>
-                            <div className="icon-relatorio">
-                                <div className='icon-form'>
-
-                                    <img src="./public/imagens/icon-vendas.png" alt="" className='img-relatorio' />
-                                </div>
-                            </div>
-                            <div className='relatorio-label'>
-
-                                <p>Relatorio de vendas</p>
                             </div>
                         </Link>
 

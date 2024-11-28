@@ -139,6 +139,17 @@ function CadastroProduto() {
                                     onChange={(e) => setPreco(e.target.value)}
                                 />
 
+                                <label htmlFor="inp-preco">Preço</label>
+                                <input
+                                    id='inp-preco'
+                                    className='inp-preco'
+                                    type="number"
+                                    onChange={(e) => setPreco(e.target.value)}
+                                />
+
+
+                                {/* criar mais 2 inputs sendo um do link de imagem e outro de id */}
+
                             </div>
                             <div className='container-dados-produto-direita'>
                                 <div className='container-dados-produto-direita-cima'>
@@ -218,7 +229,7 @@ function CadastroProduto() {
                         </div>
                         <div className='bot'>
 
-                            <button className='but-cadastro' onClick={cadastrar}>Comfirma</button>
+                            <button className='but-cadastro' onClick={cadastrar}>Confirma</button>
 
                         </div>
                         {
