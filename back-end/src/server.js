@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
 
+
 const app = express();
 const pool = new Pool({
     user: 'postgres', // Substitua pelo seu usuário do PostgreSQL

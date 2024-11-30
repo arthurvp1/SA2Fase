@@ -5,6 +5,9 @@ import Produto from '../components/Produto'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useEffect } from 'react'
+
 
 function Produtos() {
   const { produtos, setProdutos } = useContext(GlobalContext)
