@@ -1,14 +1,12 @@
 import React from 'react'
-import './CadastroProduto.css'
+import './EditarProduto.css'
 import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
 import { Navigate, useNavigate } from "react-router-dom";
 
-
-function CadastroProduto() {
-
+function EditarProduto() {
     const Navigate = useNavigate()
 
 
@@ -30,6 +28,11 @@ function CadastroProduto() {
         image: ''
 
     })
+    function excluir() {
+        setProdutos(produtos.filter((produto) => produto !== form))
+        limpaInputs()
+        Navigate("/produtos")
+    }
     function limpaInputs() {
         setForm({
             marca: '',
@@ -85,7 +88,7 @@ function CadastroProduto() {
                 <div className='cadastro-produtos-container'>
                     <div className='div-tittle'>
 
-                        <h1>Adicionar Produtos</h1>
+                        <h1>Editar Produto</h1>
 
                     </div>
 
@@ -237,6 +240,7 @@ function CadastroProduto() {
                         <div className='bot'>
 
                             <button className='but-cadastro' onClick={cadastrar}>Confirma</button>
+                            <button className='but-excluir' onClick={excluir}>Excluir Produto</button>
 
                         </div>
                         {
@@ -252,4 +256,4 @@ function CadastroProduto() {
     )
 }
 
-export default CadastroProduto
+export default EditarProduto

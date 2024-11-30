@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Produto.css';
 import SelectVenda from './SelectVenda';
 import { GlobalContext } from '../contexts/GlobalContext';
+import { Link } from 'react-router-dom';
 
 
 function Produto(props) {
@@ -33,10 +34,10 @@ function Produto(props) {
         </div>
       </div>
       <div className='div-but-produto'>
-        <button className='but-produto-editar'>Editar</button>
+        <Link to = '/editarProduto' className='but-produto-link-editar'><button className='but-produto-editar'>Editar</button></Link>
 
         
-        <button className='but-produto-editar' onClick={visibilidade}>Vender</button>
+        <button className='but-produto-vender' onClick={visibilidade}>Vender</button>
 
         
         {visible && <SelectVenda />}

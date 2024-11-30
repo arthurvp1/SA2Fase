@@ -6,8 +6,8 @@ const app = express();
 const pool = new Pool({
     user: 'postgres', // Substitua pelo seu usuário do PostgreSQL
     host: 'localhost',
-    database: 'crud_cliente_demo', // Nome da sua database
-    password: 'postgre', // Substitua pela sua senha
+    database: 'SaleSight', // Nome da sua database
+    password: 'senai', // Substitua pela sua senha
     port: 5432, // Porta padrão do PostgreSQL
 });
 
@@ -16,23 +16,23 @@ app.use(cors());
 app.use(express.json());
 
 // Rota para buscar todos os clientes
-app.get('/clientes', async (req, res) => {
+app.get('/produtos', async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM clientes');
+        const result = await pool.query('SELECT * FROM produtos');
         res.json(result.rows);
     } catch (err) {
         console.error(err.message);
-        res.status(500).json({ error: 'Erro ao buscar clientes' });
+        res.status(500).json({ error: 'Erro ao buscar produtos' });
     }
 });
 
 // Rota para buscar um cliente por ID
-app.get('/clientes/:id', async (req, res) => {
+app.get('/produtos/:id', async (req, res) => {
     const { id } = req.params;
     try {
-        const result = await pool.query('SELECT * FROM clientes WHERE id = $1', [id]);
+        const result = await pool.query('SELECT * FROM produtos WHERE id = $1', [id]);
         if (result.rows.length === 0) {
-            return res.status(404).json({ error: 'Cliente não encontrado' });
+            return res.status(404).json({ error: 'Produto não encontrado' });
         }
         res.json(result.rows[0]);
     } catch (err) {
@@ -42,51 +42,54 @@ app.get('/clientes/:id', async (req, res) => {
 });
 
 // Rota para adicionar um cliente
-app.post('/clientes', async (req, res) => {
-    const { nome, endereco, email, telefone } = req.body;
+app.post('/produtos', async (req, res) => {
+    const { marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image } = req.body;
     try {
         const result = await pool.query(
-            'INSERT INTO clientes (nome, endereco, email, telefone) VALUES ($1, $2, $3, $4) RETURNING *',
-            [nome, endereco, email, telefone]
+            'INSERT INTO produtos (nome, endereco, email, telefone) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING *',
+            [marca , modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image]
+            
+        
+       
         );
         res.status(201).json(result.rows[0]);
     } catch (err) {
         console.error(err.message);
-        res.status(500).json({ error: 'Erro ao adicionar cliente' });
+        res.status(500).json({ error: 'Erro ao adicionar produtos' });
     }
 });
 
 // Rota para atualizar um cliente
-app.put('/clientes/:id', async (req, res) => {
+app.put('/produtos/:id', async (req, res) => {
     const { id } = req.params;
-    const { nome, endereco, email, telefone } = req.body;
+    const { marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image } = req.body;
     try {
         const result = await pool.query(
-            'UPDATE clientes SET nome = $1, endereco = $2, email = $3, telefone = $4 WHERE id = $5 RETURNING *',
-            [nome, endereco, email, telefone, id]
+            'UPDATE clientes SET marca = $1, modelo = $2, anoFabri = $3, anoModelo = $4, combustivel = $5, versao = $6, km = $7, cambio = $8, preco = $9, localizacao = $10, descri = $11, image = $12 WHERE id = $13 RETURNING *',
+            [marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image, id]
         );
         if (result.rows.length === 0) {
-            return res.status(404).json({ error: 'Cliente não encontrado' });
+            return res.status(404).json({ error: 'produtos não encontrado' });
         }
         res.json(result.rows[0]);
     } catch (err) {
         console.error(err.message);
-        res.status(500).json({ error: 'Erro ao atualizar cliente' });
+        res.status(500).json({ error: 'Erro ao atualizar produtos' });
     }
 });
 
 // Rota para deletar um cliente
-app.delete('/clientes/:id', async (req, res) => {
+app.delete('/produtos/:id', async (req, res) => {
     const { id } = req.params;
     try {
-        const result = await pool.query('DELETE FROM clientes WHERE id = $1 RETURNING *', [id]);
+        const result = await pool.query('DELETE FROM produtos WHERE id = $1 RETURNING *', [id]);
         if (result.rows.length === 0) {
-            return res.status(404).json({ error: 'Cliente não encontrado' });
+            return res.status(404).json({ error: 'produtos não encontrado' });
         }
-        res.json({ message: 'Cliente deletado com sucesso' });
+        res.json({ message: 'produtos deletado com sucesso' });
     } catch (err) {
         console.error(err.message);
-        res.status(500).json({ error: 'Erro ao deletar cliente' });
+        res.status(500).json({ error: 'Erro ao deletar produto' });
     }
 });
 

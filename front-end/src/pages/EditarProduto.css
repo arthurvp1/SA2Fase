@@ -156,6 +156,16 @@
     border-radius: 10px;
     margin-top: 10px;
 }
+.but-excluir{
+    width: 35%;
+    height: 39%;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
 .but-cadastro:hover{
     width: 35%;
     height: 39%;
