@@ -1,23 +1,27 @@
 import React from 'react'
 import './Login.css'
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
+
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-
+    const navigate = useNavigate(); // Hook para navegação programática
 
     function logar() {
-        // Capturar o checkbox
-        var checkbox = document.getElementById('check');
-    
-        // Verificar se está marcado
-        if (checkbox.checked) {
-            alert('O checkbox está marcado');
-            document.getElementById('user').setAttribute('autocomplete', 'on');
+        const email_adm = 'adm@salesight.com'; // String (não lista)
+        const senha_adm = 'adm22';
+
+        const inpusuario = document.getElementById('user').value;
+        const inpsenha = document.getElementById('senha').value;
+
+        if (inpusuario === email_adm && inpsenha === senha_adm) {
+            alert("Login realizado!");
+            navigate('/'); // Redireciona para a página inicial
         } else {
-            alert('O checkbox não está marcado');
-            document.getElementById('user').setAttribute('autocomplete', 'off');
+            alert("Usuário ou senha inválidos!");
         }
     }
+
     return (
         <div className='login-container'>
 
@@ -80,9 +84,7 @@ function Login() {
 
                             </div>
                             <div className='div-but-entrar'>
-                                <Link to="/"><button onClick={logar} className='but-entrar'>Entrar</button></Link>
-
-
+                               <button onClick={logar} className='but-entrar'>Entrar</button>
                             </div>
                         </div>
 

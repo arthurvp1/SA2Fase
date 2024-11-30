@@ -167,7 +167,7 @@ function CadastroFunc() {
               value={meta}
               onChange={(e) => setMeta(e.target.value)} // Remove todos os caracteres não numéricos
               maxLength="7"
-              placeholder="Digite a meta (TESTE)"
+              placeholder="Digite a meta (K)"
             />
           </section>
 

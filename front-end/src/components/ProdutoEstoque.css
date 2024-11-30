@@ -4,14 +4,14 @@
     
     
 }
-.btnStatus{
+/* .btnStatus{
     background-color: rgb(108, 211, 151);
     width: 65%;
     height: 4%;
     border-radius: 2px;
     color: rgba(255, 255, 255, 0.87);
     border: 1px solid rgba(53, 53, 53, 0.877);
-}
+} */
 .produtos-componente{
     display: flex;  
     align-items: center;

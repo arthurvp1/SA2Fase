@@ -23,6 +23,8 @@ function SelectVenda() {
         setVisible(false); // Alterna o estado de 'visible'
       };
 
+
+
   return (
     <div className='select-container'>
       <label htmlFor="pessoa">Vendedor:</label>
