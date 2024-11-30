@@ -14,6 +14,7 @@ function CadastroProduto() {
 
     const { produtos, setProdutos } = useContext(GlobalContext)
 
+
     
     const [form, setForm] = useState({
         marca: '',
@@ -47,7 +48,7 @@ function CadastroProduto() {
             image: ''
         })
     }
-
+    
     function cadastrar() {
         if (form.marca == '' || form.modelo == '' || form.anoFabri == '' || form.anoModelo == '' || form.cor == '' || form.combustivel == '' || form.versao == '' || form.km == '' || form.cambio == '' || form.preco == '' || form.localizacao == ''|| form.descri == '' || form.image == '') {
             alert('Preencha todos os campos');

@@ -7,7 +7,23 @@ import { GlobalContext } from '../contexts/GlobalContext'
 import { Link } from 'react-router-dom'
 
 function Produtos() {
-  const { produtos } = useContext(GlobalContext)
+  const { produtos, setProdutos } = useContext(GlobalContext)
+
+  const getUsers = async () => {
+    try {
+      const response = await axios.get('http://localhost:3000/produtos');
+      setProdutos(response.data);
+    } catch (error) {
+      console.error('Erro ao buscar clientes:', error);
+    }
+
+
+  };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
   return (
     <div className='produtos-container'>
       <div className='body-container'>
@@ -19,7 +35,7 @@ function Produtos() {
         <div className='body-produtos'>
           {
             produtos.map((p) => (
-               <Produto produto={p} />
+              <Produto  key= {p.produtoid} produto={p} />
             ))
           }
           <div className='add-produto'>
@@ -27,9 +43,9 @@ function Produtos() {
               <img src='./public/imagens/add-produto.png' alt='Toggle' />
             </div>
             <div className='produto-but'>
-              <Link to = '/cadProduto'>
+              <Link to='/cadProduto'>
 
-              <button className='but-add-produto'>Adicionar Produto</button>
+                <button className='but-add-produto'>Adicionar Produto</button>
 
               </Link>
             </div>
