@@ -52,7 +52,7 @@ class RadialBar extends Component {
           options={this.state.options}
           series={this.state.options.series}
           type="radialBar"
-          height={350}
+          height={250}
           className="radial-chart"
         />
       </div>

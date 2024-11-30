@@ -24,12 +24,23 @@ function Home() {
         <div className='body-home'>
 
           <h1 className="h1-home">Página home do site</h1>
-          <div className="colunabar">
-          <LineBar />
-          {/* <ColunaBar /> */}
-          {/* <RadialBar /> */}
-
+          
+          <div className="body-meio">
+            <div className="body-top">
+            <LineBar />
+            </div>
+            <div className="body-baixoEsq">
+            <ColunaBar />
+            </div>
+            <div className="body-baixoDir">
+            <RadialBar />
+            </div>
           </div>
+          
+          
+          
+
+          
         </div>
 
       </div>

@@ -29,9 +29,49 @@ html,body,#root{
 }
 .body-home {
     width: 80%;
-    /* background-color: #2C0E6A; */
+    height: 95%;
+    background-color: whitesmoke;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 15px;
+    flex-direction: column;
     
 }
+
+.body-meio {
+    display: flex; /* Flexbox para alinhar os filhos horizontalmente */
+    flex-wrap: wrap; /* Garante que elementos se alinhem corretamente se não houver espaço */
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: blue; /* Azul mantém o fundo geral */
+}
+
+.body-top {
+    background-color: #2C0E6A;
+    width: 100%;
+    height: 50%; /* Mantém o topo no tamanho correto */
+    margin-bottom: 5px;
+}
+
+.body-baixoEsq {
+    background-color: #00ff00; /* Verde */
+    width: 60%;
+    height: 50%;
+    border-bottom-left-radius: 15px;
+}
+
+.body-baixoDir {
+    background-color: #ff0000; /* Vermelho */
+    width: 40%;
+    height: 50%;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .colunabar{
     width: 50%;
     height: 20%;
@@ -40,5 +80,5 @@ html,body,#root{
 }
 
 .h1-home{
-    color: #fff;
+    color: #000000;
 }
