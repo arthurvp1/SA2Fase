@@ -37,8 +37,8 @@
 </div>
 
 <p>
-	DataBase  SaleSight
-create table produtos(
+DataBase  SaleSight(
+	create table produtos(
     
 	idp serial primary key,
     	marca varchar(30),
@@ -54,7 +54,7 @@ create table produtos(
 	localizacao varchar(60),
 	descri varchar(300),
 	image varchar(300)
-);
+));
 select * from produtos;
 </p>
 
