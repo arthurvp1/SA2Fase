@@ -39,7 +39,6 @@
 <p>
 DataBase  SaleSight(
 	create table produtos(
-    
 	idp serial primary key,
     	marca varchar(30),
 	modelo varchar(30),
@@ -56,6 +55,7 @@ DataBase  SaleSight(
 	image varchar(300)
 ));
 select * from produtos;
+	
 </p>
 
 
