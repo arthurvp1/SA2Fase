@@ -64,7 +64,7 @@ class LineBar extends Component {
           },
         },
         labels: [
-          " ",
+          "Jan",
           "Fev",
           "Mar",
           "Abr",
@@ -103,13 +103,12 @@ class LineBar extends Component {
   render() {
     return (
       <div id="line-chart">
-        {/* <h2 className="h2-line">R$ 102.5M</h2> */}
         <Chart
           options={this.state.options}
           series={this.state.series}
           type="line"
           height={250}
-          width={700}
+          width={750}
         />
       </div>
     );

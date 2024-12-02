@@ -30,7 +30,7 @@ html,body,#root{
 .body-home {
     width: 80%;
     height: 95%;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     display: flex;
     border-radius: 15px;
     margin-top: 15px;
@@ -42,28 +42,28 @@ html,body,#root{
     display: flex; /* Flexbox para alinhar os filhos horizontalmente */
     flex-wrap: wrap; /* Garante que elementos se alinhem corretamente se não houver espaço */
     width: 100%;
-    height: 100%;
+    height: 90%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: blue; /* Azul mantém o fundo geral */
+    /* background-color: blue; */
 }
 
 .body-top {
-    background-color: #2C0E6A;
+    /* background-color: #2C0E6A; */
     width: 100%;
-    height: 50%; /* Mantém o topo no tamanho correto */
+    height: 50%; 
     margin-bottom: 5px;
 }
 
 .body-baixoEsq {
-    background-color: #00ff00; /* Verde */
+    /* background-color: #00ff00; */
     width: 60%;
     height: 50%;
     border-bottom-left-radius: 15px;
 }
 
 .body-baixoDir {
-    background-color: #ff0000; /* Vermelho */
+    /* background-color: #ff0000;  */
     width: 40%;
     height: 50%;
     border-bottom-right-radius: 15px;

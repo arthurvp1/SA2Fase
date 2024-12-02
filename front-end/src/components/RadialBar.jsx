@@ -38,7 +38,7 @@ class RadialBar extends Component {
           show: true,
           floating: true,
           position: 'left',
-          offsetX: -30,
+          offsetX: -35,
           offsetY: -20,
         },
       },
