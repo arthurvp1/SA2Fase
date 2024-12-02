@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     {path: "/cadProduto", element: <CadastroProduto />},
     {path: "/historico", element: <Historico/>},
     {path: "/editarProduto", element: <EditarProduto/>},
-
+    {path: "/alterarFunc", element: <AlterarCad/>}
     
 ])
 
