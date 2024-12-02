@@ -5,10 +5,10 @@ import { Link, Navigate } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-    const navigate = useNavigate(); // Hook para navegação programática
+    const navigate = useNavigate(); 
 
     function logar() {
-        const email_adm = 'adm@salesight.com'; // String (não lista)
+        const email_adm = 'adm@salesight.com'; //email e senha de login adm
         const senha_adm = 'adm22';
 
         const inpusuario = document.getElementById('user').value;

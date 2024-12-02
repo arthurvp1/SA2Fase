@@ -100,8 +100,7 @@ function CadastroFunc() {
 
           <div className="texts">
             <label className="titulo">Cadastro de funcionários</label>
-            <p className="descricao">Digite os dados do funcionário abaixo e clique em
-              <label className="verde">&nbsp;Confirmar</label></p>
+            <p className="descricao">Preencha os dados do funcionário abaixo:</p>
           </div>
 
 
@@ -109,16 +108,16 @@ function CadastroFunc() {
             <input
               id='input-nome'
               className="username-input"
+              placeholder="Nome completo"
               autoComplete='off'
-              placeholder="Digite seu nome"
               type="text"
               onChange={(e) => setUser(e.target.value)} />
 
             <input
               id='input-email'
               className="email-input"
-              placeholder="Digite seu email"
               autoComplete='off'
+              placeholder="Email"
               type="email"
               onChange={(e) => setEmail(e.target.value)} />
 
@@ -130,14 +129,14 @@ function CadastroFunc() {
               value={cpf}
               onChange={(e) => setCpf(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
               maxLength="11"
-              placeholder="Digite seu CPF"
+              placeholder="CPF"
             />
 
             <input
               id='input-senha'
               className="senha-input"
+              placeholder="Senha funcionário"
               autoComplete='off'
-              placeholder="Digite sua senha"
               type="password" onChange={(e) =>
                 setSenha(e.target.value)} />
 
@@ -149,7 +148,7 @@ function CadastroFunc() {
               value={telefone}
               onChange={(e) => setTelefone(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
               maxLength="11"
-              placeholder="Digite seu telefone"
+              placeholder="Telefone funcionário"
             />
             <input
               className="nascimento-input"
@@ -168,7 +167,7 @@ function CadastroFunc() {
                 setData(valor);
               }}
               maxLength="10"
-              placeholder="dd/mm/aaaa"
+              placeholder="Data de nascimento"
             />
             <input
               type="number"
@@ -178,7 +177,7 @@ function CadastroFunc() {
               value={meta}
               onChange={(e) => setMeta(e.target.value)} // Remove todos os caracteres não numéricos
               maxLength="7"
-              placeholder="Digite a meta (K)"
+              placeholder="Meta do funcionário (K)"
             />
           </section>
 
@@ -192,7 +191,7 @@ function CadastroFunc() {
 
         <aside className="direito">
           <div className="profile-section">
-            <img className="profile-picture" src="./images/nome.png" />
+            <img className="profile-picture" src="./imagens/profilepicture.png" />
             <button className="change-photo-button">Trocar Foto</button>
           </div>
         </aside>
