@@ -23,7 +23,7 @@ function Home() {
         </div>
         <div className='body-home'>
 
-          <h1 className="h1-home">Bem-Vindos a Sale<span className="span-home">Sight</span></h1>
+          <h1 className="h1-home">Bem Vindo à Sale<span className="span-home">Sight</span></h1>
           
           <div className="body-meio">
             <div className="body-top">
