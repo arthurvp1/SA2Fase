@@ -15,23 +15,8 @@ export const GlobalContextProvider = ({ children }) => {
     ])
 
 
-    const [produtos, setProdutos] = useState([
-        {
-            marca: 'Porche',
-            modelo: '911',
-            versao: '3.0 24V CARRERA S ',
-            combustivel: 'Gasolina',
-            cambio: 'PDK',
-            preco: '1.299.900',
-            anoFabri: '2023',
-            anoModelo: '2024',
-            km: '0',
-            localizacao: 'Balneário Camburiú - SC',
-            cor:  'Branco',
-            produtoID: '1'
-        },
-        
-    ])
+    const [produtos, setProdutos] = useState([{}])
+    
     const [historico, setHistorico] = useState([
         {
             vendaID: '1',
