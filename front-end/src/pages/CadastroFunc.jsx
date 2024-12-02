@@ -109,12 +109,14 @@ function CadastroFunc() {
               id='input-nome'
               className="username-input"
               placeholder="Nome completo"
+              autoComplete='off'
               type="text"
               onChange={(e) => setUser(e.target.value)} />
 
             <input
               id='input-email'
               className="email-input"
+              autoComplete='off'
               placeholder="Email"
               type="email"
               onChange={(e) => setEmail(e.target.value)} />
@@ -134,6 +136,7 @@ function CadastroFunc() {
               id='input-senha'
               className="senha-input"
               placeholder="Senha funcionário"
+              autoComplete='off'
               type="password" onChange={(e) =>
                 setSenha(e.target.value)} />
 
