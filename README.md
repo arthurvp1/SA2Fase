@@ -36,6 +36,25 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
 </div>
 
+<p>
+  create table produtos(
+    
+	prodID serial primary key,
+    prodMarca varchar(30),
+	prodModelo varchar(30),
+	prodAnoFabri varchar(10),
+	prodAnoModelo varchar(10),
+	prodCombustivel varchar(30),
+	prodVersao varchar(50),
+	prodKm varchar(30),
+	prodCambio varchar(30),
+	prodPreco varchar(30),
+	prodLocalizacao varchar(60),
+	prodDescri varchar(300),
+	prodImage varchar(300)
+);
+</p>
+
 
 ## Requisitos Funcionais:
 

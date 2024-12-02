@@ -32,7 +32,7 @@ function Config() {
 
                     <div className='body-mid'>
 
-                        <Link to='/userConfig' className='perfil-user'>
+                        {/* <Link to='/userConfig' className='perfil-user'>
                             <div className="icon-perfil">
                                 <div className='icon-form'>
 
@@ -44,7 +44,7 @@ function Config() {
 
                                 <p>Configurações de Usuário</p>
                             </div>
-                        </Link>
+                        </Link> */}
 
                         <Link to='/gerenFunc' className='gerencia-func'>
                             <div className="icon-func">

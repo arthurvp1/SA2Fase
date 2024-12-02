@@ -22,7 +22,9 @@ class LineBar extends Component {
             opacity: 1,
           },
           toolbar: {
-            show: false, // Remove o menu do gráfico
+            show: true, // Remove o menu do gráfico
+            offsetY: 25,
+            offsetX: 20,
           },
         },
         stroke: {
@@ -35,9 +37,10 @@ class LineBar extends Component {
           offsetY: 25,
           offsetX: 20,
           style: {
-            fontSize: "24px", // Aumenta o tamanho do título
+            fontSize: "20px", // Aumenta o tamanho do título
             color: "#23005B", // Altera a cor do título
             fontWeight: "bold", 
+            fontFamily: "Poppins",
           },
         },
         subtitle: {
@@ -48,6 +51,7 @@ class LineBar extends Component {
             fontSize: "16px", // Aumenta o tamanho do subtítulo
             color: "#5321CA", // Altera a cor do subtítulo
             fontWeight: "bold", 
+            fontFamily: "Poppins"
           },
         },
         markers: {
@@ -64,13 +68,18 @@ class LineBar extends Component {
           },
         },
         labels: [
-          " ",
+          "Jan",
           "Fev",
           "Mar",
           "Abr",
           "Mai",
           "Jun",
           "Jul",
+          "Ago",
+          "Set",
+          "Out",
+          "Nov",
+          "Dez",
         ],
         xaxis: {
           tooltip: {
@@ -90,11 +99,11 @@ class LineBar extends Component {
       series: [
         {
           name: "Ganhos",
-          data: [60, 100, 80, 70, 60, 80, 50],
+          data: [60, 100, 80, 70, 60, 80, 50, 90, 40, 80, 90, 30],
         },
         {
           name: "Previsto",
-          data: [50, 90, 40, 80, 90, 30, 70],
+          data: [50, 90, 40, 80, 90, 30, 70, 30, 60, 100, 80, 70],
         },
       ],
     };
@@ -103,13 +112,12 @@ class LineBar extends Component {
   render() {
     return (
       <div id="line-chart">
-        {/* <h2 className="h2-line">R$ 102.5M</h2> */}
         <Chart
           options={this.state.options}
           series={this.state.series}
           type="line"
           height={250}
-          width={700}
+          width={1000}
         />
       </div>
     );

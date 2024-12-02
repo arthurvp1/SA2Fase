@@ -38,7 +38,7 @@ function Produtos() {
         <div className='body-produtos'>
           {
             produtos.map((p) => (
-              <Produto  key= {p.produtoid} produto={p} />
+              <Produto  key= {p.prodid} produto={p} />
             ))
           }
           <div className='add-produto'>

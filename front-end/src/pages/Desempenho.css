@@ -31,6 +31,7 @@
         height: 90%;
         gap: 20px;
         overflow-y: auto;
+        overflow-x: hidden;  
         
     }
     .div-funcionarios::-webkit-scrollbar {

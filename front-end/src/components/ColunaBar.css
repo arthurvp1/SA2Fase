@@ -3,12 +3,11 @@
   width: 100%; 
   height: 100%;
   margin: 0 auto; 
-  padding: 20px; 
 } 
 
 .chart-container {
   background-color: #fff; /* Fundo branco do gráfico */
-  border-radius: 8px; /* Bordas arredondadas */
+  border-radius: 15px; /* Bordas arredondadas */
   padding: 20px; /* Espaçamento interno */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
 }
@@ -17,7 +16,7 @@
   color: #23005B; /* Cor do título */
   font-family: 'Poppins', sans-serif; /* Fonte do título */
   font-size: 17px; /* Tamanho da fonte */
-  font-style: normal; /* Estilo normal */
+  font-weight: bold; /* Estilo normal */
   font-weight: 500; /* Peso da fonte */
   line-height: 1.2; /* Altura da linha */
   margin-bottom: 10px; /* Espaçamento abaixo do título */

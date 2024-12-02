@@ -3,9 +3,6 @@
     border-radius: 15px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
-    height: 70%; /* Altura total */
-    width: 70%; /* Largura total */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 85%; /* Altura total */
+    width: 80%; /* Largura total */
   }

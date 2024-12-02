@@ -11,7 +11,9 @@ class ColunaBar extends Component {
         chart: {
           id: "basic-bar",
           toolbar: {
-            show: false, // Remove o menu do gráfico
+            show: true, // Remove o menu do gráfico
+            offsetY: -30,
+            offsetX: 10,
           },
         },
         xaxis: {
@@ -19,7 +21,7 @@ class ColunaBar extends Component {
 
         },
         yaxis: {
-          max: 100
+          max: 10
         },
         plotOptions: {
           bar: {
@@ -28,11 +30,12 @@ class ColunaBar extends Component {
           },
         },
         fill: {
+          colors: ['#4F3CC0'],
           type: "gradient",
           gradient: {
             shade: "light",
             type: "vertical",
-            gradientToColors: ["#A084DC"], // Cor final
+            gradientToColors: ['#08D110'], // Cor final
             stops: [0, 100],
           },
         },
@@ -40,7 +43,7 @@ class ColunaBar extends Component {
       series: [
         {
           name: "series-1",
-          data: [30, 40, 45, 50, 49, 60],
+          data: [3, 4, 4, 5, 4, 6],
         },
       ],
     };
@@ -50,7 +53,7 @@ class ColunaBar extends Component {
     return (
       <div className="coluna-bar">
         <div className="chart-container">
-          <h2 className="h2-colunaBar">Ação dos Vendedores</h2>
+          <h2 className="h2-colunaBar"><b>Venda dos Funcionários</b></h2>
           <Chart
             options={this.state.options}
             series={this.state.series}

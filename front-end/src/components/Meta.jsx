@@ -3,6 +3,7 @@ import './Meta.css'
 import GraficoBar from './GraficoBar'
 
 function Meta(props) {
+  
   return (
     <div className='meta-container'>
 

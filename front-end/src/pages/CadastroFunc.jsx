@@ -2,10 +2,13 @@ import React, { useContext, useState } from 'react'
 import './Cadastrofunc.css'
 import Navbar from '../components/Navbar'
 import { GlobalContext } from '../contexts/GlobalContext'
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 
 function CadastroFunc() {
+
+  const Navigate = useNavigate()
 
   const {funcionarios, setFuncionarios} = useContext(GlobalContext)
   let objeto = {
@@ -62,6 +65,7 @@ function CadastroFunc() {
       setFuncionarios([...funcionarios, objeto])
 
       limpaInputs()  
+      Navigate('/')
       
       return;
     }
@@ -104,14 +108,24 @@ function CadastroFunc() {
             <input
               id='input-nome'
               className="username-input"
+<<<<<<< HEAD
               placeholder="Nome completo"
+=======
+              autoComplete='off'
+              placeholder="Digite seu nome"
+>>>>>>> d7202f652aa95ff518a8fac9687514d604a5d677
               type="text"
               onChange={(e) => setUser(e.target.value)} />
 
             <input
               id='input-email'
               className="email-input"
+<<<<<<< HEAD
               placeholder="Email"
+=======
+              placeholder="Digite seu email"
+              autoComplete='off'
+>>>>>>> d7202f652aa95ff518a8fac9687514d604a5d677
               type="email"
               onChange={(e) => setEmail(e.target.value)} />
 
@@ -119,6 +133,7 @@ function CadastroFunc() {
               type="text"
               id="cpf"
               className="cpf-input"
+              autoComplete='off'
               value={cpf}
               onChange={(e) => setCpf(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
               maxLength="11"
@@ -128,7 +143,12 @@ function CadastroFunc() {
             <input
               id='input-senha'
               className="senha-input"
+<<<<<<< HEAD
               placeholder="Senha funcionário"
+=======
+              autoComplete='off'
+              placeholder="Digite sua senha"
+>>>>>>> d7202f652aa95ff518a8fac9687514d604a5d677
               type="password" onChange={(e) =>
                 setSenha(e.target.value)} />
 
@@ -136,6 +156,7 @@ function CadastroFunc() {
               type="text"
               id='input-telefone'
               className="telefone"
+              autoComplete='off'
               value={telefone}
               onChange={(e) => setTelefone(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
               maxLength="11"
@@ -143,6 +164,7 @@ function CadastroFunc() {
             />
             <input
               className="nascimento-input"
+              autoComplete='off'
               type="text" id="data" name="data"
               value={data}
               onChange={(e) => {
@@ -162,6 +184,7 @@ function CadastroFunc() {
             <input
               type="number"
               id='input-meta'
+              autoComplete='off'
               className="meta"
               value={meta}
               onChange={(e) => setMeta(e.target.value)} // Remove todos os caracteres não numéricos

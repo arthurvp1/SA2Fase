@@ -15,6 +15,11 @@ class RadialBar extends Component {
           type: 'radialBar',
           height: 350,
           width: 380,
+          toolbar: {
+            show: true, // Remove o menu do gráfico
+            offsetY: 5,
+            offsetX: 10,
+          },
         },
         colors: ['#4F3CC0','#08D110'],
         plotOptions: {
@@ -32,14 +37,26 @@ class RadialBar extends Component {
         stroke: {
           lineCap: 'round', // Deixa as bordas arredondadas
         },
+        title: {
+          text: "Comissão",
+          align: "left",
+          offsetY: 0,
+          offsetX: -10,
+          style: {
+            fontSize: "18px", // Aumenta o tamanho do título
+            color: "#23005B", // Altera a cor do título
+            fontWeight: "bold",
+            fontFamily: "Poppins", // Define a fonte como Poppins
+          },
+        },
         series: [vendidos, comissoes],
         labels: [`Vendido ${vendidos}K`, `Comissão ${comissoes}K`],
         legend: {
           show: true,
           floating: true,
           position: 'left',
-          offsetX: -30,
-          offsetY: -20,
+          offsetX: -35,
+          offsetY: 20,
         },
       },
     };

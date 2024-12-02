@@ -5,17 +5,86 @@ import { useState } from 'react'
 import { useContext } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
 import { Navigate, useNavigate } from "react-router-dom";
+import axios from 'axios'
+import { useEffect } from 'react'
 
 
 function CadastroProduto() {
 
     const Navigate = useNavigate()
+    const [selectedProduto, setSelectedProduto] = useState(null);
 
 
     const { produtos, setProdutos } = useContext(GlobalContext)
 
+    const fetchProdutos = async () => {
+        try {
+            const response = await axios.get('http://localhost:3000/produtos');
+            setProdutos(response.data);
+        } catch (error) {
+            console.error('Erro ao buscar clientes:', error);
+        }
+    };
 
-    
+    useEffect(() => {
+        fetchProdutos();
+    }, []);
+    useEffect(() => {
+        console.log(produtos);
+    }, [produtos]);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            if (selectedProduto) {
+                // Atualizar cliente existente (PUT)
+                const response = await axios.put(`http://localhost:3000/produtos/${selectedProduto.id}`, form);
+                if (response.status === 200) {
+                    fetchProdutos(); // Atualiza a lista de clientes após a edição
+                    setForm({
+                        marca: '',
+                        modelo: '',
+                        anoFabri: '',
+                        anoModelo: '',
+                        combustivel: '',
+                        versao: '',
+                        km: '',
+                        cambio: '',
+                        preco: '',
+                        localizacao: '',
+                        descri: '',
+                        image: ''
+                    }); // Limpa o formulário
+                    setSelectedProduto(null); // Reseta o cliente selecionado
+                }
+            } else {
+                // Adicionar novo cliente (POST)
+                const response = await axios.post('http://localhost:3000/produtos', form);
+                if (response.status === 201) {
+                    fetchProdutos(); // Atualiza a lista de clientes após a adição
+                    setForm({
+                        marca: '',
+                        modelo: '',
+                        anoFabri: '',
+                        anoModelo: '',
+                        combustivel: '',
+                        versao: '',
+                        km: '',
+                        cambio: '',
+                        preco: '',
+                        localizacao: '',
+                        descri: '',
+                        image: ''
+                    }); // Limpa o formulário
+                }
+            }
+        } catch (error) {
+            console.error('Erro ao adicionar/atualizar produto:', error);
+        }
+    };
+
+
+
     const [form, setForm] = useState({
         marca: '',
         modelo: '',
@@ -48,17 +117,17 @@ function CadastroProduto() {
             image: ''
         })
     }
-    
+
     function cadastrar() {
-        if (form.marca == '' || form.modelo == '' || form.anoFabri == '' || form.anoModelo == '' || form.cor == '' || form.combustivel == '' || form.versao == '' || form.km == '' || form.cambio == '' || form.preco == '' || form.localizacao == ''|| form.descri == '' || form.image == '') {
+        if (form.marca == '' || form.modelo == '' || form.anoFabri == '' || form.anoModelo == '' || form.cor == '' || form.combustivel == '' || form.versao == '' || form.km == '' || form.cambio == '' || form.preco == '' || form.localizacao == '' || form.descri == '' || form.image == '') {
             alert('Preencha todos os campos');
             return;
         } else {
 
+            handleSubmit()
 
             alert('Produto cadastrado com sucesso!')
 
-            setProdutos([...produtos, form])
             limpaInputs()
 
             Navigate("/produtos")
@@ -98,10 +167,10 @@ function CadastroProduto() {
                                     id='inp-marca'
                                     className='inp-marca'
                                     type="text"
-                                    value = {form.marca}
-                                    onChange={(e) => setForm({ ...form, marca: e.target.value })} 
+                                    value={form.marca}
+                                    onChange={(e) => setForm({ ...form, marca: e.target.value })}
 
-                                    />
+                                />
                                 <label htmlFor="inp-anoFabri">Ano Fabriação</label>
                                 <input
                                     id='inp-anoFabri'
@@ -203,7 +272,7 @@ function CadastroProduto() {
                                             type="text"
                                             value={form.cambio}
                                             onChange={(e) => setForm({ ...form, cambio: e.target.value })}
-                                            
+
                                         />
 
                                     </div>
