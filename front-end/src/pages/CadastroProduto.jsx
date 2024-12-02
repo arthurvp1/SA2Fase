@@ -17,6 +17,39 @@ function CadastroProduto() {
 
     const { produtos, setProdutos } = useContext(GlobalContext)
 
+    const [form, setForm] = useState({
+        marca: '',
+        modelo: '',
+        anoFabri: '',
+        anoModelo: '',
+        combustivel: '',
+        versao: '',
+        km: '',
+        cambio: '',
+        preco: '',
+        localizacao: '',
+        descri: '',
+        image: ''
+
+    });
+    console.table(form)
+
+    const handleClick = async (e) => {
+    
+
+        e.preventDefault()
+        try {
+          // Utilizando o axios para enviar requisição de post do front para o back
+          const response = await axios.post('http://localhost:3000/produtos', form)
+          if (response.status === 201) {
+            setForm(response.data);
+            alert('Usuário cadastrado no banco de dados! :D')
+          }
+        } catch (error) {
+          console.error('Erro ao cadastrar usuário! :(', error)
+        }
+      }
+
     const fetchProdutos = async () => {
         try {
             const response = await axios.get('http://localhost:3000/produtos');
@@ -84,22 +117,6 @@ function CadastroProduto() {
     };
 
 
-
-    const [form, setForm] = useState({
-        marca: '',
-        modelo: '',
-        anoFabri: '',
-        anoModelo: '',
-        combustivel: '',
-        versao: '',
-        km: '',
-        cambio: '',
-        preco: '',
-        localizacao: '',
-        descri: '',
-        image: ''
-
-    })
     function limpaInputs() {
         setForm({
             marca: '',
@@ -124,7 +141,7 @@ function CadastroProduto() {
             return;
         } else {
 
-            handleSubmit()
+            handleClick()
 
             alert('Produto cadastrado com sucesso!')
 

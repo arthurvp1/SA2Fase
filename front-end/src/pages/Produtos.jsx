@@ -7,6 +7,7 @@ import { GlobalContext } from '../contexts/GlobalContext'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 function Produtos() {

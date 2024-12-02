@@ -46,13 +46,15 @@ app.get('/produtos/:id', async (req, res) => {
 app.post('/produtos', async (req, res) => {
     const { marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image } = req.body;
     try {
+        if(marca != '' && modelo != '' && anoFabri != '' && anoModelo != '' && combustivel != '' && versao != '' && km != '' && cambio != '' && preco != '' && localizacao != '' && descri != '' && image != ''){
         const result = await pool.query(
-            'INSERT INTO produtos (nome, endereco, email, telefone) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING *',
+            'INSERT INTO produtos (prodMarca , prodModelo , prodAnoFabri , prodAnoModelo , prodCombustivel , prodversao , prodKm , prodCambio , prodPreco , prodLocalizacao , proddescri , prodDmage) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING *',
             [marca , modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image]
-            
-        
-       
-        );
+            );
+        }else{
+            res.status(400).json({ error: 'Preencha todos os campos! :(' })
+        }
+                   
         res.status(201).json(result.rows[0]);
     } catch (err) {
         console.error(err.message);
