@@ -27,6 +27,7 @@ function CadastroProduto() {
         km: '',
         cambio: '',
         preco: '',
+        cor:'',
         localizacao: '',
         descri: '',
         image: ''
@@ -36,17 +37,15 @@ function CadastroProduto() {
 
     const handleClick = async (e) => {
     
-
-    
         try {
           // Utilizando o axios para enviar requisição de post do front para o back
           const response = await axios.post('http://localhost:3000/produtos', form)
           if (response.status === 201) {
             setForm(response.data);
-            alert('Usuário cadastrado no banco de dados! :D')
+            alert('produto cadastrado no banco de dados! :D')
           }
         } catch (error) {
-          console.error('Erro ao cadastrar usuário! :(', error)
+          console.error('Erro ao cadastrar produto! :(', error)
         }
       }
 
@@ -55,7 +54,7 @@ function CadastroProduto() {
             const response = await axios.get('http://localhost:3000/produtos');
             setProdutos(response.data);
         } catch (error) {
-            console.error('Erro ao buscar clientes:', error);
+            console.error('Erro ao buscar produtos:', error);
         }
     };
 
@@ -82,6 +81,7 @@ function CadastroProduto() {
                         combustivel: '',
                         versao: '',
                         km: '',
+                        cor: '',
                         cambio: '',
                         preco: '',
                         localizacao: '',
@@ -103,6 +103,7 @@ function CadastroProduto() {
                         combustivel: '',
                         versao: '',
                         km: '',
+                        cor: '',
                         cambio: '',
                         preco: '',
                         localizacao: '',

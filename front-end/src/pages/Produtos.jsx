@@ -26,7 +26,12 @@ function Produtos() {
 
   useEffect(() => {
     getUsers();
+    
   }, []);
+  useEffect(() => {
+    console.table(produtos);
+  }
+  , [produtos]);
 
   return (
     <div className='produtos-container'>
@@ -38,8 +43,8 @@ function Produtos() {
         </div>
         <div className='body-produtos'>
           {
-            produtos.map((p) => (
-              <Produto  key= {p.prodid} produto={p} />
+            produtos.map((p) => (   
+              <Produto key={p.idp} produto={p} />
             ))
           }
           <div className='add-produto'>

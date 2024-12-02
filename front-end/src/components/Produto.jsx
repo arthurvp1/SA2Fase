@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './Produto.css';
 import SelectVenda from './SelectVenda';
 import { GlobalContext } from '../contexts/GlobalContext';
@@ -9,7 +9,7 @@ function Produto(props) {
     let produto = props.produto
 
     const { visible, setVisible } = useContext(GlobalContext);
-
+   
   // Função para alternar a visibilidade
   const visibilidade = () => {
     setVisible(true); // Alterna o estado de 'visible'
@@ -18,7 +18,7 @@ function Produto(props) {
   return (
     <section className='body-produto'>
       <div className='img-produto'>
-        <img src="" alt="Toggle" />
+        <img src= {produto.image} alt="Toggle" className='imagem-carro' />
       </div>
       <div className='dados-produto'>
         <p>{produto.marca} {produto.modelo}</p>
@@ -27,7 +27,7 @@ function Produto(props) {
       <div className='dados-produto-preco'>
         <div className='preco-ano'>
           <p>R$ {produto.preco}</p>
-          <p className='p-ano'>{produto.anoFabri} / {produto.anoModelo}</p>
+          <p className='p-ano'>{produto.anofabri} / {produto.anomodelo}</p>
         </div>
         <div className='KM'>
           <p>{produto.km} Km</p>
@@ -45,6 +45,8 @@ function Produto(props) {
       <div className='produto-localiza'>
         <p><img src="./public/imagens/icon-loca.png" alt="" />  {produto.localizacao}</p>
       </div>
+
+      <p>{produto.idp}</p>
     </section>
     )
 }

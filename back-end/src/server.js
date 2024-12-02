@@ -44,12 +44,12 @@ app.get('/produtos/:id', async (req, res) => {
 
 // Rota para adicionar um cliente
 app.post('/produtos', async (req, res) => {
-    const { marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image } = req.body;
+    const { marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image , cor} = req.body;
     try {
-        if(marca != '' && modelo != '' && anoFabri != '' && anoModelo != '' && combustivel != '' && versao != '' && km != '' && cambio != '' && preco != '' && localizacao != '' && descri != '' && image != ''){
+        if(marca != '' && modelo != '' && anoFabri != '' && anoModelo != '' && combustivel != '' && versao != '' && km != '' && cambio != '' && preco != '' && localizacao != '' && descri != '' && image != '' && cor != ''){
         const result = await pool.query(
-            'INSERT INTO produtos (prodMarca , prodModelo , prodAnoFabri , prodAnoModelo , prodCombustivel , prodversao , prodKm , prodCambio , prodPreco , prodLocalizacao , proddescri , prodDmage) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING *',
-            [marca , modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image]
+            'INSERT INTO produtos (marca , modelo , anoFabri ,anoModelo , combustivel , versao , Km , cor, cambio , preco , localizacao , descri , image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING *',
+            [marca , modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco ,cor, localizacao , descri , image]
             );
         }else{
             res.status(400).json({ error: 'Preencha todos os campos! :(' })
@@ -68,7 +68,7 @@ app.put('/produtos/:id', async (req, res) => {
     const { marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image } = req.body;
     try {
         const result = await pool.query(
-            'UPDATE clientes SET marca = $1, modelo = $2, anoFabri = $3, anoModelo = $4, combustivel = $5, versao = $6, km = $7, cambio = $8, preco = $9, localizacao = $10, descri = $11, image = $12 WHERE id = $13 RETURNING *',
+            'UPDATE clientes SET marca = $1, modelo = $2, anoFabri = $3, anoModelo = $4, combustivel = $5, versao = $6, km = $7, cor = $8 cambio = $9, preco = $10, localizacao = $11, descri = $12, image = $13 WHERE id = $14 RETURNING *',
             [marca, modelo , anoFabri , anoModelo , combustivel , versao , km , cambio , preco , localizacao , descri , image, id]
         );
         if (result.rows.length === 0) {

@@ -15,8 +15,8 @@ export const GlobalContextProvider = ({ children }) => {
     ])
 
 
-    const [produtos, setProdutos] = useState([{}])
-    
+    const [produtos, setProdutos] = useState([])
+
     const [historico, setHistorico] = useState([
         {
             vendaID: '1',
