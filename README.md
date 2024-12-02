@@ -41,7 +41,7 @@
 create table produtos(
     
 	idp serial primary key,
-    	marca varchar(30),
+    marca varchar(30),
 	modelo varchar(30),
 	anoFabri varchar(10),
 	anoModelo varchar(10),
