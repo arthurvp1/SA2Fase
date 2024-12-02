@@ -12,6 +12,8 @@ class ColunaBar extends Component {
           id: "basic-bar",
           toolbar: {
             show: true, // Remove o menu do gráfico
+            offsetY: -30,
+            offsetX: 10,
           },
         },
         xaxis: {

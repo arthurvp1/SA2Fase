@@ -80,5 +80,9 @@ html,body,#root{
 }
 
 .h1-home{
-    color: #000000;
+    color: #fff;
+}
+
+.span-home{
+    color: rgb(0, 255, 0)
 }
