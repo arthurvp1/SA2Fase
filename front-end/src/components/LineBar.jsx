@@ -22,7 +22,7 @@ class LineBar extends Component {
             opacity: 1,
           },
           toolbar: {
-            show: false, // Remove o menu do gráfico
+            show: true, // Remove o menu do gráfico
           },
         },
         stroke: {
