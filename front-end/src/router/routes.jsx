@@ -11,6 +11,7 @@ import AlterarCad from "../pages/AlterarCad";
 import CadastroProduto from "../pages/CadastroProduto";
 import Historico from "../pages/Historico";
 import EditarProduto from "../pages/EditarProduto";
+import AlterarFunc from "../pages/AlterarFunc";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home />},
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
     {path: "/cadProduto", element: <CadastroProduto />},
     {path: "/historico", element: <Historico/>},
     {path: "/editarProduto", element: <EditarProduto/>},
-    {path: "/alterarFunc", element: <AlterarCad/>}
+    {path: "/alterarFunc", element: <AlterarFunc/>}
     
 ])
 
