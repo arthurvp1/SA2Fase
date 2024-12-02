@@ -37,7 +37,7 @@ function CadastroProduto() {
     const handleClick = async (e) => {
     
 
-        e.preventDefault()
+    
         try {
           // Utilizando o axios para enviar requisição de post do front para o back
           const response = await axios.post('http://localhost:3000/produtos', form)
