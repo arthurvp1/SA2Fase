@@ -11,8 +11,10 @@ export const GlobalContextProvider = ({ children }) => {
         fone: '48991836492',
         cpf: '99898789878',
         meta: 100
+
     }
     ])
+    
 
 
     const [produtos, setProdutos] = useState([])

@@ -48,7 +48,7 @@ function AlterarCad() {
                             </div>
                         </Link>
 
-                        <Link to='/alterar' className='alterar-func'>
+                        <Link to='/alterarFunc' className='alterar-func'>
                             <div className="icon-alterar">
                                 <div className='icon-form'>
 

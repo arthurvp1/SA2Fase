@@ -37,22 +37,27 @@
 </div>
 
 <p>
-  create table produtos(
+	
+create table produtos(
     
-	prodID serial primary key,
-    prodMarca varchar(30),
-	prodModelo varchar(30),
-	prodAnoFabri varchar(10),
-	prodAnoModelo varchar(10),
-	prodCombustivel varchar(30),
-	prodVersao varchar(50),
-	prodKm varchar(30),
-	prodCambio varchar(30),
-	prodPreco varchar(30),
-	prodLocalizacao varchar(60),
-	prodDescri varchar(300),
-	prodImage varchar(300)
+	idp serial primary key,
+    marca varchar(30),
+	modelo varchar(30),
+	anoFabri varchar(10),
+	anoModelo varchar(10),
+	combustivel varchar(30),
+	versao varchar(50),
+	km varchar(30),
+	cor varchar(30),
+	cambio varchar(30),
+	preco varchar(30),
+	localizacao varchar(60),
+	descri varchar(300),
+	image varchar(300)
 );
+select * from produtos;
+DataBase SaleSigth
+	
 </p>
 
 
