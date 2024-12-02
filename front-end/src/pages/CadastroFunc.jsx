@@ -129,7 +129,7 @@ function CadastroFunc() {
               value={cpf}
               onChange={(e) => setCpf(e.target.value.replace(/\D/g, ""))} // Remove todos os caracteres não numéricos
               maxLength="11"
-              placeholder="CPF*"
+              placeholder="CPF"
             />
 
             <input
