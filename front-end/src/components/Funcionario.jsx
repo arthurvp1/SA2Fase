@@ -50,7 +50,7 @@ function Funcionario(props) {
         <section className= {estado} >
 
             <div className='foto'>
-                <label htmlFor="">{funcionario.img}</label>
+               <img className='imagemluiz' src="/imagens/166057870.png"/>
             </div>
 
             <div className='perfil-text'>

@@ -2,7 +2,8 @@
 .perfil1{
     
     width: 95%;
-    height: 80px;
+    height: 100px;
+    position: relative;
     border-radius: 10px;
     display: flex;
     background-color: white;
@@ -41,6 +42,13 @@
         width: 70%;
         height: 100%;
 
+    }
+    .imagemluiz{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        object-fit: cover;
     }
         .perfil-text-encima{
             height: 47.5%;
