@@ -52,8 +52,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    height: 60%;
-    width: 20%;
+    height: 70%;
+    width: 22%;
     color: rgba(0, 0, 0, 0.900);
     background-color: whitesmoke;
     
@@ -106,6 +106,7 @@
     font-size: 25px;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.900);
+    margin-left: 15%;
 }
 .div-but-back{
     display: flex;
@@ -129,6 +130,17 @@
 .img-but{
     height: 40px;
     
+}
+.lblAltCad{
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    /* padding-left: 55px; */
+    height: 15%;
+    color: rgba(255, 255, 255, 0.897);
 }
 
     

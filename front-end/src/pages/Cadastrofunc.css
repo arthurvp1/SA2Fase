@@ -120,6 +120,10 @@ body,html,#root{
         justify-content: center;
         flex-direction: column;
         gap: 22%;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-left: 5%;
+        margin-top: 7.5%;
     }
         .profile-picture{
             border-radius: 50%;
@@ -132,128 +136,4 @@ body,html,#root{
             color: white;
             border: 0;
         }
-        /* .esquerdo{
-            background-color: #e3e1e9 ;
-            backdrop-filter: blur(10px);
-            width: 50%;
-            height: 95%;
-            border-radius: 15px;
-        }
-
-         .section{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 10%;
-        }
         
-            .top{
-                height: 20%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: left;
-                gap: 10%;
-        }
-            .texts{
-                text-align: left;
-                height: 17%;
-                width: 100%;
-                margin-left: 3%;
-            }
-                .titulo{
-                    font-size: 30px;
-                    font-weight: bold;
-                }
-                .descricao{
-                    font-size: 20px;
-                }
-                .verde{
-                    font-weight: bold;
-                }
-                .inputs{
-                    display: block;
-                    margin-left: 3%;
-                    width: 100%;
-                }
-                input::placeholder{
-                    color: rgb(100, 98, 98);
-                }
-                .username-input,.email-input,.senha-input,.telefone,.nascimento-input,.cpf-input,.meta{
-                    width: 600px;
-                    height: 45px;
-                    border-top: 0px;
-                    border-left: 0px;
-                    border-right: 0px;
-                    background-color: transparent;
-                    padding-left: 2%;
-                    font-size: 17px;
-                  
-                }
-                input:focus{
-                    outline: none;
-                }
-                .buttons{
-                    display: flex;
-                    width: 100%;
-                    height: 20%;
-                    align-items: center;
-                    justify-content: space-evenly;
-                }
-                    .confirma,.limpa,.change-photo-button{
-                        width: 150px;
-                        height: 55px;
-                        border-radius: 20px;
-                    }
-                    .confirma{
-                        background-color: #7B76F1;
-                        color: white;
-                        border: 0;
-                    }
-                    .limpa{
-                        background-color: #7B76F1;
-                        color: white;
-                        border: 0;
-                    } 
-
-        .direito{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 30%;
-            border-radius: 15px;
-            height: 95%;
-            flex-direction: column;
-        }
-        .profile-section{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 22%;
-        }
-            .profile-picture{
-                border-radius: 50%;
-                width: 200px;
-                height: 200px;
-            } 
-
-            .change-photo-button{
-                background-color: #7B76F1;
-                color: white;
-                border: 0;
-            }
-            .limpa:active{
-                width: 148px;
-                height: 54px;
-                border-radius: 20px;
-            }
-            .confirma:active{
-                margin-right: 2px;
-                width: 148px;
-                height: 54px;
-                border-radius: 20px;
-            } */

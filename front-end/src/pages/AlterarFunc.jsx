@@ -95,7 +95,7 @@ function AlterarFunc() {
           </div>
           <aside className="esquerdo">
   
-            <div className="texts">
+            <div className="textsAlterar">
               <label className="titulo">Alterar dados</label>
               {/* <p className="descricao">Preencha os dados do funcionário abaixo:</p> */}
             </div>
@@ -187,8 +187,8 @@ function AlterarFunc() {
   
   
           <aside className="direito">
-            <div className="profile-section">
-              <img className="profile-picture" src="./imagens/profilepicture.png" />
+            <div className="profile-sectionAlt">
+              <img className="profile-pictureAlt" src="./imagens/profilepicture.png" />
               <select name="" id="" className='selectFunc' >
                 <option value="0" disabled selected>Selecione o funcionário</option>
               </select>

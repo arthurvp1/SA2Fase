@@ -18,7 +18,8 @@ function AlterarCad() {
                     <div className='body-up'>
                         <div className='titulo-label'>
 
-                        <h1>Alterar ou Cadastrar</h1>
+                        
+                        <label htmlFor="" className='lblAltCad'>Alterar ou Cadastrar:</label>
 
                         </div>
                         <div className='div-but-back'>
