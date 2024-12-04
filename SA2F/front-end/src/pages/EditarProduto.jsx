@@ -13,46 +13,98 @@ function EditarProduto() {
 
 
     const { produtos, setProdutos } = useContext(GlobalContext)
-    const [selectedProduto, setSelectedProduto] = useState(null);
 
+    const {selectedProduto, setSelectedProduto} = useContext(GlobalContext)
+    let idp = selectedProduto
+
+
+    useEffect(() => {
+        setForm({idp: selectedProduto})
+    }, []);
+    useEffect(() => {fetchprodutoById()}, []);
 
     const [form, setForm] = useState({
+        
         marca: '',
         modelo: '',
-        anoFabri: '',
-        anoModelo: '',
+        ano_fabri: '',
+        ano_modelo: '',
         combustivel: '',
         versao: '',
         km: '',
         cambio: '',
         preco: '',
+        cor:'',
         localizacao: '',
         descri: '',
         image: ''
 
-    })
+    });
+
+     console.log(form.idp)
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            
+                // Atualizar cliente existente (PUT)
+                const response = await axios.put(`http://localhost:3000/produtos/${form.idp}`, form);
+                if (response.status === 200) {
+                    fetchProdutos(); // Atualiza a lista de clientes após a edição
+                    limpaInputs(); // Limpa o formulário
+                    setSelectedProduto(null); // Reseta o cliente selecionado
+                }
+            
+        } catch (error) {
+            console.error('Erro ao atualizar produto:', error);
+        }
+    };
+    const deleteCliente = async (idp) => {
+        try {
+            const response = await axios.delete(`http://localhost:3000/produtos/${idp}`);
+            if (response.status === 200) {
+                fetchProdutos(); // Atualiza a lista de clientes após a exclusão
+            }
+        } catch (error) {
+            console.error('Erro ao deletar cliente:', error);
+        }
+    };
+    
+
     function excluir() {
-        setProdutos(produtos.filter((produto) => produto !== form))
-        limpaInputs()
-        Navigate("/produtos")
+        deleteCliente()
+        
     }
     function limpaInputs() {
-        setForm({
+         setForm({
             marca: '',
             modelo: '',
-            anoFabri: '',
-            anoModelo: '',
-            cor: '',
+            ano_fabri: '',
+            ano_modelo: '',
             combustivel: '',
             versao: '',
             km: '',
             cambio: '',
             preco: '',
+            cor:'',
             localizacao: '',
             descri: '',
             image: ''
-        })
+    
+        });
     }
+    const fetchprodutoById = async (idp) => {
+
+        
+        try {
+            const response = await axios.get(`http://localhost:3000/produtos/${idp}`);
+            setSelectedProduto(response.data); // Seleciona o cliente para edição
+            setForm(response.data); // Preenche o formulário com os dados do cliente
+        } catch (error) {
+            console.error('Erro ao buscar cliente por ID:', error);
+        }
+    };
     const fetchProdutos = async () => {
         try {
             const response = await axios.get('http://localhost:3000/produtos');
@@ -63,72 +115,19 @@ function EditarProduto() {
     };
 
     useEffect(() => {
-        fetchProdutos();
-    }, []);
-    useEffect(() => {
         console.log(produtos);
     }, [produtos]);
 
     function editar() {
-        if (form.marca == '' || form.modelo == '' || form.anoFabri == '' || form.anoModelo == '' || form.cor == '' || form.combustivel == '' || form.versao == '' || form.km == '' || form.cambio == '' || form.preco == '' || form.localizacao == '' || form.descri == '' || form.image == '') {
+        if (form.marca == '' || form.modelo == '' || form.ano_fabri == '' || form.ano_modelo == '' || form.cor == '' || form.combustivel == '' || form.versao == '' || form.km == '' || form.cambio == '' || form.preco == '' || form.localizacao == '' || form.descri == '' || form.image == '') {
             alert('Preencha todos os campos');
             return;
         } else {
 
-            const handleSubmit = async (e) => {
-                e.preventDefault();
-                try {
-                    if (selectedProduto) {
-                        // Atualizar cliente existente (PUT)
-                        const response = await axios.put(`http://localhost:3000/produtos/${selectedProduto.id}`, form);
-                        if (response.status === 200) {
-                            fetchProdutos(); // Atualiza a lista de clientes após a edição
-                            setForm({
-                                marca: '',
-                                modelo: '',
-                                anoFabri: '',
-                                anoModelo: '',
-                                combustivel: '',
-                                versao: '',
-                                km: '',
-                                cambio: '',
-                                preco: '',
-                                localizacao: '',
-                                descri: '',
-                                image: ''
-                            }); // Limpa o formulário
-                            setSelectedProduto(null); // Reseta o cliente selecionado
-                        }
-                    } else {
-                        // Adicionar novo cliente (POST)
-                        const response = await axios.post('http://localhost:3000/produtos', form);
-                        if (response.status === 201) {
-                            fetchProdutos(); // Atualiza a lista de clientes após a adição
-                            setForm({
-                                marca: '',
-                                modelo: '',
-                                anoFabri: '',
-                                anoModelo: '',
-                                combustivel: '',
-                                versao: '',
-                                km: '',
-                                cambio: '',
-                                preco: '',
-                                localizacao: '',
-                                descri: '',
-                                image: ''
-                            }); // Limpa o formulário
-                        }
-                    }
-                } catch (error) {
-                    console.error('Erro ao adicionar/atualizar cliente:', error);
-                }
-            };
-
-
+            handleSubmit()
+            
             alert('Produto cadastrado com sucesso!')
 
-            setProdutos([...produtos, form])
             limpaInputs()
 
             Navigate("/produtos")
@@ -177,8 +176,8 @@ function EditarProduto() {
                                     id='inp-anoFabri'
                                     className='inp-anoFabri'
                                     type="number"
-                                    value={form.anoFabri}
-                                    onChange={(e) => setForm({ ...form, anoFabri: e.target.value })}
+                                    value={form.ano_fabri}
+                                    onChange={(e) => setForm({ ...form, ano_fabri: e.target.value })}
 
                                 />
                                 <label htmlFor="inp-cor">Cor</label>
@@ -231,8 +230,8 @@ function EditarProduto() {
                                             id='inp-anoModelo'
                                             className='inp-anoModelo'
                                             type="number"
-                                            value={form.anoModelo}
-                                            onChange={(e) => setForm({ ...form, anoModelo: e.target.value })}
+                                            value={form.ano_modelo}
+                                            onChange={(e) => setForm({ ...form, ano_modelo: e.target.value })}
 
                                         />
                                         <label htmlFor="inp-combustivel">Combustivel</label>

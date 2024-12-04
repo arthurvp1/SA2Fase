@@ -17,6 +17,7 @@ export const GlobalContextProvider = ({ children }) => {
 
 
     const [produtos, setProdutos] = useState([])
+    const [selectedProduto, setSelectedProduto] = useState('');
 
     const [historico, setHistorico] = useState([
         {
@@ -35,7 +36,7 @@ export const GlobalContextProvider = ({ children }) => {
 
 
     return (
-        <GlobalContext.Provider value={{ usuarioLogado, isVisible, setIsVisible, produtos, setProdutos, funcionarios, setFuncionarios,visible, setVisible, historico, setHistorico }}>
+        <GlobalContext.Provider value={{selectedProduto, setSelectedProduto, usuarioLogado, isVisible, setIsVisible, produtos, setProdutos, funcionarios, setFuncionarios,visible, setVisible, historico, setHistorico }}>
             {children}
         </GlobalContext.Provider>
     )

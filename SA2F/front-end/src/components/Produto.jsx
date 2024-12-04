@@ -11,7 +11,14 @@ function Produto(props) {
     let produto = props.produto
 
     const { visible, setVisible } = useContext(GlobalContext);
+    const { selectedProduto, setSelectedProduto } = useContext(GlobalContext);
     const [idp,setIdp] = useState('')
+    
+    function editar() {
+        setSelectedProduto(idp)
+
+    }
+        
    
   // Função para alternar a visibilidade
   const visibilidade = () => {
@@ -40,7 +47,7 @@ function Produto(props) {
         </div>
       </div>
       <div className='div-but-produto'>
-        <Link to = '/editarProduto' className='but-produto-link-editar'><button className='but-produto-editar'>Editar</button></Link>
+        <Link to = '/editarProduto' className='but-produto-link-editar' onClick={editar}><button className='but-produto-editar' >Editar</button></Link>
 
         
         <button className='but-produto-vender' onClick={visibilidade}>Vender</button>
