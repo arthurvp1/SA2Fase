@@ -39,12 +39,11 @@
 <p>
 	
 create table produtos(
-    
 	idp serial primary key,
-    marca varchar(30),
+	marca varchar(30),
 	modelo varchar(30),
-	anoFabri varchar(10),
-	anoModelo varchar(10),
+	ano_fabri integer,
+	ano_modelo integer,
 	combustivel varchar(30),
 	versao varchar(50),
 	km varchar(30),
