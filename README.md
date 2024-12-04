@@ -39,6 +39,7 @@
 <p>
 	
 create table produtos(
+
 	idp serial primary key,
 	marca varchar(30),
 	modelo varchar(30),
