@@ -28,10 +28,10 @@ app.get('/produtos', async (req, res) => {
 });
 
 // Rota para buscar um cliente por ID
-app.get('/produtos/:id', async (req, res) => {
+app.get('/produtos/:idp', async (req, res) => {
     const { idp } = req.params;
     try {
-        const result = await pool.query('SELECT * FROM produtos WHERE id = $1', [idp]);
+        const result = await pool.query('SELECT * FROM produtos WHERE idp = $1', [idp]);
         if (result.rows.length === 0) {
             return res.status(404).json({ error: 'Produto não encontrado' });
         }
@@ -44,7 +44,7 @@ app.get('/produtos/:id', async (req, res) => {
 
 // Rota para adicionar um cliente
 app.post('/produtos', async (req, res) => {
-    const { marca, modelo, ano_fabri, ano_modelo, combustivel, versao, km, cambio, preco, cor, localizacao, descri, image } = req.body;
+    const { marca, modelo, ano_fabri, ano_modelo, combustivel, versao, km, cor, cambio, preco, localizacao, descri, image } = req.body;
     
     // Verificar se todos os campos foram preenchidos
     if (marca && modelo && ano_fabri && ano_modelo && combustivel && versao && km && cambio && preco && localizacao && descri && image && cor) {
@@ -73,13 +73,13 @@ app.post('/produtos', async (req, res) => {
 });
 
 // Rota para atualizar um cliente
-app.put('/produtos/:id', async (req, res) => {
-    const { id } = req.params;
-    const { marca, modelo , ano_fabri , ano_modelo , combustivel , versao , km , cambio , preco , localizacao , descri , image } = req.body;
+app.put('/produtos/:idp', async (req, res) => {
+    const { idp } = req.params;
+    const { marca, modelo, ano_fabri, ano_modelo, combustivel, versao, km, cor, cambio, preco, localizacao, descri, image } = req.body;
     try {
         const result = await pool.query(
-            'UPDATE clientes SET marca = $1, modelo = $2, ano_fabri = $3, ano_modelo = $4, combustivel = $5, versao = $6, km = $7, cor = $8 cambio = $9, preco = $10, localizacao = $11, descri = $12, image = $13 WHERE id = $14 RETURNING *',
-            [marca, modelo , ano_fabri , ano_modelo , combustivel , versao , km , cambio , preco , localizacao , descri , image, id]
+            'UPDATE produtos SET marca = $1, modelo = $2, ano_fabri = $3, ano_modelo = $4, combustivel = $5, versao = $6, km = $7, cor = $8, cambio = $9, preco = $10, localizacao = $11, descri = $12, image = $13 WHERE idp = $14 RETURNING *',
+            [marca, modelo, ano_fabri, ano_modelo, combustivel, versao, km, cor, cambio, preco, localizacao, descri, image, idp]
         );
         if (result.rows.length === 0) {
             return res.status(404).json({ error: 'produtos não encontrado' });
@@ -92,10 +92,10 @@ app.put('/produtos/:id', async (req, res) => {
 });
 
 // Rota para deletar um cliente
-app.delete('/produtos/:id', async (req, res) => {
+app.delete('/produtos/:idp', async (req, res) => {
     const { idp } = req.params;
     try {
-        const result = await pool.query('DELETE FROM produtos WHERE id = $1 RETURNING *', [idp]);
+        const result = await pool.query('DELETE FROM produtos WHERE idp = $1 RETURNING *', [idp]);
         if (result.rows.length === 0) {
             return res.status(404).json({ error: 'produtos não encontrado' });
         }

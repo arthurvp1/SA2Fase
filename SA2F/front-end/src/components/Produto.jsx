@@ -15,6 +15,8 @@ function Produto(props) {
     const [idp,setIdp] = useState('')
     
     function editar() {
+      let id = idp
+    localStorage.setItem('produto', JSON.stringify(id));
         setSelectedProduto(idp)
 
     }
@@ -26,6 +28,7 @@ function Produto(props) {
   };
   useEffect(() => {
     setIdp(produto.idp)
+    
   }, [produto.idp])
 
   return (

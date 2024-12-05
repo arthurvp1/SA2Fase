@@ -24,7 +24,7 @@ function Desempenho() {
           <div className="div-funcionarios">
           {
             funcionarios.map((f) => (
-              <Funcionario funcionario={f} />
+              <Funcionario key={f} funcionario={f} />
             ))
           }
 

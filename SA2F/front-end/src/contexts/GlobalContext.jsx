@@ -10,7 +10,8 @@ export const GlobalContextProvider = ({ children }) => {
         email: 'filipefln@gmail.com',
         fone: '48991836492',
         cpf: '99898789878',
-        meta: 50
+        meta: 50,
+        id: '1'
     }
     ])
     
