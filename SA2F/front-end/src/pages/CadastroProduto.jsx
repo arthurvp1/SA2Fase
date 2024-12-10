@@ -134,7 +134,7 @@ function CadastroProduto() {
     return (
 
 
-        <div className="Cadastrofunc-container">
+        <div className="CadastroProd-container">
 
 
             <div className='body-container'>

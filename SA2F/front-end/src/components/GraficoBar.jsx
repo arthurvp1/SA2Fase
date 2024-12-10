@@ -36,7 +36,7 @@ class GraficoBar extends Component {
           max: 100, // Define o valor máximo do eixo x
           labels: {
             formatter: function (value) {
-              return `${value}K`; // Adiciona o sufixo "k" aos valores
+              return `${value}%`; // Adiciona o sufixo "k" aos valores
             }
           }
         },
