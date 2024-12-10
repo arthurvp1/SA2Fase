@@ -172,7 +172,7 @@ function EditarProduto() {
                 <div className='cadastro-produtos-container'>
                     <div className='div-tittle'>
 
-                        <h1>Editar Produto</h1>
+                        <h1 >Editar Produto</h1>
 
                     </div>
 

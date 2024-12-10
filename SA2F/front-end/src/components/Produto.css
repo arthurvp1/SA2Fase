@@ -25,6 +25,14 @@
     align-items: center;
 
 }
+.imagem-carro{
+   height: 99%;
+   width: 100%;
+   margin-top: 4.8px;
+   border-top-right-radius: 8px;
+   border-top-left-radius: 8px;
+    
+}
 .dados-produto{
     height: 10%;
     width: 95%;
@@ -120,9 +128,4 @@
 .but-produto-editar:hover{
     background-color: rgba(0, 0, 0, 0.623);
     color: whitesmoke;
-}
-.imagem-carro{
-    height: 100%;
-    width: 100%;
-    
 }

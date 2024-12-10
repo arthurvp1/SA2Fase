@@ -62,7 +62,7 @@ function Produto(props) {
         <p><img src="./public/imagens/icon-loca.png" alt="" />  {produto.localizacao}</p>
       </div>
 
-      <p>{produto.idp}</p>
+      
     </section>
     )
 }
