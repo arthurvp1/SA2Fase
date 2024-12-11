@@ -7,7 +7,7 @@ const app = express();
 const pool = new Pool({
     user: 'postgres', // Substitua pelo seu usuário do PostgreSQL
     host: 'localhost',
-    database: 'SaleSight', // Nome da sua database
+    database: 'SaleSigth', // Nome da sua database
     password: 'senai', // Substitua pela sua senha
     port: 5432, // Porta padrão do PostgreSQL
 });

@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 function Produto(props) {
     let produto = props.produto
 
+    const [ visibles, setVisibles ] = useState(false);
     const { visible, setVisible } = useContext(GlobalContext);
     const { selectedProduto, setSelectedProduto } = useContext(GlobalContext);
     const [idp,setIdp] = useState('')
@@ -24,7 +25,7 @@ function Produto(props) {
    
   // Função para alternar a visibilidade
   const visibilidade = () => {
-    setVisible(true); // Alterna o estado de 'visible'
+    setVisibles(true); // Alterna o estado de 'visibles'
   };
   useEffect(() => {
     setIdp(produto.idp)
@@ -56,7 +57,8 @@ function Produto(props) {
         <button className='but-produto-vender' onClick={visibilidade}>Vender</button>
 
         
-        {visible && <SelectVenda />}
+        {visibles && <SelectVenda />}
+
       </div>
       <div className='produto-localiza'>
         <p><img src="./public/imagens/icon-loca.png" alt="" />  {produto.localizacao}</p>
